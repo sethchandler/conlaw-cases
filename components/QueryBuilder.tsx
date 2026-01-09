@@ -8,13 +8,14 @@ import { Card } from '@/components/ui/card';
 import { generateSQL } from '@/lib/ai/providers';
 import { DATABASE_SCHEMA } from '@/lib/schema';
 import type { AIProviderName } from '@/types/ai';
+import type { CaseWithChiefJustice } from '@/types/case';
 
 export default function QueryBuilder() {
   const [query, setQuery] = useState('');
   const [generatedSQL, setGeneratedSQL] = useState('');
   const [isGenerating, setIsGenerating] = useState(false);
   const [error, setError] = useState('');
-  const [results, setResults] = useState([]);
+  const [results, setResults] = useState<CaseWithChiefJustice[]>([]);
 
   const handleGenerateSQL = async () => {
     if (!query.trim()) {
