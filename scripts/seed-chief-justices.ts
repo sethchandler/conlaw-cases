@@ -5,6 +5,7 @@
  * Usage: npx tsx scripts/seed-chief-justices.ts
  */
 
+import 'dotenv/config';
 import { sql } from '@vercel/postgres';
 
 interface ChiefJustice {

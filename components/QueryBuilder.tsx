@@ -14,8 +14,10 @@ export default function QueryBuilder() {
   const [query, setQuery] = useState('');
   const [generatedSQL, setGeneratedSQL] = useState('');
   const [isGenerating, setIsGenerating] = useState(false);
+  const [isExecuting, setIsExecuting] = useState(false);
   const [error, setError] = useState('');
   const [results, setResults] = useState<CaseWithChiefJustice[]>([]);
+  const [executionTime, setExecutionTime] = useState<number | null>(null);
 
   const handleGenerateSQL = async () => {
     if (!query.trim()) {
@@ -68,9 +70,39 @@ export default function QueryBuilder() {
       return;
     }
 
-    setError('Database execution will be available once you set up Vercel Postgres');
-    // TODO: Implement actual database execution in Phase 2
-    // For now, we just show that the SQL is editable and ready
+    setIsExecuting(true);
+    setError('');
+    setResults([]);
+    setExecutionTime(null);
+
+    try {
+      const response = await fetch('/api/execute-query', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ query: generatedSQL }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        setError(data.error || 'Failed to execute query');
+        return;
+      }
+
+      if (data.success) {
+        setResults(data.data);
+        setExecutionTime(data.executionTime);
+        if (data.truncated) {
+          setError(data.message);
+        }
+      }
+    } catch (err: any) {
+      setError(err.message || 'Failed to execute query');
+    } finally {
+      setIsExecuting(false);
+    }
   };
 
   return (
@@ -135,8 +167,12 @@ export default function QueryBuilder() {
             </div>
 
             <div className="flex gap-2">
-              <Button onClick={handleExecuteSQL} className="flex-1 sm:flex-initial">
-                Execute Query
+              <Button
+                onClick={handleExecuteSQL}
+                disabled={isExecuting}
+                className="flex-1 sm:flex-initial"
+              >
+                {isExecuting ? 'Executing...' : 'Execute Query'}
               </Button>
               <Button
                 variant="outline"
@@ -144,11 +180,18 @@ export default function QueryBuilder() {
                   setGeneratedSQL('');
                   setResults([]);
                   setError('');
+                  setExecutionTime(null);
                 }}
               >
                 Clear
               </Button>
             </div>
+
+            {executionTime !== null && (
+              <div className="text-sm text-muted-foreground">
+                Query executed in {executionTime}ms
+              </div>
+            )}
           </div>
         )}
 
@@ -163,13 +206,36 @@ export default function QueryBuilder() {
 
         {results.length > 0 && (
           <div>
-            <h3 className="text-lg font-semibold mb-4">Results</h3>
+            <div className="flex items-center justify-between mb-4">
+              <h3 className="text-lg font-semibold">
+                Results ({results.length} {results.length === 1 ? 'case' : 'cases'})
+              </h3>
+            </div>
             <div className="space-y-4">
               {results.map((result, i) => (
-                <Card key={i} className="p-4">
-                  <div className="font-semibold">{result.name}</div>
-                  <div className="text-sm text-muted-foreground">
-                    {result.year}
+                <Card key={i} className="p-4 hover:bg-accent/50 transition-colors">
+                  <div className="space-y-2">
+                    <div>
+                      <div className="font-semibold text-lg">{result.name}</div>
+                      <div className="text-sm text-muted-foreground">
+                        {result.year} • Chief Justice: {result.chief_justice_name || 'Unknown'}
+                      </div>
+                    </div>
+                    {result.description && (
+                      <p className="text-sm">{result.description}</p>
+                    )}
+                    {result.issues && result.issues.length > 0 && (
+                      <div className="flex flex-wrap gap-2 mt-2">
+                        {result.issues.map((issue, idx) => (
+                          <span
+                            key={idx}
+                            className="px-2 py-1 bg-primary/10 text-primary rounded-md text-xs"
+                          >
+                            {issue}
+                          </span>
+                        ))}
+                      </div>
+                    )}
                   </div>
                 </Card>
               ))}
