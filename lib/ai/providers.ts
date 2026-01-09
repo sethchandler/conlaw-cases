@@ -1,0 +1,211 @@
+'use client';
+
+import Anthropic from '@anthropic-ai/sdk';
+import OpenAI from 'openai';
+import { GoogleGenerativeAI } from '@google/generative-ai';
+import type { AIProviderName } from '@/types/ai';
+
+/**
+ * Test connection to an AI provider
+ */
+export async function testConnection(
+  provider: AIProviderName,
+  apiKey: string,
+  model: string
+): Promise<{ success: boolean; error?: string }> {
+  try {
+    switch (provider) {
+      case 'anthropic':
+        return await testAnthropic(apiKey, model);
+      case 'openai':
+        return await testOpenAI(apiKey, model);
+      case 'gemini':
+        return await testGemini(apiKey, model);
+      case 'openrouter':
+        return await testOpenRouter(apiKey, model);
+      default:
+        return { success: false, error: 'Unknown provider' };
+    }
+  } catch (error: any) {
+    return { success: false, error: error.message || 'Connection failed' };
+  }
+}
+
+async function testAnthropic(apiKey: string, model: string) {
+  const client = new Anthropic({ apiKey, dangerouslyAllowBrowser: true });
+
+  const response = await client.messages.create({
+    model: model,
+    max_tokens: 10,
+    messages: [{ role: 'user', content: 'Hi' }],
+  });
+
+  if (response.content[0].type === 'text') {
+    return { success: true };
+  }
+  return { success: false, error: 'Invalid response' };
+}
+
+async function testOpenAI(apiKey: string, model: string) {
+  const client = new OpenAI({ apiKey, dangerouslyAllowBrowser: true });
+
+  const response = await client.chat.completions.create({
+    model: model,
+    max_tokens: 10,
+    messages: [{ role: 'user', content: 'Hi' }],
+  });
+
+  if (response.choices[0]?.message?.content) {
+    return { success: true };
+  }
+  return { success: false, error: 'Invalid response' };
+}
+
+async function testGemini(apiKey: string, model: string) {
+  const genAI = new GoogleGenerativeAI(apiKey);
+  const geminiModel = genAI.getGenerativeModel({ model: model });
+
+  const result = await geminiModel.generateContent('Hi');
+  const response = await result.response;
+
+  if (response.text()) {
+    return { success: true };
+  }
+  return { success: false, error: 'Invalid response' };
+}
+
+async function testOpenRouter(apiKey: string, model: string) {
+  const client = new OpenAI({
+    apiKey: apiKey,
+    baseURL: 'https://openrouter.ai/api/v1',
+    dangerouslyAllowBrowser: true,
+  });
+
+  const response = await client.chat.completions.create({
+    model: model,
+    max_tokens: 10,
+    messages: [{ role: 'user', content: 'Hi' }],
+  });
+
+  if (response.choices[0]?.message?.content) {
+    return { success: true };
+  }
+  return { success: false, error: 'Invalid response' };
+}
+
+/**
+ * Generate SQL from natural language using AI
+ */
+export async function generateSQL(
+  provider: AIProviderName,
+  apiKey: string,
+  model: string,
+  userQuery: string,
+  schema: string
+): Promise<{ sql: string; error?: string }> {
+  const systemPrompt = `You are a PostgreSQL expert. Generate ONLY valid PostgreSQL SELECT queries based on user requests.
+
+Database Schema:
+${schema}
+
+Rules:
+- Return ONLY the SQL query, no explanations
+- Use only SELECT statements (no INSERT, UPDATE, DELETE, DROP)
+- Use proper JOINs when querying across tables
+- Include appropriate WHERE, ORDER BY, and LIMIT clauses
+- For text search, use ILIKE for case-insensitive matching
+- The cases_with_chief_justice view is available for convenience`;
+
+  try {
+    switch (provider) {
+      case 'anthropic':
+        return await generateSQLAnthropic(apiKey, model, systemPrompt, userQuery);
+      case 'openai':
+        return await generateSQLOpenAI(apiKey, model, systemPrompt, userQuery);
+      case 'gemini':
+        return await generateSQLGemini(apiKey, model, systemPrompt, userQuery);
+      case 'openrouter':
+        return await generateSQLOpenRouter(apiKey, model, systemPrompt, userQuery);
+      default:
+        return { sql: '', error: 'Unknown provider' };
+    }
+  } catch (error: any) {
+    return { sql: '', error: error.message || 'Failed to generate SQL' };
+  }
+}
+
+async function generateSQLAnthropic(apiKey: string, model: string, systemPrompt: string, userQuery: string) {
+  const client = new Anthropic({ apiKey, dangerouslyAllowBrowser: true });
+
+  const response = await client.messages.create({
+    model: model,
+    max_tokens: 1024,
+    system: systemPrompt,
+    messages: [{ role: 'user', content: userQuery }],
+  });
+
+  if (response.content[0].type === 'text') {
+    const sql = response.content[0].text.trim();
+    return { sql: cleanSQL(sql) };
+  }
+  return { sql: '', error: 'Invalid response' };
+}
+
+async function generateSQLOpenAI(apiKey: string, model: string, systemPrompt: string, userQuery: string) {
+  const client = new OpenAI({ apiKey, dangerouslyAllowBrowser: true });
+
+  const response = await client.chat.completions.create({
+    model: model,
+    max_tokens: 1024,
+    messages: [
+      { role: 'system', content: systemPrompt },
+      { role: 'user', content: userQuery }
+    ],
+  });
+
+  const sql = response.choices[0]?.message?.content?.trim() || '';
+  return { sql: cleanSQL(sql) };
+}
+
+async function generateSQLGemini(apiKey: string, model: string, systemPrompt: string, userQuery: string) {
+  const genAI = new GoogleGenerativeAI(apiKey);
+  const geminiModel = genAI.getGenerativeModel({ model: model });
+
+  const prompt = `${systemPrompt}\n\nUser Query: ${userQuery}`;
+  const result = await geminiModel.generateContent(prompt);
+  const response = await result.response;
+
+  const sql = response.text().trim();
+  return { sql: cleanSQL(sql) };
+}
+
+async function generateSQLOpenRouter(apiKey: string, model: string, systemPrompt: string, userQuery: string) {
+  const client = new OpenAI({
+    apiKey: apiKey,
+    baseURL: 'https://openrouter.ai/api/v1',
+    dangerouslyAllowBrowser: true,
+  });
+
+  const response = await client.chat.completions.create({
+    model: model,
+    max_tokens: 1024,
+    messages: [
+      { role: 'system', content: systemPrompt },
+      { role: 'user', content: userQuery }
+    ],
+  });
+
+  const sql = response.choices[0]?.message?.content?.trim() || '';
+  return { sql: cleanSQL(sql) };
+}
+
+/**
+ * Clean SQL output (remove markdown code blocks, etc.)
+ */
+function cleanSQL(sql: string): string {
+  // Remove markdown code blocks
+  sql = sql.replace(/```sql\n?/g, '').replace(/```\n?/g, '');
+  // Remove leading/trailing whitespace
+  sql = sql.trim();
+  return sql;
+}
