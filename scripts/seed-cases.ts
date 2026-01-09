@@ -103,7 +103,8 @@ async function seedCases() {
           continue;
         }
 
-        // Insert the case
+        // Insert the case (issues array needs to be passed as an ARRAY literal)
+        const issuesArray = `{${caseData.issues.map(issue => `"${issue.replace(/"/g, '\\"')}"`).join(',')}}`;
         await sql`
           INSERT INTO cases (name, year, description, chief_justice_id, issues)
           VALUES (
@@ -111,7 +112,7 @@ async function seedCases() {
             ${caseData.year},
             ${caseData.description},
             ${chiefJusticeId},
-            ${caseData.issues}
+            ${issuesArray}::text[]
           )
         `;
 
