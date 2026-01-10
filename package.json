@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "reseed": "cp ../conlaw-cases.json . && npx tsx --env-file=.env.local scripts/reseed-cases.ts",
+    "seed:justices": "npx tsx --env-file=.env.local scripts/seed-chief-justices.ts",
+    "seed:cases": "npx tsx --env-file=.env.local scripts/seed-cases.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.71.2",
