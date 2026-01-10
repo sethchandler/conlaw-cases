@@ -209,3 +209,125 @@ function cleanSQL(sql: string): string {
   sql = sql.trim();
   return sql;
 }
+
+/**
+ * Case type for RAG context
+ */
+interface CaseContext {
+  name: string;
+  year: number;
+  description: string;
+  issues: string[];
+  chief_justice_name: string;
+}
+
+/**
+ * Chat with RAG - answers questions using retrieved cases as context
+ */
+export async function chatWithRAG(
+  provider: AIProviderName,
+  apiKey: string,
+  model: string,
+  userQuestion: string,
+  cases: CaseContext[]
+): Promise<{ response: string; error?: string }> {
+  // Build context from retrieved cases
+  const caseContext = cases.map((c, i) =>
+    `${i + 1}. ${c.name} (${c.year})
+   Chief Justice: ${c.chief_justice_name}
+   Issues: ${c.issues.join(', ')}
+   Summary: ${c.description}`
+  ).join('\n\n');
+
+  const systemPrompt = `You are a constitutional law expert assistant. Answer questions based ONLY on the cases provided below.
+
+IMPORTANT RULES:
+- Base your answers ONLY on the provided cases - do not use outside knowledge
+- Cite cases using the format: *Case Name* (Year)
+- If the provided cases don't contain enough information to answer, say so
+- Be concise but thorough
+- When discussing legal principles, tie them to specific cases from the list
+
+AVAILABLE CASES:
+${caseContext}
+
+If no cases are provided or relevant, explain that you need more specific information to answer.`;
+
+  try {
+    switch (provider) {
+      case 'anthropic':
+        return await chatAnthropic(apiKey, model, systemPrompt, userQuestion);
+      case 'openai':
+        return await chatOpenAI(apiKey, model, systemPrompt, userQuestion);
+      case 'gemini':
+        return await chatGemini(apiKey, model, systemPrompt, userQuestion);
+      case 'openrouter':
+        return await chatOpenRouter(apiKey, model, systemPrompt, userQuestion);
+      default:
+        return { response: '', error: 'Unknown provider' };
+    }
+  } catch (error: any) {
+    return { response: '', error: error.message || 'Failed to generate response' };
+  }
+}
+
+async function chatAnthropic(apiKey: string, model: string, systemPrompt: string, userQuestion: string) {
+  const client = new Anthropic({ apiKey, dangerouslyAllowBrowser: true });
+
+  const response = await client.messages.create({
+    model: model,
+    max_tokens: 2048,
+    system: systemPrompt,
+    messages: [{ role: 'user', content: userQuestion }],
+  });
+
+  if (response.content[0].type === 'text') {
+    return { response: response.content[0].text };
+  }
+  return { response: '', error: 'Invalid response' };
+}
+
+async function chatOpenAI(apiKey: string, model: string, systemPrompt: string, userQuestion: string) {
+  const client = new OpenAI({ apiKey, dangerouslyAllowBrowser: true });
+
+  const response = await client.chat.completions.create({
+    model: model,
+    max_tokens: 2048,
+    messages: [
+      { role: 'system', content: systemPrompt },
+      { role: 'user', content: userQuestion }
+    ],
+  });
+
+  return { response: response.choices[0]?.message?.content || '' };
+}
+
+async function chatGemini(apiKey: string, model: string, systemPrompt: string, userQuestion: string) {
+  const genAI = new GoogleGenerativeAI(apiKey);
+  const geminiModel = genAI.getGenerativeModel({ model: model });
+
+  const prompt = `${systemPrompt}\n\nUser Question: ${userQuestion}`;
+  const result = await geminiModel.generateContent(prompt);
+  const response = await result.response;
+
+  return { response: response.text() };
+}
+
+async function chatOpenRouter(apiKey: string, model: string, systemPrompt: string, userQuestion: string) {
+  const client = new OpenAI({
+    apiKey: apiKey,
+    baseURL: 'https://openrouter.ai/api/v1',
+    dangerouslyAllowBrowser: true,
+  });
+
+  const response = await client.chat.completions.create({
+    model: model,
+    max_tokens: 2048,
+    messages: [
+      { role: 'system', content: systemPrompt },
+      { role: 'user', content: userQuestion }
+    ],
+  });
+
+  return { response: response.choices[0]?.message?.content || '' };
+}
