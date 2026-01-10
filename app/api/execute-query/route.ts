@@ -1,5 +1,20 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { sql } from '@vercel/postgres';
+import { createPool } from '@vercel/postgres';
+
+// Find connection string from various possible env var names
+function getConnectionString(): string | undefined {
+  return (
+    process.env.POSTGRES_URL ||
+    process.env.DATABASE_URL ||
+    process.env.STORAGE_URL ||
+    process.env.NEON_DATABASE_URL ||
+    process.env.POSTGRES_PRISMA_URL
+  );
+}
+
+const pool = createPool({
+  connectionString: getConnectionString(),
+});
 
 /**
  * API Route: Execute SQL Query
@@ -68,9 +83,18 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    // Check if we have a connection string
+    const connString = getConnectionString();
+    if (!connString) {
+      return NextResponse.json(
+        { error: 'Database not configured. Missing connection string environment variable.' },
+        { status: 503 }
+      );
+    }
+
     // Execute query with timeout
     const startTime = Date.now();
-    const result = await sql.query(query);
+    const result = await pool.query(query);
     const executionTime = Date.now() - startTime;
 
     // Limit results
