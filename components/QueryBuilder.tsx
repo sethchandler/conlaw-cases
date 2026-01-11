@@ -5,8 +5,10 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Card } from '@/components/ui/card';
+import { ExternalLink } from 'lucide-react';
 import { generateSQL } from '@/lib/ai/providers';
 import { DATABASE_SCHEMA } from '@/lib/schema';
+import { getPrimaryUrl } from '@/lib/case-url';
 import type { AIProviderName } from '@/types/ai';
 import type { CaseWithChiefJustice } from '@/types/case';
 
@@ -336,7 +338,20 @@ CRITICAL: Do NOT invent values. Only use the exact strings listed above.
                 <Card key={i} className="p-4 hover:bg-accent/50 transition-colors">
                   <div className="space-y-2">
                     <div>
-                      <div className="font-semibold text-lg">{result.name}</div>
+                      <div className="flex items-center gap-2">
+                        <span className="font-semibold text-lg">{result.name}</span>
+                        {getPrimaryUrl(result) && (
+                          <a
+                            href={getPrimaryUrl(result)!}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-muted-foreground hover:text-primary transition-colors"
+                            title="View opinion"
+                          >
+                            <ExternalLink className="h-4 w-4" />
+                          </a>
+                        )}
+                      </div>
                       <div className="text-sm text-muted-foreground">
                         {result.year} • Chief Justice: {result.chief_justice_name || 'Unknown'}
                       </div>
@@ -364,6 +379,18 @@ CRITICAL: Do NOT invent values. Only use the exact strings listed above.
                             className="px-2 py-1 bg-blue-500/10 text-blue-600 dark:text-blue-400 rounded-md text-xs"
                           >
                             {prov}
+                          </span>
+                        ))}
+                      </div>
+                    )}
+                    {result.trigger_types && result.trigger_types.length > 0 && (
+                      <div className="flex flex-wrap gap-2 mt-1">
+                        {result.trigger_types.map((trigger, idx) => (
+                          <span
+                            key={idx}
+                            className="px-2 py-1 bg-amber-500/10 text-amber-600 dark:text-amber-400 rounded-md text-xs"
+                          >
+                            {trigger}
                           </span>
                         ))}
                       </div>

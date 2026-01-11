@@ -53,7 +53,14 @@ Tables:
    - case_id: integer (foreign key -> cases.id)
    - provision_id: varchar(50) (foreign key -> provisions.provision_id)
 
-9. cases_view (VIEW - use this for most queries)
+9. case_urls (external links to opinions)
+   - id: integer (primary key)
+   - case_id: integer (foreign key -> cases.id)
+   - source: varchar(50) (e.g., "oyez", "cornell", "justia")
+   - url: varchar(500)
+   - verified: boolean
+
+10. cases_view (VIEW - use this for most queries)
    - id, name, year, description, chief_justice_id
    - chief_justice_name, chief_justice_start, chief_justice_end
    - issues: text[] (array of issue names)
@@ -63,6 +70,9 @@ Tables:
    - trigger_ids: text[] (array of trigger IDs)
    - provisions: text[] (array of provision names)
    - provision_ids: text[] (array of provision IDs)
+   - oyez_url: varchar (link to Oyez.org)
+   - cornell_url: varchar (link to Cornell LII)
+   - justia_url: varchar (link to Justia)
 
 Example Queries:
 

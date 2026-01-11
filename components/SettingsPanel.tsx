@@ -7,6 +7,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 import { testConnection } from '@/lib/ai/providers';
+import { URL_SOURCES, getUrlPriority, setUrlPriority, type UrlSource } from '@/lib/case-url';
 import type { AIProviderName } from '@/types/ai';
 
 const MODELS = {
@@ -42,6 +43,7 @@ export default function SettingsPanel() {
   const [apiKey, setApiKey] = useState('');
   const [testing, setTesting] = useState(false);
   const [testResult, setTestResult] = useState<{ success: boolean; message: string } | null>(null);
+  const [urlPriority, setUrlPriorityState] = useState<UrlSource[]>(['oyez', 'cornell', 'justia']);
 
   useEffect(() => {
     // Load settings from localStorage
@@ -61,7 +63,17 @@ export default function SettingsPanel() {
     if (savedApiKey) {
       setApiKey(savedApiKey);
     }
+
+    // Load URL priority
+    setUrlPriorityState(getUrlPriority());
   }, [provider]);
+
+  const handleUrlPriorityChange = (primarySource: UrlSource) => {
+    // Move selected source to front, keep others in order
+    const newPriority = [primarySource, ...urlPriority.filter(s => s !== primarySource)];
+    setUrlPriorityState(newPriority);
+    setUrlPriority(newPriority);
+  };
 
   const handleTestConnection = async () => {
     if (!apiKey.trim()) {
@@ -218,7 +230,28 @@ export default function SettingsPanel() {
               </Card>
             )}
 
-            <div className="pt-4 border-t">
+            <div className="pt-4 border-t space-y-4">
+              <div>
+                <label className="text-sm font-medium mb-2 block">
+                  Opinion Link Source
+                </label>
+                <p className="text-xs text-muted-foreground mb-2">
+                  Preferred source for case opinion links
+                </p>
+                <Select value={urlPriority[0]} onValueChange={(v) => handleUrlPriorityChange(v as UrlSource)}>
+                  <SelectTrigger>
+                    <SelectValue />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {URL_SOURCES.map((source) => (
+                      <SelectItem key={source.value} value={source.value}>
+                        {source.label} - {source.description}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </div>
+
               <Button
                 variant="destructive"
                 onClick={handleClearAll}

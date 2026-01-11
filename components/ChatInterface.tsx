@@ -4,13 +4,21 @@ import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
 import { Card } from '@/components/ui/card';
+import { ExternalLink } from 'lucide-react';
 import { chatWithRAG } from '@/lib/ai/providers';
+import { getPrimaryUrl } from '@/lib/case-url';
 import type { AIProviderName } from '@/types/ai';
+
+interface CaseInfo {
+  name: string;
+  year: number;
+  url: string | null;
+}
 
 interface ChatMessage {
   role: 'user' | 'assistant';
   content: string;
-  casesUsed?: string[];
+  casesUsed?: CaseInfo[];
 }
 
 interface CaseResult {
@@ -18,7 +26,49 @@ interface CaseResult {
   year: number;
   description: string;
   issues: string[];
+  trigger_types?: string[];
   chief_justice_name: string;
+  oyez_url?: string | null;
+  cornell_url?: string | null;
+  justia_url?: string | null;
+}
+
+/**
+ * Render markdown links as clickable <a> tags
+ * Handles: [text](url) format
+ */
+function renderMarkdownLinks(text: string): React.ReactNode {
+  const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
+  const parts: React.ReactNode[] = [];
+  let lastIndex = 0;
+  let match;
+
+  while ((match = linkRegex.exec(text)) !== null) {
+    // Add text before the link
+    if (match.index > lastIndex) {
+      parts.push(text.slice(lastIndex, match.index));
+    }
+    // Add the link
+    parts.push(
+      <a
+        key={match.index}
+        href={match[2]}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-primary underline hover:text-primary/80"
+      >
+        {match[1]}
+      </a>
+    );
+    lastIndex = match.index + match[0].length;
+  }
+
+  // Add remaining text
+  if (lastIndex < text.length) {
+    parts.push(text.slice(lastIndex));
+  }
+
+  return parts.length > 0 ? parts : text;
 }
 
 export default function ChatInterface() {
@@ -63,7 +113,11 @@ export default function ChatInterface() {
       }
 
       const cases: CaseResult[] = searchData.cases || [];
-      const caseNames = cases.map(c => `${c.name} (${c.year})`);
+      const caseInfos: CaseInfo[] = cases.map(c => ({
+        name: c.name,
+        year: c.year,
+        url: getPrimaryUrl(c),
+      }));
 
       // Step 2: Generate response using RAG
       const result = await chatWithRAG(provider, apiKey, model, userQuestion, cases);
@@ -78,7 +132,7 @@ export default function ChatInterface() {
         {
           role: 'assistant',
           content: result.response,
-          casesUsed: caseNames,
+          casesUsed: caseInfos,
         },
       ]);
     } catch (err: any) {
@@ -133,7 +187,9 @@ export default function ChatInterface() {
                   }`}
                 >
                   <div className="text-sm whitespace-pre-wrap">
-                    {message.content}
+                    {message.role === 'assistant'
+                      ? renderMarkdownLinks(message.content)
+                      : message.content}
                   </div>
                 </Card>
                 {message.role === 'assistant' && message.casesUsed && message.casesUsed.length > 0 && (
@@ -143,7 +199,20 @@ export default function ChatInterface() {
                     </summary>
                     <ul className="mt-1 ml-4 space-y-0.5">
                       {message.casesUsed.map((c, idx) => (
-                        <li key={idx}>{c}</li>
+                        <li key={idx} className="flex items-center gap-1">
+                          {c.name} ({c.year})
+                          {c.url && (
+                            <a
+                              href={c.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-muted-foreground hover:text-primary transition-colors"
+                              title="View opinion"
+                            >
+                              <ExternalLink className="h-3 w-3" />
+                            </a>
+                          )}
+                        </li>
                       ))}
                     </ul>
                   </details>

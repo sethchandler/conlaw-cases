@@ -10,7 +10,8 @@
     "migrate": "npx tsx --env-file=.env.local scripts/migrate-schema.ts",
     "import": "npx tsx --env-file=.env.local scripts/import-spreadsheet.ts",
     "create-spreadsheet": "npx tsx scripts/create-spreadsheet.ts",
-    "seed:justices": "npx tsx --env-file=.env.local scripts/seed-chief-justices.ts"
+    "seed:justices": "npx tsx --env-file=.env.local scripts/seed-chief-justices.ts",
+    "find-urls": "npx tsx scripts/find-case-urls.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.71.2",

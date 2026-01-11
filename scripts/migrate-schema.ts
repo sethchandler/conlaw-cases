@@ -154,8 +154,30 @@ async function migrate() {
     await sql`CREATE INDEX idx_triggers_type ON triggers(trigger_type)`;
     console.log('  ✓ Created all indexes');
 
-    // === Step 6: Create updated view ===
-    console.log('\nStep 6: Creating cases_view...');
+    // === Step 6: Create case_urls table ===
+    console.log('\nStep 6: Creating case_urls table...');
+
+    await sql`DROP TABLE IF EXISTS case_urls CASCADE`;
+
+    await sql`
+      CREATE TABLE case_urls (
+        id SERIAL PRIMARY KEY,
+        case_id INTEGER NOT NULL REFERENCES cases(id) ON DELETE CASCADE,
+        source VARCHAR(50) NOT NULL,
+        url VARCHAR(500) NOT NULL,
+        verified BOOLEAN DEFAULT false,
+        created_at TIMESTAMP DEFAULT NOW(),
+        UNIQUE(case_id, source)
+      )
+    `;
+    console.log('  ✓ Created case_urls table');
+
+    await sql`CREATE INDEX idx_case_urls_case ON case_urls(case_id)`;
+    await sql`CREATE INDEX idx_case_urls_source ON case_urls(source)`;
+    console.log('  ✓ Created case_urls indexes');
+
+    // === Step 7: Create updated view ===
+    console.log('\nStep 7: Creating cases_view...');
 
     await sql`
       CREATE VIEW cases_view AS
@@ -174,7 +196,10 @@ async function migrate() {
         ARRAY_AGG(DISTINCT t.trigger_event) FILTER (WHERE t.trigger_event IS NOT NULL) as trigger_events,
         ARRAY_AGG(DISTINCT t.trigger_id) FILTER (WHERE t.trigger_id IS NOT NULL) as trigger_ids,
         ARRAY_AGG(DISTINCT p.name) FILTER (WHERE p.name IS NOT NULL) as provisions,
-        ARRAY_AGG(DISTINCT p.provision_id) FILTER (WHERE p.provision_id IS NOT NULL) as provision_ids
+        ARRAY_AGG(DISTINCT p.provision_id) FILTER (WHERE p.provision_id IS NOT NULL) as provision_ids,
+        (SELECT url FROM case_urls WHERE case_id = c.id AND source = 'oyez' LIMIT 1) as oyez_url,
+        (SELECT url FROM case_urls WHERE case_id = c.id AND source = 'cornell' LIMIT 1) as cornell_url,
+        (SELECT url FROM case_urls WHERE case_id = c.id AND source = 'justia' LIMIT 1) as justia_url
       FROM cases c
       LEFT JOIN chief_justices cj ON c.chief_justice_id = cj.id
       LEFT JOIN case_issues ci ON c.id = ci.case_id
@@ -186,10 +211,10 @@ async function migrate() {
       GROUP BY c.id, c.name, c.year, c.description, c.chief_justice_id,
                cj.name, cj.start_year, cj.end_year
     `;
-    console.log('  ✓ Created cases_view');
+    console.log('  ✓ Created cases_view with URL columns');
 
-    // === Step 7: Clear cases table (will be repopulated by import) ===
-    console.log('\nStep 7: Clearing cases table...');
+    // === Step 8: Clear cases table (will be repopulated by import) ===
+    console.log('\nStep 8: Clearing cases table...');
     await sql`DELETE FROM cases`;
     console.log('  ✓ Cleared cases table');
 

@@ -44,6 +44,10 @@ export interface CaseWithChiefJustice {
   // Provisions from junction table
   provisions: string[];
   provision_ids: string[];
+  // URLs from case_urls table
+  oyez_url: string | null;
+  cornell_url: string | null;
+  justia_url: string | null;
 }
 
 // Issue from controlled vocabulary table

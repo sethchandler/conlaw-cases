@@ -220,7 +220,11 @@ interface CaseContext {
   year: number;
   description: string;
   issues: string[];
+  trigger_types?: string[];
   chief_justice_name: string;
+  oyez_url?: string | null;
+  cornell_url?: string | null;
+  justia_url?: string | null;
 }
 
 /**
@@ -233,19 +237,25 @@ export async function chatWithRAG(
   userQuestion: string,
   cases: CaseContext[]
 ): Promise<{ response: string; error?: string }> {
-  // Build context from retrieved cases
-  const caseContext = cases.map((c, i) =>
-    `${i + 1}. ${c.name} (${c.year})
+  // Build context from retrieved cases, including URLs and triggers
+  const caseContext = cases.map((c, i) => {
+    const url = c.oyez_url || c.cornell_url || c.justia_url;
+    const urlLine = url ? `\n   Opinion: ${url}` : '';
+    const triggerLine = c.trigger_types && c.trigger_types.length > 0
+      ? `\n   Triggers: ${c.trigger_types.join(', ')}`
+      : '';
+    return `${i + 1}. ${c.name} (${c.year})
    Chief Justice: ${c.chief_justice_name}
-   Issues: ${c.issues.join(', ')}
-   Summary: ${c.description}`
-  ).join('\n\n');
+   Issues: ${c.issues.join(', ')}${triggerLine}
+   Summary: ${c.description}${urlLine}`;
+  }).join('\n\n');
 
   const systemPrompt = `You are a constitutional law expert assistant. Answer questions based ONLY on the cases provided below.
 
 IMPORTANT RULES:
 - Base your answers ONLY on the provided cases - do not use outside knowledge
-- Cite cases using the format: *Case Name* (Year)
+- When citing a case, use markdown link format: [*Case Name* (Year)](URL) if a URL is available
+- If no URL is available for a case, cite as: *Case Name* (Year)
 - If the provided cases don't contain enough information to answer, say so
 - Be concise but thorough
 - When discussing legal principles, tie them to specific cases from the list

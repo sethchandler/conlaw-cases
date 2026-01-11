@@ -54,6 +54,15 @@ interface CaseRow {
   provision_ids?: string;
 }
 
+interface CaseUrlRow {
+  case_name: string;
+  oyez_url?: string;
+  cornell_url?: string;
+  justia_url?: string;
+  citation?: string;
+  status: string;
+}
+
 interface ChiefJusticeDB {
   id: number;
   name: string;
@@ -103,6 +112,7 @@ async function importSpreadsheet(xlsxPath: string) {
   const triggersSheet = workbook.Sheets['Triggers'];
   const provisionsSheet = workbook.Sheets['Provisions'];
   const cjSheet = workbook.Sheets['Chief Justices'];
+  const urlsSheet = workbook.Sheets['Case URLs']; // Optional
 
   if (!casesSheet) throw new Error('Cases sheet not found');
   if (!issuesSheet) throw new Error('Issues sheet not found');
@@ -115,12 +125,14 @@ async function importSpreadsheet(xlsxPath: string) {
   const triggers: TriggerRow[] = XLSX.utils.sheet_to_json(triggersSheet);
   const provisions: ProvisionRow[] = XLSX.utils.sheet_to_json(provisionsSheet);
   const chiefJustices: ChiefJusticeRow[] = XLSX.utils.sheet_to_json(cjSheet);
+  const caseUrls: CaseUrlRow[] = urlsSheet ? XLSX.utils.sheet_to_json(urlsSheet) : [];
 
   console.log(`  ✓ Cases: ${cases.length}`);
   console.log(`  ✓ Issues: ${issues.length}`);
   console.log(`  ✓ Triggers: ${triggers.length}`);
   console.log(`  ✓ Provisions: ${provisions.length}`);
   console.log(`  ✓ Chief Justices: ${chiefJustices.length}`);
+  console.log(`  ✓ Case URLs: ${caseUrls.length}${!urlsSheet ? ' (sheet not found, skipping)' : ''}`);
 
   // === Step 2: Validate data ===
   console.log('\nStep 2: Validating data...');
@@ -203,6 +215,7 @@ async function importSpreadsheet(xlsxPath: string) {
   // === Step 3: Clear existing data ===
   console.log('\nStep 3: Clearing existing data...');
 
+  await sql`DELETE FROM case_urls`;
   await sql`DELETE FROM case_provisions`;
   await sql`DELETE FROM case_triggers`;
   await sql`DELETE FROM case_issues`;
@@ -211,7 +224,7 @@ async function importSpreadsheet(xlsxPath: string) {
   await sql`DELETE FROM triggers`;
   await sql`DELETE FROM issues`;
   // Keep chief_justices - they rarely change
-  console.log('  ✓ Cleared junction and reference tables');
+  console.log('  ✓ Cleared junction, URL, and reference tables');
 
   // === Step 4: Insert reference tables ===
   console.log('\nStep 4: Inserting reference tables...');
@@ -343,6 +356,52 @@ async function importSpreadsheet(xlsxPath: string) {
   console.log(`  ✓ Inserted ${issueLinks} case-issue links`);
   console.log(`  ✓ Inserted ${triggerLinks} case-trigger links`);
   console.log(`  ✓ Inserted ${provisionLinks} case-provision links`);
+
+  // === Step 7: Insert case URLs ===
+  if (caseUrls.length > 0) {
+    console.log('\nStep 7: Inserting case URLs...');
+
+    let urlCount = 0;
+    for (const urlRow of caseUrls) {
+      const caseId = caseNameToId.get(urlRow.case_name);
+      if (!caseId) {
+        addWarning(`URL row references unknown case: ${urlRow.case_name}`);
+        continue;
+      }
+
+      // Insert Oyez URL
+      if (urlRow.oyez_url) {
+        await sql`
+          INSERT INTO case_urls (case_id, source, url, verified)
+          VALUES (${caseId}, 'oyez', ${urlRow.oyez_url}, true)
+          ON CONFLICT (case_id, source) DO UPDATE SET url = ${urlRow.oyez_url}
+        `;
+        urlCount++;
+      }
+
+      // Insert Cornell URL
+      if (urlRow.cornell_url) {
+        await sql`
+          INSERT INTO case_urls (case_id, source, url, verified)
+          VALUES (${caseId}, 'cornell', ${urlRow.cornell_url}, false)
+          ON CONFLICT (case_id, source) DO UPDATE SET url = ${urlRow.cornell_url}
+        `;
+        urlCount++;
+      }
+
+      // Insert Justia URL
+      if (urlRow.justia_url) {
+        await sql`
+          INSERT INTO case_urls (case_id, source, url, verified)
+          VALUES (${caseId}, 'justia', ${urlRow.justia_url}, false)
+          ON CONFLICT (case_id, source) DO UPDATE SET url = ${urlRow.justia_url}
+        `;
+        urlCount++;
+      }
+    }
+
+    console.log(`  ✓ Inserted ${urlCount} case URLs`);
+  }
 
   // === Done ===
   console.log('\n' + '═'.repeat(60));

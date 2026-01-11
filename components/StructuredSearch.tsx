@@ -11,7 +11,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
-import { X } from 'lucide-react';
+import { X, ExternalLink } from 'lucide-react';
+import { getPrimaryUrl } from '@/lib/case-url';
 import type { CaseWithChiefJustice } from '@/types/case';
 
 interface Issue {
@@ -35,6 +36,7 @@ interface ChiefJustice {
 interface SchemaInfo {
   issues: Issue[];
   issueNames: string[];
+  triggerTypes: string[];
   provisions: Provision[];
   chiefJustices: ChiefJustice[];
   yearRange: { min: number; max: number };
@@ -48,6 +50,7 @@ export default function StructuredSearch() {
 
   // Filter state
   const [selectedIssues, setSelectedIssues] = useState<string[]>([]);
+  const [selectedTriggers, setSelectedTriggers] = useState<string[]>([]);
   const [selectedProvisions, setSelectedProvisions] = useState<string[]>([]);
   const [selectedChiefJustice, setSelectedChiefJustice] = useState<string>('');
   const [yearMin, setYearMin] = useState<string>('');
@@ -85,6 +88,11 @@ export default function StructuredSearch() {
     // Issue filter
     selectedIssues.forEach(issueName => {
       conditions.push(`'${issueName.replace(/'/g, "''")}' = ANY(issues)`);
+    });
+
+    // Trigger filter
+    selectedTriggers.forEach(triggerType => {
+      conditions.push(`'${triggerType.replace(/'/g, "''")}' = ANY(trigger_types)`);
     });
 
     // Provision filter
@@ -154,6 +162,7 @@ export default function StructuredSearch() {
   // Clear all filters
   const clearFilters = () => {
     setSelectedIssues([]);
+    setSelectedTriggers([]);
     setSelectedProvisions([]);
     setSelectedChiefJustice('');
     setYearMin('');
@@ -174,6 +183,18 @@ export default function StructuredSearch() {
   // Remove issue from filter
   const removeIssue = (issueName: string) => {
     setSelectedIssues(selectedIssues.filter(i => i !== issueName));
+  };
+
+  // Add trigger to filter
+  const addTrigger = (triggerType: string) => {
+    if (triggerType && !selectedTriggers.includes(triggerType)) {
+      setSelectedTriggers([...selectedTriggers, triggerType]);
+    }
+  };
+
+  // Remove trigger from filter
+  const removeTrigger = (triggerType: string) => {
+    setSelectedTriggers(selectedTriggers.filter(t => t !== triggerType));
   };
 
   // Add provision to filter
@@ -252,6 +273,38 @@ export default function StructuredSearch() {
           </Select>
         </div>
 
+        {/* Triggers */}
+        <div>
+          <label className="text-sm font-medium mb-2 block">Case Triggers</label>
+          <div className="flex gap-2 flex-wrap mb-2">
+            {selectedTriggers.map(trigger => (
+              <span
+                key={trigger}
+                className="inline-flex items-center gap-1 px-2 py-1 bg-amber-500/10 text-amber-600 dark:text-amber-400 rounded-md text-sm"
+              >
+                {trigger}
+                <button onClick={() => removeTrigger(trigger)} className="hover:text-amber-400">
+                  <X className="h-3 w-3" />
+                </button>
+              </span>
+            ))}
+          </div>
+          <Select onValueChange={addTrigger} value="">
+            <SelectTrigger>
+              <SelectValue placeholder="Add a trigger type..." />
+            </SelectTrigger>
+            <SelectContent>
+              {schemaInfo?.triggerTypes
+                .filter(type => !selectedTriggers.includes(type))
+                .map(type => (
+                  <SelectItem key={type} value={type}>
+                    {type}
+                  </SelectItem>
+                ))}
+            </SelectContent>
+          </Select>
+        </div>
+
         {/* Provisions */}
         <div>
           <label className="text-sm font-medium mb-2 block">Constitutional Provisions</label>
@@ -310,12 +363,12 @@ export default function StructuredSearch() {
           </div>
           <div>
             <label className="text-sm font-medium mb-2 block">Chief Justice</label>
-            <Select onValueChange={setSelectedChiefJustice} value={selectedChiefJustice}>
+            <Select onValueChange={(val) => setSelectedChiefJustice(val === '__any__' ? '' : val)} value={selectedChiefJustice || '__any__'}>
               <SelectTrigger>
                 <SelectValue placeholder="Any" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="">Any</SelectItem>
+                <SelectItem value="__any__">Any</SelectItem>
                 {schemaInfo?.chiefJustices.map(cj => (
                   <SelectItem key={cj.name} value={cj.name}>
                     {cj.name} ({cj.startYear}-{cj.endYear || 'present'})
@@ -377,7 +430,20 @@ export default function StructuredSearch() {
               <Card key={i} className="p-4 hover:bg-accent/50 transition-colors">
                 <div className="space-y-2">
                   <div>
-                    <div className="font-semibold text-lg">{result.name}</div>
+                    <div className="flex items-center gap-2">
+                      <span className="font-semibold text-lg">{result.name}</span>
+                      {getPrimaryUrl(result) && (
+                        <a
+                          href={getPrimaryUrl(result)!}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-muted-foreground hover:text-primary transition-colors"
+                          title="View opinion"
+                        >
+                          <ExternalLink className="h-4 w-4" />
+                        </a>
+                      )}
+                    </div>
                     <div className="text-sm text-muted-foreground">
                       {result.year} • Chief Justice: {result.chief_justice_name || 'Unknown'}
                     </div>
@@ -405,6 +471,18 @@ export default function StructuredSearch() {
                           className="px-2 py-1 bg-blue-500/10 text-blue-600 dark:text-blue-400 rounded-md text-xs"
                         >
                           {prov}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+                  {result.trigger_types && result.trigger_types.length > 0 && (
+                    <div className="flex flex-wrap gap-2 mt-1">
+                      {result.trigger_types.map((trigger, idx) => (
+                        <span
+                          key={idx}
+                          className="px-2 py-1 bg-amber-500/10 text-amber-600 dark:text-amber-400 rounded-md text-xs"
+                        >
+                          {trigger}
                         </span>
                       ))}
                     </div>
