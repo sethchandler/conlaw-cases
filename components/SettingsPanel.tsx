@@ -134,11 +134,11 @@ export default function SettingsPanel() {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button variant="outline">Settings</Button>
+        <Button variant="outline">AI Connection Settings</Button>
       </DialogTrigger>
       <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
         <DialogHeader>
-          <DialogTitle>AI Provider Settings</DialogTitle>
+          <DialogTitle>AI Connection Settings</DialogTitle>
         </DialogHeader>
 
         <div className="space-y-6 py-4">
