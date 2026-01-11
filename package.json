@@ -9,7 +9,9 @@
     "lint": "eslint",
     "reseed": "npx tsx --env-file=.env.local scripts/reseed-cases.ts",
     "seed:justices": "npx tsx --env-file=.env.local scripts/seed-chief-justices.ts",
-    "seed:cases": "npx tsx --env-file=.env.local scripts/seed-cases.ts"
+    "seed:cases": "npx tsx --env-file=.env.local scripts/seed-cases.ts",
+    "seed:triggers": "npx tsx --env-file=.env.local scripts/seed-triggers.ts",
+    "seed:case-triggers": "npx tsx --env-file=.env.local scripts/seed-case-triggers.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.71.2",
@@ -27,7 +29,8 @@
     "openai": "^6.15.0",
     "react": "19.2.3",
     "react-dom": "19.2.3",
-    "tailwind-merge": "^3.4.0"
+    "tailwind-merge": "^3.4.0",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
