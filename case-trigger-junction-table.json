@@ -1,0 +1,710 @@
+[
+    {
+        "Case Name": "Chisholm v. Georgia",
+        "Trigger ID": "T001"
+    },
+    {
+        "Case Name": "Calder v. Bull",
+        "Trigger ID": "T002"
+    },
+    {
+        "Case Name": "Marbury v. Madison",
+        "Trigger ID": "T003"
+    },
+    {
+        "Case Name": "Martin v. Hunter's Lessee",
+        "Trigger ID": "T004"
+    },
+    {
+        "Case Name": "McCulloch v. Maryland",
+        "Trigger ID": "T005"
+    },
+    {
+        "Case Name": "Corfield v. Coryell",
+        "Trigger ID": "T006"
+    },
+    {
+        "Case Name": "Gibbons v. Ogden",
+        "Trigger ID": "T007"
+    },
+    {
+        "Case Name": "Barron v. City of Baltimore",
+        "Trigger ID": "T008"
+    },
+    {
+        "Case Name": "Prigg v. Pennsylvania",
+        "Trigger ID": "T009"
+    },
+    {
+        "Case Name": "Luther v. Borden",
+        "Trigger ID": "T010"
+    },
+    {
+        "Case Name": "Dred Scott v. Sandford",
+        "Trigger ID": "T011"
+    },
+    {
+        "Case Name": "Prize Cases",
+        "Trigger ID": "T012"
+    },
+    {
+        "Case Name": "Ex Parte Milligan",
+        "Trigger ID": "T013"
+    },
+    {
+        "Case Name": "Mississippi v. Johnson",
+        "Trigger ID": "T014"
+    },
+    {
+        "Case Name": "Hepburn v. Griswold",
+        "Trigger ID": "T015"
+    },
+    {
+        "Case Name": "Knox v. Lee",
+        "Trigger ID": "T015"
+    },
+    {
+        "Case Name": "Slaughterhouse Cases",
+        "Trigger ID": "T016"
+    },
+    {
+        "Case Name": "Bradwell v. Illinois",
+        "Trigger ID": "T017"
+    },
+    {
+        "Case Name": "United States v. Cruikshank",
+        "Trigger ID": "T018"
+    },
+    {
+        "Case Name": "Reynolds v. United States",
+        "Trigger ID": "T019"
+    },
+    {
+        "Case Name": "Strauder v. West Virginia",
+        "Trigger ID": "T020"
+    },
+    {
+        "Case Name": "Civil Rights Cases",
+        "Trigger ID": "T021"
+    },
+    {
+        "Case Name": "Elk v. Wilkins",
+        "Trigger ID": "T022"
+    },
+    {
+        "Case Name": "Yick Wo v. Hopkins",
+        "Trigger ID": "T023"
+    },
+    {
+        "Case Name": "Hans v. Louisiana",
+        "Trigger ID": "T024"
+    },
+    {
+        "Case Name": "In re Neagle",
+        "Trigger ID": "T025"
+    },
+    {
+        "Case Name": "United States v. E.C. Knight Co.",
+        "Trigger ID": "T026"
+    },
+    {
+        "Case Name": "Plessy v. Ferguson",
+        "Trigger ID": "T027"
+    },
+    {
+        "Case Name": "Chicago, Burlington & Quincy Railroad Co. v. Chicago",
+        "Trigger ID": "T028"
+    },
+    {
+        "Case Name": "Champion v. Ames",
+        "Trigger ID": "T029"
+    },
+    {
+        "Case Name": "Lochner v. New York",
+        "Trigger ID": "T030"
+    },
+    {
+        "Case Name": "Jacobson v. Massachusetts",
+        "Trigger ID": "T031"
+    },
+    {
+        "Case Name": "Muller v. Oregon",
+        "Trigger ID": "T032"
+    },
+    {
+        "Case Name": "Hipolite Egg Co. v. United States",
+        "Trigger ID": "T033"
+    },
+    {
+        "Case Name": "Shreveport Rate Cases",
+        "Trigger ID": "T034"
+    },
+    {
+        "Case Name": "Selective Draft Law Cases",
+        "Trigger ID": "T035"
+    },
+    {
+        "Case Name": "Hammer v. Dagenhart",
+        "Trigger ID": "T036"
+    },
+    {
+        "Case Name": "Schenck v. United States",
+        "Trigger ID": "T037"
+    },
+    {
+        "Case Name": "Adkins v. Children's Hospital",
+        "Trigger ID": "T038"
+    },
+    {
+        "Case Name": "Meyer v. Nebraska",
+        "Trigger ID": "T039"
+    },
+    {
+        "Case Name": "Pierce v. Society of Sisters",
+        "Trigger ID": "T040"
+    },
+    {
+        "Case Name": "Buck v. Bell",
+        "Trigger ID": "T041"
+    },
+    {
+        "Case Name": "Gong Lum v. Rice",
+        "Trigger ID": "T042"
+    },
+    {
+        "Case Name": "Wong Kim Ark",
+        "Trigger ID": "T043"
+    },
+    {
+        "Case Name": "Nebbia v. New York",
+        "Trigger ID": "T044"
+    },
+    {
+        "Case Name": "Schechter Poultry Corp. v. United States",
+        "Trigger ID": "T045"
+    },
+    {
+        "Case Name": "Humphrey's Executor v. United States",
+        "Trigger ID": "T046"
+    },
+    {
+        "Case Name": "United States v. Butler",
+        "Trigger ID": "T047"
+    },
+    {
+        "Case Name": "West Coast Hotel v. Parrish",
+        "Trigger ID": "T048"
+    },
+    {
+        "Case Name": "NLRB v. Jones & Laughlin Steel Corp.",
+        "Trigger ID": "T049"
+    },
+    {
+        "Case Name": "United States v. Carolene Products",
+        "Trigger ID": "T050"
+    },
+    {
+        "Case Name": "United States v. Darby",
+        "Trigger ID": "T051"
+    },
+    {
+        "Case Name": "Wickard v. Filburn",
+        "Trigger ID": "T052"
+    },
+    {
+        "Case Name": "Hirabayashi v. United States",
+        "Trigger ID": "T053"
+    },
+    {
+        "Case Name": "Korematsu v. United States",
+        "Trigger ID": "T054"
+    },
+    {
+        "Case Name": "Ex Parte Endo",
+        "Trigger ID": "T055"
+    },
+    {
+        "Case Name": "Ex Parte Quirin",
+        "Trigger ID": "T056"
+    },
+    {
+        "Case Name": "United States v. South-Eastern Underwriters Ass'n",
+        "Trigger ID": "T057"
+    },
+    {
+        "Case Name": "United Public Workers v. Mitchell",
+        "Trigger ID": "T058"
+    },
+    {
+        "Case Name": "Shelley v. Kraemer",
+        "Trigger ID": "T059"
+    },
+    {
+        "Case Name": "Railway Express Agency v. New York",
+        "Trigger ID": "T060"
+    },
+    {
+        "Case Name": "Youngstown Sheet & Tube Co. v. Sawyer",
+        "Trigger ID": "T061"
+    },
+    {
+        "Case Name": "Brown v. Board of Education",
+        "Trigger ID": "T062"
+    },
+    {
+        "Case Name": "Bolling v. Sharpe",
+        "Trigger ID": "T063"
+    },
+    {
+        "Case Name": "Lee Optical v. Williamson",
+        "Trigger ID": "T064"
+    },
+    {
+        "Case Name": "Sweezy v. New Hampshire",
+        "Trigger ID": "T065"
+    },
+    {
+        "Case Name": "Cooper v. Aaron",
+        "Trigger ID": "T066"
+    },
+    {
+        "Case Name": "Baker v. Carr",
+        "Trigger ID": "T067"
+    },
+    {
+        "Case Name": "Sherbert v. Verner",
+        "Trigger ID": "T068"
+    },
+    {
+        "Case Name": "Heart of Atlanta Motel v. United States",
+        "Trigger ID": "T069"
+    },
+    {
+        "Case Name": "Katzenbach v. McClung",
+        "Trigger ID": "T070"
+    },
+    {
+        "Case Name": "Griswold v. Connecticut",
+        "Trigger ID": "T071"
+    },
+    {
+        "Case Name": "United States v. Brown",
+        "Trigger ID": "T072"
+    },
+    {
+        "Case Name": "Katzenbach v. Morgan",
+        "Trigger ID": "T073"
+    },
+    {
+        "Case Name": "South Carolina v. Katzenbach",
+        "Trigger ID": "T074"
+    },
+    {
+        "Case Name": "Loving v. Virginia",
+        "Trigger ID": "T075"
+    },
+    {
+        "Case Name": "Keyishian v. Board of Regents",
+        "Trigger ID": "T076"
+    },
+    {
+        "Case Name": "Lemon v. Kurtzman",
+        "Trigger ID": "T077"
+    },
+    {
+        "Case Name": "Roe v. Wade",
+        "Trigger ID": "T078"
+    },
+    {
+        "Case Name": "United States v. Nixon",
+        "Trigger ID": "T079"
+    },
+    {
+        "Case Name": "Milliken v. Bradley",
+        "Trigger ID": "T080"
+    },
+    {
+        "Case Name": "Buckley v. Valeo",
+        "Trigger ID": "T081"
+    },
+    {
+        "Case Name": "Fitzpatrick v. Bitzer",
+        "Trigger ID": "T082"
+    },
+    {
+        "Case Name": "Craig v. Boren",
+        "Trigger ID": "T083"
+    },
+    {
+        "Case Name": "Washington v. Davis",
+        "Trigger ID": "T084"
+    },
+    {
+        "Case Name": "Mathews v. Eldridge",
+        "Trigger ID": "T085"
+    },
+    {
+        "Case Name": "Hunt v. Washington State Apple Advertising Commission",
+        "Trigger ID": "T086"
+    },
+    {
+        "Case Name": "Regents of the Univ. of Cal. v. Bakke",
+        "Trigger ID": "T087"
+    },
+    {
+        "Case Name": "Hicklin v. Orbeck",
+        "Trigger ID": "T088"
+    },
+    {
+        "Case Name": "Hodel v. Virginia Surface Mining",
+        "Trigger ID": "T089"
+    },
+    {
+        "Case Name": "Dames & Moore v. Regan",
+        "Trigger ID": "T090"
+    },
+    {
+        "Case Name": "City of Los Angeles v. Lyons",
+        "Trigger ID": "T091"
+    },
+    {
+        "Case Name": "INS v. Chadha",
+        "Trigger ID": "T092"
+    },
+    {
+        "Case Name": "Allen v. Wright",
+        "Trigger ID": "T093"
+    },
+    {
+        "Case Name": "Garcia v. San Antonio MTA",
+        "Trigger ID": "T094"
+    },
+    {
+        "Case Name": "Maine v. Taylor",
+        "Trigger ID": "T095"
+    },
+    {
+        "Case Name": "Morrison v. Olson",
+        "Trigger ID": "T096"
+    },
+    {
+        "Case Name": "Texas v. Johnson",
+        "Trigger ID": "T097"
+    },
+    {
+        "Case Name": "Lujan v. Defenders of Wildlife",
+        "Trigger ID": "T098"
+    },
+    {
+        "Case Name": "Planned Parenthood v. Casey",
+        "Trigger ID": "T099"
+    },
+    {
+        "Case Name": "New York v. United States",
+        "Trigger ID": "T100"
+    },
+    {
+        "Case Name": "Church of Lukumi Babalu Aye v. Hialeah",
+        "Trigger ID": "T101"
+    },
+    {
+        "Case Name": "Wisconsin v. Mitchell",
+        "Trigger ID": "T102"
+    },
+    {
+        "Case Name": "United States v. Lopez",
+        "Trigger ID": "T103"
+    },
+    {
+        "Case Name": "BMW v. Gore",
+        "Trigger ID": "T104"
+    },
+    {
+        "Case Name": "Romer v. Evans",
+        "Trigger ID": "T105"
+    },
+    {
+        "Case Name": "United States v. Virginia",
+        "Trigger ID": "T106"
+    },
+    {
+        "Case Name": "City of Boerne v. Flores",
+        "Trigger ID": "T107"
+    },
+    {
+        "Case Name": "Printz v. United States",
+        "Trigger ID": "T108"
+    },
+    {
+        "Case Name": "Clinton v. City of New York",
+        "Trigger ID": "T109"
+    },
+    {
+        "Case Name": "Saenz v. Roe",
+        "Trigger ID": "T110"
+    },
+    {
+        "Case Name": "Troxel v. Granville",
+        "Trigger ID": "T111"
+    },
+    {
+        "Case Name": "United States v. Morrison",
+        "Trigger ID": "T112"
+    },
+    {
+        "Case Name": "Board of Trustees of the Univ. of Alabama v. Garrett",
+        "Trigger ID": "T113"
+    },
+    {
+        "Case Name": "Lawrence v. Texas",
+        "Trigger ID": "T114"
+    },
+    {
+        "Case Name": "Nevada Dept. of Human Resources v. Hibbs",
+        "Trigger ID": "T115"
+    },
+    {
+        "Case Name": "Stogner v. California",
+        "Trigger ID": "T116"
+    },
+    {
+        "Case Name": "Tennessee v. Lane",
+        "Trigger ID": "T117"
+    },
+    {
+        "Case Name": "Gonzales v. Raich",
+        "Trigger ID": "T118"
+    },
+    {
+        "Case Name": "Hamdi v. Rumsfeld",
+        "Trigger ID": "T119"
+    },
+    {
+        "Case Name": "Rasul v. Bush",
+        "Trigger ID": "T120"
+    },
+    {
+        "Case Name": "Garcetti v. Ceballos",
+        "Trigger ID": "T121"
+    },
+    {
+        "Case Name": "Massachusetts v. EPA",
+        "Trigger ID": "T122"
+    },
+    {
+        "Case Name": "District of Columbia v. Heller",
+        "Trigger ID": "T123"
+    },
+    {
+        "Case Name": "Boumediene v. Bush",
+        "Trigger ID": "T124"
+    },
+    {
+        "Case Name": "McDonald v. City of Chicago",
+        "Trigger ID": "T125"
+    },
+    {
+        "Case Name": "NFIB v. Sebelius",
+        "Trigger ID": "T126"
+    },
+    {
+        "Case Name": "Shelby County v. Holder",
+        "Trigger ID": "T127"
+    },
+    {
+        "Case Name": "Clapper v. Amnesty International USA",
+        "Trigger ID": "T128"
+    },
+    {
+        "Case Name": "Obergefell v. Hodges",
+        "Trigger ID": "T129"
+    },
+    {
+        "Case Name": "Zivotofsky v. Kerry",
+        "Trigger ID": "T130"
+    },
+    {
+        "Case Name": "Gundy v. United States",
+        "Trigger ID": "T131"
+    },
+    {
+        "Case Name": "Rucho v. Common Cause",
+        "Trigger ID": "T132"
+    },
+    {
+        "Case Name": "Timbs v. Indiana",
+        "Trigger ID": "T133"
+    },
+    {
+        "Case Name": "Seila Law LLC v. CFPB",
+        "Trigger ID": "T134"
+    },
+    {
+        "Case Name": "Trump v. Vance",
+        "Trigger ID": "T135"
+    },
+    {
+        "Case Name": "Fulton v. City of Philadelphia",
+        "Trigger ID": "T136"
+    },
+    {
+        "Case Name": "California v. Texas",
+        "Trigger ID": "T137"
+    },
+    {
+        "Case Name": "Whole Women's Health v. Jackson",
+        "Trigger ID": "T138"
+    },
+    {
+        "Case Name": "Dobbs v. Jackson Women's Health Organization",
+        "Trigger ID": "T139"
+    },
+    {
+        "Case Name": "NY State Rifle & Pistol Ass'n v. Bruen",
+        "Trigger ID": "T140"
+    },
+    {
+        "Case Name": "Carson v. Makin",
+        "Trigger ID": "T141"
+    },
+    {
+        "Case Name": "Egbert v. Boule",
+        "Trigger ID": "T142"
+    },
+    {
+        "Case Name": "Haaland v. Brackeen",
+        "Trigger ID": "T143"
+    },
+    {
+        "Case Name": "SFFA v. Harvard",
+        "Trigger ID": "T144"
+    },
+    {
+        "Case Name": "303 Creative LLC v. Elenis",
+        "Trigger ID": "T145"
+    },
+    {
+        "Case Name": "United States v. Texas",
+        "Trigger ID": "T146"
+    },
+    {
+        "Case Name": "National Pork Producers Council v. Ross",
+        "Trigger ID": "T147"
+    },
+    {
+        "Case Name": "Trump v. United States",
+        "Trigger ID": "T148"
+    },
+    {
+        "Case Name": "United States v. Rahimi",
+        "Trigger ID": "T149"
+    },
+    {
+        "Case Name": "Jarkesy v. SEC",
+        "Trigger ID": "T150"
+    },
+    {
+        "Case Name": "Sheetz v. County of El Dorado",
+        "Trigger ID": "T151"
+    },
+    {
+        "Case Name": "Mahmoud v. Taylor",
+        "Trigger ID": "T152"
+    },
+    {
+        "Case Name": "United States v. Skrmetti",
+        "Trigger ID": "T153"
+    },
+    {
+        "Case Name": "Trump v. CASA, Inc.",
+        "Trigger ID": "T154"
+    },
+    {
+        "Case Name": "Louisiana v. Callais",
+        "Trigger ID": "T155"
+    },
+    {
+        "Case Name": "Trump v. Barbara",
+        "Trigger ID": "T156"
+    },
+    {
+        "Case Name": "Chiles v. Salazar",
+        "Trigger ID": "T157"
+    },
+    {
+        "Case Name": "Trump v. Cook",
+        "Trigger ID": "T158"
+    },
+    {
+        "Case Name": "Trump v. Slaughter",
+        "Trigger ID": "T159"
+    },
+    {
+        "Case Name": "United States v. O'Brien",
+        "Trigger ID": "T160"
+    },
+    {
+        "Case Name": "Tinker v. Des Moines Independent Community School District",
+        "Trigger ID": "T161"
+    },
+    {
+        "Case Name": "Wisconsin v. Yoder",
+        "Trigger ID": "T162"
+    },
+    {
+        "Case Name": "Cleburne v. Cleburne Living Center, Inc.",
+        "Trigger ID": "T163"
+    },
+    {
+        "Case Name": "South Dakota v. Dole",
+        "Trigger ID": "T164"
+    },
+    {
+        "Case Name": "Employment Division v. Smith",
+        "Trigger ID": "T165"
+    },
+    {
+        "Case Name": "R.A.V. v. City of St. Paul",
+        "Trigger ID": "T166"
+    },
+    {
+        "Case Name": "Shaw v. Reno",
+        "Trigger ID": "T167"
+    },
+    {
+        "Case Name": "Seminole Tribe of Florida v. Florida",
+        "Trigger ID": "T168"
+    },
+    {
+        "Case Name": "Gratz v. Bollinger",
+        "Trigger ID": "T169"
+    },
+    {
+        "Case Name": "Grutter v. Bollinger",
+        "Trigger ID": "T169"
+    },
+    {
+        "Case Name": "McCreary County v. ACLU of Kentucky",
+        "Trigger ID": "T170"
+    },
+    {
+        "Case Name": "Van Orden v. Perry",
+        "Trigger ID": "T171"
+    },
+    {
+        "Case Name": "Snyder v. Phelps",
+        "Trigger ID": "T172"
+    },
+    {
+        "Case Name": "Town of Greece v. Galloway",
+        "Trigger ID": "T173"
+    },
+    {
+        "Case Name": "NLRB v. Noel Canning",
+        "Trigger ID": "T174"
+    },
+    {
+        "Case Name": "American Legion v. American Humanist Association",
+        "Trigger ID": "T175"
+    }
+]

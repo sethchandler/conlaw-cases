@@ -68,7 +68,7 @@ CREATE INDEX IF NOT EXISTS case_embeddings_idx ON case_embeddings
   WITH (lists = 10); -- Adjust lists based on data size (sqrt of row count is a good starting point)
 
 -- Helpful view that joins cases with chief justice names
-CREATE OR REPLACE VIEW cases_with_chief_justice AS
+CREATE OR REPLACE VIEW cases_view AS
 SELECT
   c.id,
   c.name,

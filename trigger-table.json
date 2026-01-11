@@ -1,0 +1,877 @@
+[
+    {
+        "Trigger ID": "T001",
+        "Trigger Type": "Lawsuit Catalyst",
+        "Specific Trigger": "State debt claims (Post-Revolutionary War)"
+    },
+    {
+        "Trigger ID": "T002",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Connecticut Probate Act"
+    },
+    {
+        "Trigger ID": "T003",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Judiciary Act of 1801 (Midnight Appointments)"
+    },
+    {
+        "Trigger ID": "T004",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Virginia land confiscation laws / Jay Treaty"
+    },
+    {
+        "Trigger ID": "T005",
+        "Trigger Type": "Economic/Financial",
+        "Specific Trigger": "Second Bank of the United States"
+    },
+    {
+        "Trigger ID": "T006",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "New Jersey oyster harvesting regulation"
+    },
+    {
+        "Trigger ID": "T007",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "New York steamboat monopoly grant"
+    },
+    {
+        "Trigger ID": "T008",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Baltimore street grading/wharf infrastructure"
+    },
+    {
+        "Trigger ID": "T009",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Fugitive Slave Act of 1793"
+    },
+    {
+        "Trigger ID": "T010",
+        "Trigger Type": "Social/Political",
+        "Specific Trigger": "The Dorr Rebellion (Rhode Island)"
+    },
+    {
+        "Trigger ID": "T011",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Missouri Compromise of 1820"
+    },
+    {
+        "Trigger ID": "T012",
+        "Trigger Type": "War",
+        "Specific Trigger": "U.S. Civil War (Naval Blockade)"
+    },
+    {
+        "Trigger ID": "T013",
+        "Trigger Type": "War",
+        "Specific Trigger": "U.S. Civil War (Habeas Suspension)"
+    },
+    {
+        "Trigger ID": "T014",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Reconstruction Acts"
+    },
+    {
+        "Trigger ID": "T015",
+        "Trigger Type": "Economic/Financial",
+        "Specific Trigger": "Legal Tender Act of 1862 (Greenbacks)"
+    },
+    {
+        "Trigger ID": "T016",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Louisiana butchering monopoly law"
+    },
+    {
+        "Trigger ID": "T017",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Illinois bar admission regulations"
+    },
+    {
+        "Trigger ID": "T018",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Enforcement Act of 1870 (Civil Rights)"
+    },
+    {
+        "Trigger ID": "T019",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Morrill Anti-Bigamy Act"
+    },
+    {
+        "Trigger ID": "T020",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "West Virginia jury selection statute"
+    },
+    {
+        "Trigger ID": "T021",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Civil Rights Act of 1875"
+    },
+    {
+        "Trigger ID": "T022",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Section 1 of the 14th Amendment (Citizenship Clause)"
+    },
+    {
+        "Trigger ID": "T023",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "San Francisco wooden laundry ordinance"
+    },
+    {
+        "Trigger ID": "T024",
+        "Trigger Type": "Economic/Financial",
+        "Specific Trigger": "Louisiana state debt default"
+    },
+    {
+        "Trigger ID": "T025",
+        "Trigger Type": "Executive Action",
+        "Specific Trigger": "Protection of Justice Field"
+    },
+    {
+        "Trigger ID": "T026",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Sherman Antitrust Act"
+    },
+    {
+        "Trigger ID": "T027",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Louisiana Separate Car Act"
+    },
+    {
+        "Trigger ID": "T028",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Chicago eminent domain ordinance"
+    },
+    {
+        "Trigger ID": "T029",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Federal Lottery Act of 1895"
+    },
+    {
+        "Trigger ID": "T030",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "New York Bakeshop Act"
+    },
+    {
+        "Trigger ID": "T031",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Massachusetts mandatory vaccination law"
+    },
+    {
+        "Trigger ID": "T032",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Oregon law limiting women's work hours"
+    },
+    {
+        "Trigger ID": "T033",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Pure Food and Drug Act of 1906"
+    },
+    {
+        "Trigger ID": "T034",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Interstate Commerce Act"
+    },
+    {
+        "Trigger ID": "T035",
+        "Trigger Type": "War",
+        "Specific Trigger": "World War I (Selective Service Act of 1917)"
+    },
+    {
+        "Trigger ID": "T036",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Keating-Owen Child Labor Act"
+    },
+    {
+        "Trigger ID": "T037",
+        "Trigger Type": "War",
+        "Specific Trigger": "World War I (Espionage Act of 1917)"
+    },
+    {
+        "Trigger ID": "T038",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "District of Columbia minimum wage law"
+    },
+    {
+        "Trigger ID": "T039",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Nebraska Siman Act (Foreign language ban)"
+    },
+    {
+        "Trigger ID": "T040",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Oregon Compulsory Education Act"
+    },
+    {
+        "Trigger ID": "T041",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Virginia Eugenical Sterilization Act"
+    },
+    {
+        "Trigger ID": "T042",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Mississippi dual school system"
+    },
+    {
+        "Trigger ID": "T043",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Chinese Exclusion Act / 14th Amendment"
+    },
+    {
+        "Trigger ID": "T044",
+        "Trigger Type": "Economic/Financial",
+        "Specific Trigger": "New York Milk Control Law"
+    },
+    {
+        "Trigger ID": "T045",
+        "Trigger Type": "Economic/Financial",
+        "Specific Trigger": "National Industrial Recovery Act (New Deal)"
+    },
+    {
+        "Trigger ID": "T046",
+        "Trigger Type": "Executive Action",
+        "Specific Trigger": "Removal of FTC Commissioner (New Deal)"
+    },
+    {
+        "Trigger ID": "T047",
+        "Trigger Type": "Economic/Financial",
+        "Specific Trigger": "Agricultural Adjustment Act (New Deal)"
+    },
+    {
+        "Trigger ID": "T048",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Washington state minimum wage law"
+    },
+    {
+        "Trigger ID": "T049",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "National Labor Relations Act (Wagner Act)"
+    },
+    {
+        "Trigger ID": "T050",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Filled Milk Act of 1923"
+    },
+    {
+        "Trigger ID": "T051",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Fair Labor Standards Act of 1938"
+    },
+    {
+        "Trigger ID": "T052",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Agricultural Adjustment Act of 1938"
+    },
+    {
+        "Trigger ID": "T053",
+        "Trigger Type": "War",
+        "Specific Trigger": "World War II (Curfew Order)"
+    },
+    {
+        "Trigger ID": "T054",
+        "Trigger Type": "War",
+        "Specific Trigger": "World War II (Exclusion Order 34)"
+    },
+    {
+        "Trigger ID": "T055",
+        "Trigger Type": "War",
+        "Specific Trigger": "World War II (Japanese Internment)"
+    },
+    {
+        "Trigger ID": "T056",
+        "Trigger Type": "War",
+        "Specific Trigger": "World War II (Nazi Saboteurs)"
+    },
+    {
+        "Trigger ID": "T057",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Sherman Antitrust Act (Insurance industry)"
+    },
+    {
+        "Trigger ID": "T058",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Hatch Act of 1939"
+    },
+    {
+        "Trigger ID": "T059",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Restrictive real estate covenants (MO/MI)"
+    },
+    {
+        "Trigger ID": "T060",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "New York City traffic regulation"
+    },
+    {
+        "Trigger ID": "T061",
+        "Trigger Type": "War",
+        "Specific Trigger": "Korean War (Steel mill seizure)"
+    },
+    {
+        "Trigger ID": "T062",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "State segregated school laws"
+    },
+    {
+        "Trigger ID": "T063",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "District of Columbia school segregation"
+    },
+    {
+        "Trigger ID": "T064",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Oklahoma optician/ophthalmologist law"
+    },
+    {
+        "Trigger ID": "T065",
+        "Trigger Type": "Social/Political",
+        "Specific Trigger": "Cold War / McCarthyism (Subversion probes)"
+    },
+    {
+        "Trigger ID": "T066",
+        "Trigger Type": "Social/Political",
+        "Specific Trigger": "Little Rock Nine school integration"
+    },
+    {
+        "Trigger ID": "T067",
+        "Trigger Type": "Social/Political",
+        "Specific Trigger": "Tennessee legislative reapportionment"
+    },
+    {
+        "Trigger ID": "T068",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "South Carolina Unemployment Compensation Act"
+    },
+    {
+        "Trigger ID": "T069",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Civil Rights Act of 1964 (Public Accommodations)"
+    },
+    {
+        "Trigger ID": "T070",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Civil Rights Act of 1964 (Ollie's BBQ)"
+    },
+    {
+        "Trigger ID": "T071",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Connecticut anti-contraception law"
+    },
+    {
+        "Trigger ID": "T072",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "LMDRA of 1959"
+    },
+    {
+        "Trigger ID": "T073",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Voting Rights Act of 1965 (Section 4e)"
+    },
+    {
+        "Trigger ID": "T074",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Voting Rights Act of 1965 (Preclearance)"
+    },
+    {
+        "Trigger ID": "T075",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Virginia Racial Integrity Act of 1924"
+    },
+    {
+        "Trigger ID": "T076",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "New York Feinberg Law (Loyalty oaths)"
+    },
+    {
+        "Trigger ID": "T077",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "PA/RI nonpublic school aid acts"
+    },
+    {
+        "Trigger ID": "T078",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Texas abortion statutes"
+    },
+    {
+        "Trigger ID": "T079",
+        "Trigger Type": "Criminal Prosecution",
+        "Specific Trigger": "The Watergate Scandal"
+    },
+    {
+        "Trigger ID": "T080",
+        "Trigger Type": "Social/Political",
+        "Specific Trigger": "Detroit school desegregation / Busing"
+    },
+    {
+        "Trigger ID": "T081",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Federal Election Campaign Act of 1971"
+    },
+    {
+        "Trigger ID": "T082",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Title VII of Civil Rights Act of 1964"
+    },
+    {
+        "Trigger ID": "T083",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Oklahoma near-beer gender age law"
+    },
+    {
+        "Trigger ID": "T084",
+        "Trigger Type": "Executive Action",
+        "Specific Trigger": "District of Columbia police entrance exam"
+    },
+    {
+        "Trigger ID": "T085",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Social Security Act (Disability benefits)"
+    },
+    {
+        "Trigger ID": "T086",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "North Carolina apple grading law"
+    },
+    {
+        "Trigger ID": "T087",
+        "Trigger Type": "Executive Action",
+        "Specific Trigger": "UC Davis medical school admissions policy"
+    },
+    {
+        "Trigger ID": "T088",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Alaska Hire Act"
+    },
+    {
+        "Trigger ID": "T089",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "SMCRA of 1977"
+    },
+    {
+        "Trigger ID": "T090",
+        "Trigger Type": "Executive Action",
+        "Specific Trigger": "Iran Hostage Crisis / Algiers Accords"
+    },
+    {
+        "Trigger ID": "T091",
+        "Trigger Type": "Executive Action",
+        "Specific Trigger": "LAPD chokehold policy"
+    },
+    {
+        "Trigger ID": "T092",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Immigration and Nationality Act (Veto)"
+    },
+    {
+        "Trigger ID": "T093",
+        "Trigger Type": "Executive Action",
+        "Specific Trigger": "IRS tax-exempt status for private schools"
+    },
+    {
+        "Trigger ID": "T094",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Fair Labor Standards Act"
+    },
+    {
+        "Trigger ID": "T095",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Maine baitfish import law"
+    },
+    {
+        "Trigger ID": "T096",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Ethics in Government Act of 1978"
+    },
+    {
+        "Trigger ID": "T097",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Texas Flag Desecration Law"
+    },
+    {
+        "Trigger ID": "T098",
+        "Trigger Type": "Executive Action",
+        "Specific Trigger": "Endangered Species Act (Interior Dept)"
+    },
+    {
+        "Trigger ID": "T099",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Pennsylvania Abortion Control Act of 1982"
+    },
+    {
+        "Trigger ID": "T100",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "LLRWP Amendments Act"
+    },
+    {
+        "Trigger ID": "T101",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Hialeah animal sacrifice ordinances"
+    },
+    {
+        "Trigger ID": "T102",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Wisconsin hate-crime penalty enhancer"
+    },
+    {
+        "Trigger ID": "T103",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Gun-Free School Zones Act of 1990"
+    },
+    {
+        "Trigger ID": "T104",
+        "Trigger Type": "Criminal Prosecution",
+        "Specific Trigger": "Alabama punitive damage award (Paint job)"
+    },
+    {
+        "Trigger ID": "T105",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Colorado Amendment 2"
+    },
+    {
+        "Trigger ID": "T106",
+        "Trigger Type": "Executive Action",
+        "Specific Trigger": "VMI admissions policy"
+    },
+    {
+        "Trigger ID": "T107",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Religious Freedom Restoration Act (RFRA)"
+    },
+    {
+        "Trigger ID": "T108",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Brady Handgun Violence Prevention Act"
+    },
+    {
+        "Trigger ID": "T109",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Line Item Veto Act of 1996"
+    },
+    {
+        "Trigger ID": "T110",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "California welfare residency requirement"
+    },
+    {
+        "Trigger ID": "T111",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Washington state grandparent visitation law"
+    },
+    {
+        "Trigger ID": "T112",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Violence Against Women Act of 1994"
+    },
+    {
+        "Trigger ID": "T113",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Americans with Disabilities Act (ADA)"
+    },
+    {
+        "Trigger ID": "T114",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Texas Homosexual Conduct law"
+    },
+    {
+        "Trigger ID": "T115",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Family and Medical Leave Act of 1993"
+    },
+    {
+        "Trigger ID": "T116",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "California child sex abuse statute extension"
+    },
+    {
+        "Trigger ID": "T117",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "ADA (Access to Courts)"
+    },
+    {
+        "Trigger ID": "T118",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Controlled Substances Act / Compassionate Use"
+    },
+    {
+        "Trigger ID": "T119",
+        "Trigger Type": "War",
+        "Specific Trigger": "Authorization for Use of Military Force (AUMF) / War on Terror"
+    },
+    {
+        "Trigger ID": "T120",
+        "Trigger Type": "War",
+        "Specific Trigger": "Guantanamo Bay detentions"
+    },
+    {
+        "Trigger ID": "T121",
+        "Trigger Type": "Executive Action",
+        "Specific Trigger": "LA County District Attorney employment"
+    },
+    {
+        "Trigger ID": "T122",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Clean Air Act (GHG regulation)"
+    },
+    {
+        "Trigger ID": "T123",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "D.C. Firearms Control Regulations Act"
+    },
+    {
+        "Trigger ID": "T124",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Military Commissions Act of 2006"
+    },
+    {
+        "Trigger ID": "T125",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Chicago handgun ban"
+    },
+    {
+        "Trigger ID": "T126",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Patient Protection and Affordable Care Act (ACA)"
+    },
+    {
+        "Trigger ID": "T127",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Voting Rights Act of 1965 (Section 4b)"
+    },
+    {
+        "Trigger ID": "T128",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "FISA Amendments Act of 2008 (Section 702)"
+    },
+    {
+        "Trigger ID": "T129",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "State bans on same-sex marriage"
+    },
+    {
+        "Trigger ID": "T130",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Foreign Relations Authorization Act"
+    },
+    {
+        "Trigger ID": "T131",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "SORNA"
+    },
+    {
+        "Trigger ID": "T132",
+        "Trigger Type": "Social/Political",
+        "Specific Trigger": "Partisan Gerrymandering (NC/MD)"
+    },
+    {
+        "Trigger ID": "T133",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Indiana civil forfeiture law"
+    },
+    {
+        "Trigger ID": "T134",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Dodd-Frank Wall Street Reform Act"
+    },
+    {
+        "Trigger ID": "T135",
+        "Trigger Type": "Criminal Prosecution",
+        "Specific Trigger": "NY County grand jury subpoena"
+    },
+    {
+        "Trigger ID": "T136",
+        "Trigger Type": "Executive Action",
+        "Specific Trigger": "Philadelphia foster care contract conditions"
+    },
+    {
+        "Trigger ID": "T137",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Tax Cuts and Jobs Act of 2017 (Mandate)"
+    },
+    {
+        "Trigger ID": "T138",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Texas Senate Bill 8 (SB8)"
+    },
+    {
+        "Trigger ID": "T139",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Mississippi Gestational Age Act"
+    },
+    {
+        "Trigger ID": "T140",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "New York Sullivan Law (Concealed carry)"
+    },
+    {
+        "Trigger ID": "T141",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Maine tuition assistance program"
+    },
+    {
+        "Trigger ID": "T142",
+        "Trigger Type": "Executive Action",
+        "Specific Trigger": "Border Patrol search at Smuggler's Inn"
+    },
+    {
+        "Trigger ID": "T143",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Indian Child Welfare Act (ICWA)"
+    },
+    {
+        "Trigger ID": "T144",
+        "Trigger Type": "Executive Action",
+        "Specific Trigger": "Harvard/UNC race-conscious admissions"
+    },
+    {
+        "Trigger ID": "T145",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Colorado Anti-Discrimination Act"
+    },
+    {
+        "Trigger ID": "T146",
+        "Trigger Type": "Executive Action",
+        "Specific Trigger": "DHS Immigration Enforcement Guidelines"
+    },
+    {
+        "Trigger ID": "T147",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "California Proposition 12"
+    },
+    {
+        "Trigger ID": "T148",
+        "Trigger Type": "Criminal Prosecution",
+        "Specific Trigger": "2020 Election interference investigation"
+    },
+    {
+        "Trigger ID": "T149",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "18 U.S.C. 922(g)(8) (DV Firearms Ban)"
+    },
+    {
+        "Trigger ID": "T150",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Dodd-Frank Act / SEC internal adjudication"
+    },
+    {
+        "Trigger ID": "T151",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "El Dorado County traffic impact fee"
+    },
+    {
+        "Trigger ID": "T152",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Maryland inclusive curriculum policy"
+    },
+    {
+        "Trigger ID": "T153",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Tennessee ban on gender-affirming care"
+    },
+    {
+        "Trigger ID": "T154",
+        "Trigger Type": "Executive Action",
+        "Specific Trigger": "Trump immigration-related executive actions"
+    },
+    {
+        "Trigger ID": "T155",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Louisiana redistricting plan"
+    },
+    {
+        "Trigger ID": "T156",
+        "Trigger Type": "Criminal Prosecution",
+        "Specific Trigger": "Private civil litigation ( Carroll context)"
+    },
+    {
+        "Trigger ID": "T157",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Colorado ban on conversion therapy"
+    },
+    {
+        "Trigger ID": "T158",
+        "Trigger Type": "Executive Action",
+        "Specific Trigger": "Federal Reserve Governor removal dispute"
+    },
+    {
+        "Trigger ID": "T159",
+        "Trigger Type": "Executive Action",
+        "Specific Trigger": "Independent commission removal dispute"
+    },
+    {
+        "Trigger ID": "T160",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Universal Military Training and Service Act"
+    },
+    {
+        "Trigger ID": "T161",
+        "Trigger Type": "Social/Political",
+        "Specific Trigger": "Vietnam War Protests (Black armbands)"
+    },
+    {
+        "Trigger ID": "T162",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Wisconsin compulsory school attendance law"
+    },
+    {
+        "Trigger ID": "T163",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Cleburne zoning ordinance"
+    },
+    {
+        "Trigger ID": "T164",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "National Minimum Drinking Age Act"
+    },
+    {
+        "Trigger ID": "T165",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Oregon controlled substance laws"
+    },
+    {
+        "Trigger ID": "T166",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "St. Paul Bias-Motivated Crime Ordinance"
+    },
+    {
+        "Trigger ID": "T167",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "North Carolina redistricting plan"
+    },
+    {
+        "Trigger ID": "T168",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Indian Gaming Regulatory Act"
+    },
+    {
+        "Trigger ID": "T169",
+        "Trigger Type": "Executive Action",
+        "Specific Trigger": "University of Michigan admissions"
+    },
+    {
+        "Trigger ID": "T170",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Kentucky Ten Commandments displays"
+    },
+    {
+        "Trigger ID": "T171",
+        "Trigger Type": "Legislation",
+        "Specific Trigger": "Texas Ten Commandments monument"
+    },
+    {
+        "Trigger ID": "T172",
+        "Trigger Type": "Social/Political",
+        "Specific Trigger": "Westboro Baptist Church protests"
+    },
+    {
+        "Trigger ID": "T173",
+        "Trigger Type": "Executive Action",
+        "Specific Trigger": "Town board prayer practice"
+    },
+    {
+        "Trigger ID": "T174",
+        "Trigger Type": "Executive Action",
+        "Specific Trigger": "Presidential Recess Appointments"
+    },
+    {
+        "Trigger ID": "T175",
+        "Trigger Type": "Social/Political",
+        "Specific Trigger": "Bladensburg Cross war memorial"
+    }
+]

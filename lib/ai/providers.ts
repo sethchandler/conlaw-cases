@@ -108,13 +108,15 @@ export async function generateSQL(
 Database Schema:
 ${schema}
 
-Rules:
-- Return ONLY the SQL query, no explanations
+CRITICAL RULES:
+- Return ONLY the SQL query, no explanations or markdown
 - Use only SELECT statements (no INSERT, UPDATE, DELETE, DROP)
-- Use proper JOINs when querying across tables
-- Include appropriate WHERE, ORDER BY, and LIMIT clauses
-- For text search, use ILIKE for case-insensitive matching
-- The cases_with_chief_justice view is available for convenience`;
+- IMPORTANT: When filtering by issues, you MUST use the EXACT issue names from the "Valid Issue Names" list above
+- Do NOT invent issue names - only use values that appear in the dynamic values section
+- For array contains queries, use: 'Exact Issue Name' = ANY(issues)
+- For text search in descriptions, use ILIKE for case-insensitive matching
+- Use the cases_view view for queries
+- Include ORDER BY year DESC unless otherwise specified`;
 
   try {
     switch (provider) {

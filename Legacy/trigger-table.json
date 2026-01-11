@@ -1,0 +1,750 @@
+[
+    {
+        "trigger_id": 1,
+        "trigger_type": "State Legislation",
+        "trigger_event": "Colorado Anti-Discrimination Act"
+    },
+    {
+        "trigger_id": 2,
+        "trigger_type": "Federal Legislation",
+        "trigger_event": "Minimum Wage Act for DC"
+    },
+    {
+        "trigger_id": 3,
+        "trigger_type": "Federal Legislation",
+        "trigger_event": "Copyright Remedy Clarification Act"
+    },
+    {
+        "trigger_id": 4,
+        "trigger_type": "Domestic Event",
+        "trigger_event": "IRS Tax Exemption Policies"
+    },
+    {
+        "trigger_id": 5,
+        "trigger_type": "World Event",
+        "trigger_event": "World War I Veterans Memorials"
+    },
+    {
+        "trigger_id": 6,
+        "trigger_type": "State Legislation",
+        "trigger_event": "Arizona Senate Bill 1070"
+    },
+    {
+        "trigger_id": 7,
+        "trigger_type": "Domestic Event",
+        "trigger_event": "Excessive Punitive Damages"
+    },
+    {
+        "trigger_id": 8,
+        "trigger_type": "Domestic Social Trend",
+        "trigger_event": "Urbanization"
+    },
+    {
+        "trigger_id": 9,
+        "trigger_type": "Domestic Social Trend",
+        "trigger_event": "Affirmative Action"
+    },
+    {
+        "trigger_id": 10,
+        "trigger_type": "Domestic Event",
+        "trigger_event": "Municipal Infrastructure Projects"
+    },
+    {
+        "trigger_id": 11,
+        "trigger_type": "Federal Legislation",
+        "trigger_event": "HEROES Act of 2003"
+    },
+    {
+        "trigger_id": 12,
+        "trigger_type": "Federal Legislation",
+        "trigger_event": "Americans with Disabilities Act"
+    },
+    {
+        "trigger_id": 13,
+        "trigger_type": "Constitutional Amendment",
+        "trigger_event": "5th Amendment"
+    },
+    {
+        "trigger_id": 14,
+        "trigger_type": "Federal Legislation",
+        "trigger_event": "Civil Rights Act of 1964"
+    },
+    {
+        "trigger_id": 15,
+        "trigger_type": "Constitutional Amendment",
+        "trigger_event": "14th Amendment"
+    },
+    {
+        "trigger_id": 16,
+        "trigger_type": "Domestic Social Trend",
+        "trigger_event": "Jim Crow Segregation"
+    },
+    {
+        "trigger_id": 17,
+        "trigger_type": "Domestic Social Trend",
+        "trigger_event": "Eugenics Movement"
+    },
+    {
+        "trigger_id": 18,
+        "trigger_type": "Federal Legislation",
+        "trigger_event": "Federal Election Campaign Act"
+    },
+    {
+        "trigger_id": 19,
+        "trigger_type": "State Legislation",
+        "trigger_event": "Connecticut Probate Act"
+    },
+    {
+        "trigger_id": 20,
+        "trigger_type": "Federal Legislation",
+        "trigger_event": "Affordable Care Act"
+    },
+    {
+        "trigger_id": 21,
+        "trigger_type": "State Legislation",
+        "trigger_event": "Maine Tuition Assistance Program"
+    },
+    {
+        "trigger_id": 22,
+        "trigger_type": "Domestic Event",
+        "trigger_event": "Public Employee Whistleblowing"
+    },
+    {
+        "trigger_id": 23,
+        "trigger_type": "Federal Legislation",
+        "trigger_event": "Immigration and Nationality Act"
+    },
+    {
+        "trigger_id": 24,
+        "trigger_type": "Federal Legislation",
+        "trigger_event": "Federal Lottery Act"
+    },
+    {
+        "trigger_id": 25,
+        "trigger_type": "State Legislation",
+        "trigger_event": "Colorado Minor Conversion Therapy Law"
+    },
+    {
+        "trigger_id": 26,
+        "trigger_type": "Interstate Conflict",
+        "trigger_event": "State Debt Disputes"
+    },
+    {
+        "trigger_id": 27,
+        "trigger_type": "State Legislation",
+        "trigger_event": "Hialeah Santeria Ordinances"
+    },
+    {
+        "trigger_id": 28,
+        "trigger_type": "Federal Legislation",
+        "trigger_event": "Bipartisan Campaign Reform Act"
+    },
+    {
+        "trigger_id": 29,
+        "trigger_type": "Federal Legislation",
+        "trigger_event": "Religious Freedom Restoration Act"
+    },
+    {
+        "trigger_id": 30,
+        "trigger_type": "Domestic Event",
+        "trigger_event": "Police Use of Force Policies"
+    },
+    {
+        "trigger_id": 31,
+        "trigger_type": "Federal Legislation",
+        "trigger_event": "Civil Rights Act of 1875"
+    },
+    {
+        "trigger_id": 32,
+        "trigger_type": "Federal Legislation",
+        "trigger_event": "FISA Amendments Act"
+    },
+    {
+        "trigger_id": 33,
+        "trigger_type": "Domestic Social Trend",
+        "trigger_event": "Disability Rights"
+    },
+    {
+        "trigger_id": 34,
+        "trigger_type": "Federal Legislation",
+        "trigger_event": "Line Item Veto Act"
+    },
+    {
+        "trigger_id": 35,
+        "trigger_type": "Domestic Event",
+        "trigger_event": "Little Rock Desegregation Crisis"
+    },
+    {
+        "trigger_id": 36,
+        "trigger_type": "Constitutional Amendment",
+        "trigger_event": "Privileges and Immunities Clause"
+    },
+    {
+        "trigger_id": 37,
+        "trigger_type": "State Legislation",
+        "trigger_event": "Oklahoma Near-Beer Law"
+    },
+    {
+        "trigger_id": 38,
+        "trigger_type": "Domestic Event",
+        "trigger_event": "Colfax Massacre"
+    },
+    {
+        "trigger_id": 39,
+        "trigger_type": "World Event",
+        "trigger_event": "Iranian Hostage Crisis"
+    },
+    {
+        "trigger_id": 40,
+        "trigger_type": "Federal Legislation",
+        "trigger_event": "Keating-Owen Child Labor Act"
+    },
+    {
+        "trigger_id": 41,
+        "trigger_type": "Federal Legislation",
+        "trigger_event": "Fair Labor Standards Act"
+    },
+    {
+        "trigger_id": 42,
+        "trigger_type": "State Legislation",
+        "trigger_event": "DC Firearms Control Regulations Act"
+    },
+    {
+        "trigger_id": 43,
+        "trigger_type": "State Legislation",
+        "trigger_event": "Mississippi Gestational Age Act"
+    },
+    {
+        "trigger_id": 44,
+        "trigger_type": "Federal Legislation",
+        "trigger_event": "Missouri Compromise"
+    },
+    {
+        "trigger_id": 45,
+        "trigger_type": "Federal Legislation",
+        "trigger_event": "Sherman Antitrust Act"
+    },
+    {
+        "trigger_id": 46,
+        "trigger_type": "Domestic Event",
+        "trigger_event": "Border Security Excessive Force Claims"
+    },
+    {
+        "trigger_id": 47,
+        "trigger_type": "Domestic Social Trend",
+        "trigger_event": "War on Drugs"
+    },
+    {
+        "trigger_id": 48,
+        "trigger_type": "World Event",
+        "trigger_event": "World War II"
+    },
+    {
+        "trigger_id": 49,
+        "trigger_type": "World Event",
+        "trigger_event": "American Civil War"
+    },
+    {
+        "trigger_id": 50,
+        "trigger_type": "Federal Legislation",
+        "trigger_event": "1972 Amendments to Civil Rights Act"
+    },
+    {
+        "trigger_id": 51,
+        "trigger_type": "Domestic Event",
+        "trigger_event": "Foster Care Contract Disputes"
+    },
+    {
+        "trigger_id": 52,
+        "trigger_type": "State Legislation",
+        "trigger_event": "New York Steamboat Monopoly"
+    },
+    {
+        "trigger_id": 53,
+        "trigger_type": "Federal Legislation",
+        "trigger_event": "Controlled Substances Act"
+    },
+    {
+        "trigger_id": 54,
+        "trigger_type": "Domestic Social Trend",
+        "trigger_event": "Sexual Revolution"
+    },
+    {
+        "trigger_id": 55,
+        "trigger_type": "Federal Legislation",
+        "trigger_event": "Sex Offender Registration and Notification Act"
+    },
+    {
+        "trigger_id": 56,
+        "trigger_type": "Federal Legislation",
+        "trigger_event": "Indian Child Welfare Act"
+    },
+    {
+        "trigger_id": 57,
+        "trigger_type": "Constitutional Amendment",
+        "trigger_event": "11th Amendment"
+    },
+    {
+        "trigger_id": 58,
+        "trigger_type": "Federal Legislation",
+        "trigger_event": "Legal Tender Act"
+    },
+    {
+        "trigger_id": 59,
+        "trigger_type": "State Legislation",
+        "trigger_event": "Alaska Hire Act"
+    },
+    {
+        "trigger_id": 60,
+        "trigger_type": "Federal Legislation",
+        "trigger_event": "Surface Mining Control and Reclamation Act"
+    },
+    {
+        "trigger_id": 61,
+        "trigger_type": "Federal Legislation",
+        "trigger_event": "Federal Trade Commission Act"
+    },
+    {
+        "trigger_id": 62,
+        "trigger_type": "Interstate Conflict",
+        "trigger_event": "State Branding Regulations"
+    },
+    {
+        "trigger_id": 63,
+        "trigger_type": "Domestic Event",
+        "trigger_event": "Protection of Federal Judges"
+    },
+    {
+        "trigger_id": 64,
+        "trigger_type": "Domestic Social Trend",
+        "trigger_event": "Smallpox Outbreak"
+    },
+    {
+        "trigger_id": 65,
+        "trigger_type": "Federal Legislation",
+        "trigger_event": "Dodd-Frank Act"
+    },
+    {
+        "trigger_id": 66,
+        "trigger_type": "Federal Legislation",
+        "trigger_event": "Voting Rights Act of 1965"
+    },
+    {
+        "trigger_id": 67,
+        "trigger_type": "Domestic Event",
+        "trigger_event": "Post-Game Prayer"
+    },
+    {
+        "trigger_id": 68,
+        "trigger_type": "Domestic Social Trend",
+        "trigger_event": "McCarthyism"
+    },
+    {
+        "trigger_id": 69,
+        "trigger_type": "Domestic Social Trend",
+        "trigger_event": "LGBTQ+ Rights Movement"
+    },
+    {
+        "trigger_id": 70,
+        "trigger_type": "State Legislation",
+        "trigger_event": "Oklahoma Optometry Act"
+    },
+    {
+        "trigger_id": 71,
+        "trigger_type": "State Legislation",
+        "trigger_event": "Parochial School Aid Laws"
+    },
+    {
+        "trigger_id": 72,
+        "trigger_type": "State Legislation",
+        "trigger_event": "New York Bakeshop Act"
+    },
+    {
+        "trigger_id": 73,
+        "trigger_type": "Federal Legislation",
+        "trigger_event": "Endangered Species Act"
+    },
+    {
+        "trigger_id": 74,
+        "trigger_type": "Domestic Event",
+        "trigger_event": "Dorr Rebellion"
+    },
+    {
+        "trigger_id": 75,
+        "trigger_type": "Domestic Social Trend",
+        "trigger_event": "Parental Rights in Education"
+    },
+    {
+        "trigger_id": 76,
+        "trigger_type": "State Legislation",
+        "trigger_event": "Maine Baitfish Law"
+    },
+    {
+        "trigger_id": 77,
+        "trigger_type": "Federal Legislation",
+        "trigger_event": "Judiciary Act of 1789"
+    },
+    {
+        "trigger_id": 78,
+        "trigger_type": "World Event",
+        "trigger_event": "Revolutionary War Treaty"
+    },
+    {
+        "trigger_id": 79,
+        "trigger_type": "Federal Legislation",
+        "trigger_event": "Clean Air Act"
+    },
+    {
+        "trigger_id": 80,
+        "trigger_type": "Federal Legislation",
+        "trigger_event": "Social Security Act"
+    },
+    {
+        "trigger_id": 81,
+        "trigger_type": "Domestic Event",
+        "trigger_event": "Courthouse Ten Commandments Displays"
+    },
+    {
+        "trigger_id": 82,
+        "trigger_type": "Federal Legislation",
+        "trigger_event": "Second Bank of the United States"
+    },
+    {
+        "trigger_id": 83,
+        "trigger_type": "State Legislation",
+        "trigger_event": "Chicago Handgun Ban"
+    },
+    {
+        "trigger_id": 84,
+        "trigger_type": "World Event",
+        "trigger_event": "World War I Anti-German Sentiment"
+    },
+    {
+        "trigger_id": 85,
+        "trigger_type": "Domestic Event",
+        "trigger_event": "State Court Plain Statement Rule"
+    },
+    {
+        "trigger_id": 86,
+        "trigger_type": "Domestic Social Trend",
+        "trigger_event": "White Flight and Suburbanization"
+    },
+    {
+        "trigger_id": 87,
+        "trigger_type": "Domestic Event",
+        "trigger_event": "Reconstruction Acts"
+    },
+    {
+        "trigger_id": 88,
+        "trigger_type": "State Legislation",
+        "trigger_event": "East Cleveland Zoning Ordinance"
+    },
+    {
+        "trigger_id": 89,
+        "trigger_type": "Federal Legislation",
+        "trigger_event": "Ethics in Government Act"
+    },
+    {
+        "trigger_id": 90,
+        "trigger_type": "State Legislation",
+        "trigger_event": "Oregon Maximum Hours Law"
+    },
+    {
+        "trigger_id": 91,
+        "trigger_type": "Federal Legislation",
+        "trigger_event": "National Labor Relations Act"
+    },
+    {
+        "trigger_id": 92,
+        "trigger_type": "Executive Action",
+        "trigger_event": "Recess Appointments"
+    },
+    {
+        "trigger_id": 93,
+        "trigger_type": "State Legislation",
+        "trigger_event": "New York Sullivan Law"
+    },
+    {
+        "trigger_id": 94,
+        "trigger_type": "State Legislation",
+        "trigger_event": "California Proposition 12"
+    },
+    {
+        "trigger_id": 95,
+        "trigger_type": "World Event",
+        "trigger_event": "Great Depression"
+    },
+    {
+        "trigger_id": 96,
+        "trigger_type": "Federal Legislation",
+        "trigger_event": "Low-Level Radioactive Waste Policy Act"
+    },
+    {
+        "trigger_id": 97,
+        "trigger_type": "State Legislation",
+        "trigger_event": "Oregon Compulsory Education Act"
+    },
+    {
+        "trigger_id": 98,
+        "trigger_type": "State Legislation",
+        "trigger_event": "Pennsylvania Abortion Control Act"
+    },
+    {
+        "trigger_id": 99,
+        "trigger_type": "Federal Legislation",
+        "trigger_event": "Fugitive Slave Act of 1793"
+    },
+    {
+        "trigger_id": 100,
+        "trigger_type": "Federal Legislation",
+        "trigger_event": "Brady Handgun Violence Prevention Act"
+    },
+    {
+        "trigger_id": 101,
+        "trigger_type": "State Legislation",
+        "trigger_event": "St. Paul Bias-Motivated Crime Ordinance"
+    },
+    {
+        "trigger_id": 102,
+        "trigger_type": "State Legislation",
+        "trigger_event": "New York City Traffic Regulations"
+    },
+    {
+        "trigger_id": 103,
+        "trigger_type": "Federal Legislation",
+        "trigger_event": "Morrill Anti-Bigamy Act"
+    },
+    {
+        "trigger_id": 104,
+        "trigger_type": "Domestic Social Trend",
+        "trigger_event": "Women's Rights Movement"
+    },
+    {
+        "trigger_id": 105,
+        "trigger_type": "State Legislation",
+        "trigger_event": "Colorado Amendment 2"
+    },
+    {
+        "trigger_id": 106,
+        "trigger_type": "Domestic Event",
+        "trigger_event": "2010 Redistricting Cycle"
+    },
+    {
+        "trigger_id": 107,
+        "trigger_type": "State Legislation",
+        "trigger_event": "California Welfare Residency Requirements"
+    },
+    {
+        "trigger_id": 108,
+        "trigger_type": "Federal Legislation",
+        "trigger_event": "National Industrial Recovery Act"
+    },
+    {
+        "trigger_id": 109,
+        "trigger_type": "Federal Legislation",
+        "trigger_event": "Dodd-Frank Act"
+    },
+    {
+        "trigger_id": 110,
+        "trigger_type": "Federal Legislation",
+        "trigger_event": "Indian Gaming Regulatory Act"
+    },
+    {
+        "trigger_id": 111,
+        "trigger_type": "State Legislation",
+        "trigger_event": "California Traffic Impact Fees"
+    },
+    {
+        "trigger_id": 112,
+        "trigger_type": "Domestic Social Trend",
+        "trigger_event": "Residential Segregation"
+    },
+    {
+        "trigger_id": 113,
+        "trigger_type": "State Legislation",
+        "trigger_event": "South Carolina Unemployment Compensation Act"
+    },
+    {
+        "trigger_id": 114,
+        "trigger_type": "World Event",
+        "trigger_event": "Iraq/Afghanistan Wars"
+    },
+    {
+        "trigger_id": 115,
+        "trigger_type": "Federal Legislation",
+        "trigger_event": "National Minimum Drinking Age Act"
+    },
+    {
+        "trigger_id": 116,
+        "trigger_type": "State Legislation",
+        "trigger_event": "California Sex Abuse Statute Extensions"
+    },
+    {
+        "trigger_id": 117,
+        "trigger_type": "Domestic Social Trend",
+        "trigger_event": "Amish Religious Practice"
+    },
+    {
+        "trigger_id": 118,
+        "trigger_type": "Domestic Social Trend",
+        "trigger_event": "Anti-Chinese Hostility"
+    },
+    {
+        "trigger_id": 119,
+        "trigger_type": "Federal Legislation",
+        "trigger_event": "Hobbs Act"
+    },
+    {
+        "trigger_id": 120,
+        "trigger_type": "Domestic Event",
+        "trigger_event": "1984 RNC Protest"
+    },
+    {
+        "trigger_id": 121,
+        "trigger_type": "Domestic Social Trend",
+        "trigger_event": "Civil Asset Forfeiture"
+    },
+    {
+        "trigger_id": 122,
+        "trigger_type": "World Event",
+        "trigger_event": "Vietnam War"
+    },
+    {
+        "trigger_id": 123,
+        "trigger_type": "Domestic Event",
+        "trigger_event": "Legislative Prayer Practices"
+    },
+    {
+        "trigger_id": 124,
+        "trigger_type": "State Legislation",
+        "trigger_event": "Washington Third-Party Visitation Law"
+    },
+    {
+        "trigger_id": 125,
+        "trigger_type": "Domestic Event",
+        "trigger_event": "Presidential Records Litigation"
+    },
+    {
+        "trigger_id": 126,
+        "trigger_type": "Executive Action",
+        "trigger_event": "Birthright Citizenship Executive Order"
+    },
+    {
+        "trigger_id": 127,
+        "trigger_type": "Executive Action",
+        "trigger_event": "Removal of Federal Reserve Governor"
+    },
+    {
+        "trigger_id": 128,
+        "trigger_type": "Executive Action",
+        "trigger_event": "Removal of FTC Commissioner"
+    },
+    {
+        "trigger_id": 129,
+        "trigger_type": "Domestic Event",
+        "trigger_event": "January 6th Investigation"
+    },
+    {
+        "trigger_id": 130,
+        "trigger_event": "Investigation of Presidential Records"
+    },
+    {
+        "trigger_id": 131,
+        "trigger_type": "Federal Legislation",
+        "trigger_event": "Hatch Act"
+    },
+    {
+        "trigger_id": 132,
+        "trigger_type": "Federal Legislation",
+        "trigger_event": "Labor-Management Reporting and Disclosure Act"
+    },
+    {
+        "trigger_id": 133,
+        "trigger_type": "Federal Legislation",
+        "trigger_event": "Filled Milk Act"
+    },
+    {
+        "trigger_id": 134,
+        "trigger_type": "Federal Legislation",
+        "trigger_event": "Controlled Substances Gun Ban"
+    },
+    {
+        "trigger_id": 135,
+        "trigger_type": "Federal Legislation",
+        "trigger_event": "Violence Against Women Act"
+    },
+    {
+        "trigger_id": 136,
+        "trigger_type": "Domestic Event",
+        "trigger_event": "Watergate Scandal"
+    },
+    {
+        "trigger_id": 137,
+        "trigger_type": "Federal Legislation",
+        "trigger_event": "Domestic Violence Gun Ban"
+    },
+    {
+        "trigger_id": 138,
+        "trigger_type": "State Legislation",
+        "trigger_event": "Tennessee Gender-Affirming Care Ban"
+    },
+    {
+        "trigger_id": 139,
+        "trigger_type": "Executive Action",
+        "trigger_event": "DHS Immigration Enforcement Guidelines"
+    },
+    {
+        "trigger_id": 140,
+        "trigger_type": "Domestic Social Trend",
+        "trigger_event": "Gender Integration of Military Colleges"
+    },
+    {
+        "trigger_id": 141,
+        "trigger_event": "State Capitol Ten Commandments Monument"
+    },
+    {
+        "trigger_id": 142,
+        "trigger_type": "Domestic Event",
+        "trigger_event": "Police Department Hiring Exams"
+    },
+    {
+        "trigger_id": 143,
+        "trigger_type": "State Legislation",
+        "trigger_event": "Texas Heartbeat Act"
+    },
+    {
+        "trigger_id": 144,
+        "trigger_type": "Federal Legislation",
+        "trigger_event": "Agricultural Adjustment Act"
+    },
+    {
+        "trigger_id": 145,
+        "trigger_type": "State Legislation",
+        "trigger_event": "Wisconsin Hate Crime Statute"
+    },
+    {
+        "trigger_id": 146,
+        "trigger_type": "World Event",
+        "trigger_event": "Korean War"
+    },
+    {
+        "trigger_id": 147,
+        "trigger_type": "Federal Legislation",
+        "trigger_event": "Foreign Relations Authorization Act"
+    },
+    {
+        "trigger_id": 148,
+        "trigger_type": "World Event",
+        "trigger_event": "Migratory Bird Treaty"
+    },
+    {
+        "trigger_id": 149,
+        "trigger_type": "Domestic Event",
+        "trigger_event": "FBI Wiretapping"
+    },
+    {
+        "trigger_id": 150,
+        "trigger_type": "Domestic Social Trend",
+        "trigger_event": "Evolving Constitutional Standards"
+    }
+]

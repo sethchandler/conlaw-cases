@@ -1,0 +1,738 @@
+[
+    {
+        "case_name": "303 Creative LLC v. Elenis",
+        "trigger_id": 124
+    },
+    {
+        "case_name": "Adkins v. Children's Hospital",
+        "trigger_id": 2
+    },
+    {
+        "case_name": "Allen v. Cooper",
+        "trigger_id": 3
+    },
+    {
+        "case_name": "Allen v. Wright",
+        "trigger_id": 4
+    },
+    {
+        "case_name": "American Legion v. American Humanist Association",
+        "trigger_id": 5
+    },
+    {
+        "case_name": "Arizona v. United States",
+        "trigger_id": 6
+    },
+    {
+        "case_name": "Baker v. Carr",
+        "trigger_id": 8
+    },
+    {
+        "case_name": "Barron v. City of Baltimore",
+        "trigger_id": 10
+    },
+    {
+        "case_name": "Biden v. Nebraska",
+        "trigger_id": 11
+    },
+    {
+        "case_name": "BMW v. Gore",
+        "trigger_id": 7
+    },
+    {
+        "case_name": "Board of Trustees of the Univ. of Alabama v. Garrett",
+        "trigger_id": 12
+    },
+    {
+        "case_name": "Bolling v. Sharpe",
+        "trigger_id": 13
+    },
+    {
+        "case_name": "Bostock v. Clayton County",
+        "trigger_id": 14
+    },
+    {
+        "case_name": "Bradwell v. Illinois",
+        "trigger_id": 15
+    },
+    {
+        "case_name": "Brown v. Board of Education",
+        "trigger_id": 16
+    },
+    {
+        "case_name": "Buck v. Bell",
+        "trigger_id": 17
+    },
+    {
+        "case_name": "Buckley v. Valeo",
+        "trigger_id": 18
+    },
+    {
+        "case_name": "Calder v. Bull",
+        "trigger_id": 19
+    },
+    {
+        "case_name": "California v. Texas",
+        "trigger_id": 20
+    },
+    {
+        "case_name": "Carson v. Makin",
+        "trigger_id": 21
+    },
+    {
+        "case_name": "Champion v. Ames",
+        "trigger_id": 24
+    },
+    {
+        "case_name": "Chicago, Burlington & Quincy Railroad Co. v. Chicago",
+        "trigger_id": 15
+    },
+    {
+        "case_name": "Chiles v. Salazar",
+        "trigger_id": 25
+    },
+    {
+        "case_name": "Chisholm v. Georgia",
+        "trigger_id": 26
+    },
+    {
+        "case_name": "Church of Lukumi Babalu Aye v. Hialeah",
+        "trigger_id": 27
+    },
+    {
+        "case_name": "Citizens United v. FEC",
+        "trigger_id": 28
+    },
+    {
+        "case_name": "City of Boerne v. Flores",
+        "trigger_id": 29
+    },
+    {
+        "case_name": "City of Los Angeles v. Lyons",
+        "trigger_id": 30
+    },
+    {
+        "case_name": "Civil Rights Cases",
+        "trigger_id": 31
+    },
+    {
+        "case_name": "Clapper v. Amnesty International USA",
+        "trigger_id": 32
+    },
+    {
+        "case_name": "Cleburne v. Cleburne Living Center, Inc.",
+        "trigger_id": 33
+    },
+    {
+        "case_name": "Clinton v. City of New York",
+        "trigger_id": 34
+    },
+    {
+        "case_name": "Cooper v. Aaron",
+        "trigger_id": 35
+    },
+    {
+        "case_name": "Corfield v. Coryell",
+        "trigger_id": 36
+    },
+    {
+        "case_name": "Craig v. Boren",
+        "trigger_id": 37
+    },
+    {
+        "case_name": "Dames & Moore v. Regan",
+        "trigger_id": 39
+    },
+    {
+        "case_name": "District of Columbia v. Heller",
+        "trigger_id": 42
+    },
+    {
+        "case_name": "Dobbs v. Jackson Women's Health Organization",
+        "trigger_id": 43
+    },
+    {
+        "case_name": "Dred Scott v. Sandford",
+        "trigger_id": 44
+    },
+    {
+        "case_name": "E.C. Knight Co.",
+        "trigger_id": 45
+    },
+    {
+        "case_name": "Egbert v. Boule",
+        "trigger_id": 46
+    },
+    {
+        "case_name": "Elk v. Wilkins",
+        "trigger_id": 15
+    },
+    {
+        "case_name": "Employment Division v. Smith",
+        "trigger_id": 47
+    },
+    {
+        "case_name": "Ex Parte Endo",
+        "trigger_id": 48
+    },
+    {
+        "case_name": "Ex Parte Milligan",
+        "trigger_id": 49
+    },
+    {
+        "case_name": "Ex Parte Quirin",
+        "trigger_id": 48
+    },
+    {
+        "case_name": "Fitzpatrick v. Bitzer",
+        "trigger_id": 50
+    },
+    {
+        "case_name": "Fulton v. City of Philadelphia",
+        "trigger_id": 51
+    },
+    {
+        "case_name": "Garcetti v. Ceballos",
+        "trigger_id": 22
+    },
+    {
+        "case_name": "Garcia v. San Antonio MTA",
+        "trigger_id": 41
+    },
+    {
+        "case_name": "Gibbons v. Ogden",
+        "trigger_id": 52
+    },
+    {
+        "case_name": "Gong Lum v. Rice",
+        "trigger_id": 16
+    },
+    {
+        "case_name": "Gonzales v. Raich",
+        "trigger_id": 53
+    },
+    {
+        "case_name": "Gratz v. Bollinger",
+        "trigger_id": 9
+    },
+    {
+        "case_name": "Griswold v. Connecticut",
+        "trigger_id": 54
+    },
+    {
+        "case_name": "Grutter v. Bollinger",
+        "trigger_id": 9
+    },
+    {
+        "case_name": "Gundy v. United States",
+        "trigger_id": 55
+    },
+    {
+        "case_name": "Haaland v. Brackeen",
+        "trigger_id": 56
+    },
+    {
+        "case_name": "Hammer v. Dagenhart",
+        "trigger_id": 40
+    },
+    {
+        "case_name": "Hans v. Louisiana",
+        "trigger_id": 57
+    },
+    {
+        "case_name": "Heart of Atlanta Motel v. United States",
+        "trigger_id": 14
+    },
+    {
+        "case_name": "Hepburn v. Griswold",
+        "trigger_id": 58
+    },
+    {
+        "case_name": "Hicklin v. Orbeck",
+        "trigger_id": 59
+    },
+    {
+        "case_name": "Hirabayashi v. United States",
+        "trigger_id": 48
+    },
+    {
+        "case_name": "Hodel v. Virginia Surface Mining",
+        "trigger_id": 60
+    },
+    {
+        "case_name": "Humphrey's Executor v. United States",
+        "trigger_id": 61
+    },
+    {
+        "case_name": "Hunt v. Washington State Apple Advertising Commission",
+        "trigger_id": 62
+    },
+    {
+        "case_name": "In re Neagle",
+        "trigger_id": 63
+    },
+    {
+        "case_name": "INS v. Chadha",
+        "trigger_id": 23
+    },
+    {
+        "case_name": "Jacobson v. Massachusetts",
+        "trigger_id": 64
+    },
+    {
+        "case_name": "Jarkesy v. SEC",
+        "trigger_id": 65
+    },
+    {
+        "case_name": "Katz v. United States",
+        "trigger_id": 149
+    },
+    {
+        "case_name": "Katzenbach v. McClung",
+        "trigger_id": 14
+    },
+    {
+        "case_name": "Katzenbach v. Morgan",
+        "trigger_id": 66
+    },
+    {
+        "case_name": "Kennedy v. Bremerton",
+        "trigger_id": 67
+    },
+    {
+        "case_name": "Keyishian v. Board of Regents",
+        "trigger_id": 68
+    },
+    {
+        "case_name": "Knox v. Lee",
+        "trigger_id": 58
+    },
+    {
+        "case_name": "Korematsu v. United States",
+        "trigger_id": 48
+    },
+    {
+        "case_name": "Lawrence v. Texas",
+        "trigger_id": 69
+    },
+    {
+        "case_name": "Lee Optical v. Williamson",
+        "trigger_id": 70
+    },
+    {
+        "case_name": "Lemon v. Kurtzman",
+        "trigger_id": 71
+    },
+    {
+        "case_name": "Lochner v. New York",
+        "trigger_id": 72
+    },
+    {
+        "case_name": "Louisiana v. Callais",
+        "trigger_id": 66
+    },
+    {
+        "case_name": "Loving v. Virginia",
+        "trigger_id": 16
+    },
+    {
+        "case_name": "Lujan v. Defenders of Wildlife",
+        "trigger_id": 73
+    },
+    {
+        "case_name": "Luther v. Borden",
+        "trigger_id": 74
+    },
+    {
+        "case_name": "Mahmoud v. Taylor",
+        "trigger_id": 75
+    },
+    {
+        "case_name": "Maine v. Taylor",
+        "trigger_id": 76
+    },
+    {
+        "case_name": "Marbury v. Madison",
+        "trigger_id": 77
+    },
+    {
+        "case_name": "Martin v. Hunter's Lessee",
+        "trigger_id": 78
+    },
+    {
+        "case_name": "Massachusetts v. EPA",
+        "trigger_id": 79
+    },
+    {
+        "case_name": "Mathews v. Eldridge",
+        "trigger_id": 80
+    },
+    {
+        "case_name": "McCreary County v. ACLU of Kentucky",
+        "trigger_id": 81
+    },
+    {
+        "case_name": "McCulloch v. Maryland",
+        "trigger_id": 82
+    },
+    {
+        "case_name": "McDonald v. City of Chicago",
+        "trigger_id": 83
+    },
+    {
+        "case_name": "Meyer v. Nebraska",
+        "trigger_id": 84
+    },
+    {
+        "case_name": "Michigan v. Long",
+        "trigger_id": 85
+    },
+    {
+        "case_name": "Milliken v. Bradley",
+        "trigger_id": 86
+    },
+    {
+        "case_name": "Mississippi v. Johnson",
+        "trigger_id": 87
+    },
+    {
+        "case_name": "Missouri v. Holland",
+        "trigger_id": 148
+    },
+    {
+        "case_name": "Moore v. City of East Cleveland",
+        "trigger_id": 88
+    },
+    {
+        "case_name": "Morrison v. Olson",
+        "trigger_id": 89
+    },
+    {
+        "case_name": "Muller v. Oregon",
+        "trigger_id": 90
+    },
+    {
+        "case_name": "National Pork Producers Council v. Ross",
+        "trigger_id": 94
+    },
+    {
+        "case_name": "Nebbia v. New York",
+        "trigger_id": 95
+    },
+    {
+        "case_name": "Nevada Dept. of Human Resources v. Hibbs",
+        "trigger_id": 15
+    },
+    {
+        "case_name": "New York v. United States",
+        "trigger_id": 96
+    },
+    {
+        "case_name": "NFIB v. Sebelius",
+        "trigger_id": 20
+    },
+    {
+        "case_name": "NLRB v. Jones & Laughlin Steel Corp.",
+        "trigger_id": 91
+    },
+    {
+        "case_name": "NLRB v. Noel Canning",
+        "trigger_id": 92
+    },
+    {
+        "case_name": "NY State Rifle & Pistol Ass'n v. Bruen",
+        "trigger_id": 93
+    },
+    {
+        "case_name": "Obergefell v. Hodges",
+        "trigger_id": 69
+    },
+    {
+        "case_name": "Paper Money Cases",
+        "trigger_id": 49
+    },
+    {
+        "case_name": "Pierce v. Society of Sisters",
+        "trigger_id": 97
+    },
+    {
+        "case_name": "Planned Parenthood v. Casey",
+        "trigger_id": 98
+    },
+    {
+        "case_name": "Plessy v. Ferguson",
+        "trigger_id": 16
+    },
+    {
+        "case_name": "Prigg v. Pennsylvania",
+        "trigger_id": 99
+    },
+    {
+        "case_name": "Printz v. United States",
+        "trigger_id": 100
+    },
+    {
+        "case_name": "Prize Cases",
+        "trigger_id": 49
+    },
+    {
+        "case_name": "R.A.V. v. City of St. Paul",
+        "trigger_id": 101
+    },
+    {
+        "case_name": "Railway Express Agency v. New York",
+        "trigger_id": 102
+    },
+    {
+        "case_name": "Regents of the Univ. of Cal. v. Bakke",
+        "trigger_id": 9
+    },
+    {
+        "case_name": "Reynolds v. United States",
+        "trigger_id": 103
+    },
+    {
+        "case_name": "Roe v. Wade",
+        "trigger_id": 104
+    },
+    {
+        "case_name": "Romer v. Evans",
+        "trigger_id": 105
+    },
+    {
+        "case_name": "Rucho v. Common Cause",
+        "trigger_id": 106
+    },
+    {
+        "case_name": "Saenz v. Roe",
+        "trigger_id": 107
+    },
+    {
+        "case_name": "Schechter Poultry Corp. v. United States",
+        "trigger_id": 108
+    },
+    {
+        "case_name": "Schenck v. United States",
+        "trigger_id": 26
+    },
+    {
+        "case_name": "Seila Law LLC v. CFPB",
+        "trigger_id": 109
+    },
+    {
+        "case_name": "Selective Draft Law Cases",
+        "trigger_id": 26
+    },
+    {
+        "case_name": "Seminole Tribe of Florida v. Florida",
+        "trigger_id": 110
+    },
+    {
+        "case_name": "SFFA v. Harvard",
+        "trigger_id": 9
+    },
+    {
+        "case_name": "Shaw v. Reno",
+        "trigger_id": 66
+    },
+    {
+        "case_name": "Sheetz v. County of El Dorado",
+        "trigger_id": 111
+    },
+    {
+        "case_name": "Shelby County v. Holder",
+        "trigger_id": 66
+    },
+    {
+        "case_name": "Shelley v. Kraemer",
+        "trigger_id": 112
+    },
+    {
+        "case_name": "Sherbert v. Verner",
+        "trigger_id": 113
+    },
+    {
+        "case_name": "Shreveport Rate Cases",
+        "trigger_id": 24
+    },
+    {
+        "case_name": "Slaughterhouse Cases",
+        "trigger_id": 15
+    },
+    {
+        "case_name": "Snyder v. Phelps",
+        "trigger_id": 114
+    },
+    {
+        "case_name": "South Carolina v. Katzenbach",
+        "trigger_id": 66
+    },
+    {
+        "case_name": "South Dakota v. Dole",
+        "trigger_id": 115
+    },
+    {
+        "case_name": "Stogner v. California",
+        "trigger_id": 116
+    },
+    {
+        "case_name": "Strauder v. West Virginia",
+        "trigger_id": 15
+    },
+    {
+        "case_name": "Sweezy v. New Hampshire",
+        "trigger_id": 68
+    },
+    {
+        "case_name": "Taylor v. United States",
+        "trigger_id": 119
+    },
+    {
+        "case_name": "Tennessee v. Lane",
+        "trigger_id": 12
+    },
+    {
+        "case_name": "Texas v. Johnson",
+        "trigger_id": 120
+    },
+    {
+        "case_name": "Timbs v. Indiana",
+        "trigger_id": 121
+    },
+    {
+        "case_name": "Tinker v. Des Moines Independent Community School District",
+        "trigger_id": 122
+    },
+    {
+        "case_name": "Town of Greece v. Galloway",
+        "trigger_id": 123
+    },
+    {
+        "case_name": "Troxel v. Granville",
+        "trigger_id": 124
+    },
+    {
+        "case_name": "Trump v. Barbara",
+        "trigger_id": 125
+    },
+    {
+        "case_name": "Trump v. CASA, Inc.",
+        "trigger_id": 126
+    },
+    {
+        "case_name": "Trump v. Cook",
+        "trigger_id": 127
+    },
+    {
+        "case_name": "Trump v. Slaughter",
+        "trigger_id": 128
+    },
+    {
+        "case_name": "Trump v. United States",
+        "trigger_id": 129
+    },
+    {
+        "case_name": "Trump v. Vance",
+        "trigger_id": 130
+    },
+    {
+        "case_name": "United Public Workers v. Mitchell",
+        "trigger_id": 131
+    },
+    {
+        "case_name": "United States v. Brown",
+        "trigger_id": 132
+    },
+    {
+        "case_name": "United States v. Carolene Products",
+        "trigger_id": 133
+    },
+    {
+        "case_name": "United States v. Cruikshank",
+        "trigger_id": 38
+    },
+    {
+        "case_name": "United States v. Darby",
+        "trigger_id": 41
+    },
+    {
+        "case_name": "United States v. Hemani",
+        "trigger_id": 134
+    },
+    {
+        "case_name": "United States v. Lopez",
+        "trigger_id": 86
+    },
+    {
+        "case_name": "United States v. Morrison",
+        "trigger_id": 135
+    },
+    {
+        "case_name": "United States v. Nixon",
+        "trigger_id": 136
+    },
+    {
+        "case_name": "United States v. O'Brien",
+        "trigger_id": 122
+    },
+    {
+        "case_name": "United States v. Rahimi",
+        "trigger_id": 137
+    },
+    {
+        "case_name": "United States v. Skrmetti",
+        "trigger_id": 138
+    },
+    {
+        "case_name": "United States v. Texas",
+        "trigger_id": 139
+    },
+    {
+        "case_name": "United States v. Virginia",
+        "trigger_id": 140
+    },
+    {
+        "case_name": "Van Orden v. Perry",
+        "trigger_id": 141
+    },
+    {
+        "case_name": "Washington v. Davis",
+        "trigger_id": 142
+    },
+    {
+        "case_name": "West Coast Hotel v. Parrish",
+        "trigger_id": 95
+    },
+    {
+        "case_name": "Whole Women's Health v. Jackson",
+        "trigger_id": 143
+    },
+    {
+        "case_name": "Wickard v. Filburn",
+        "trigger_id": 144
+    },
+    {
+        "case_name": "Wisconsin v. Mitchell",
+        "trigger_id": 145
+    },
+    {
+        "case_name": "Wisconsin v. Yoder",
+        "trigger_id": 117
+    },
+    {
+        "case_name": "Wong Kim Ark",
+        "trigger_id": 15
+    },
+    {
+        "case_name": "Yick Wo v. Hopkins",
+        "trigger_id": 118
+    },
+    {
+        "case_name": "Youngstown Sheet & Tube Co. v. Sawyer",
+        "trigger_id": 146
+    },
+    {
+        "case_name": "Zivotofsky v. Kerry",
+        "trigger_id": 147
+    }
+]

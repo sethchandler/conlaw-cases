@@ -1,6 +1,7 @@
 'use client';
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import StructuredSearch from '@/components/StructuredSearch';
 import QueryBuilder from '@/components/QueryBuilder';
 import ChatInterface from '@/components/ChatInterface';
 import SettingsPanel from '@/components/SettingsPanel';
@@ -25,11 +26,16 @@ export default function Home() {
       </div>
 
       <div className="container mx-auto px-4 py-8">
-        <Tabs defaultValue="query" className="w-full">
-          <TabsList className="grid w-full max-w-md grid-cols-2 mb-8">
-            <TabsTrigger value="query">Query Builder</TabsTrigger>
-            <TabsTrigger value="chat">Chat Mode</TabsTrigger>
+        <Tabs defaultValue="search" className="w-full">
+          <TabsList className="grid w-full max-w-lg grid-cols-3 mb-8">
+            <TabsTrigger value="search">Search</TabsTrigger>
+            <TabsTrigger value="query">AI Query</TabsTrigger>
+            <TabsTrigger value="chat">Chat</TabsTrigger>
           </TabsList>
+
+          <TabsContent value="search" className="mt-0">
+            <StructuredSearch />
+          </TabsContent>
 
           <TabsContent value="query" className="mt-0">
             <QueryBuilder />

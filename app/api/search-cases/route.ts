@@ -65,7 +65,7 @@ export async function POST(request: NextRequest) {
     if (keywords.length === 0) {
       // If no keywords, return recent landmark cases
       const result = await pool.query(`
-        SELECT * FROM cases_with_chief_justice
+        SELECT * FROM cases_view
         ORDER BY year DESC
         LIMIT $1
       `, [limit]);
@@ -88,7 +88,7 @@ export async function POST(request: NextRequest) {
           to_tsvector('english', c.name || ' ' || c.description || ' ' || array_to_string(c.issues, ' ')),
           to_tsquery('english', $1)
         ) as rank
-      FROM cases_with_chief_justice c
+      FROM cases_view c
       WHERE
         to_tsvector('english', c.name || ' ' || c.description || ' ' || array_to_string(c.issues, ' '))
         @@ to_tsquery('english', $1)

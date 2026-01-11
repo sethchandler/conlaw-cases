@@ -73,7 +73,7 @@ async function seedCases() {
     console.log(`   ✓ Loaded ${chiefJustices.length} chief justices`);
 
     // Read cases from JSON file
-    const jsonPath = path.join(__dirname, '..', 'conlaw-cases.json');
+    const jsonPath = path.join(__dirname, '..', 'con-law-cases.json');
     if (!fs.existsSync(jsonPath)) {
       console.error(`❌ Cannot find conlaw-cases.json at ${jsonPath}`);
       process.exit(1);

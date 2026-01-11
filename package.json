@@ -1,17 +1,16 @@
 {
   "name": "conlaw-app",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "reseed": "npx tsx --env-file=.env.local scripts/reseed-cases.ts",
-    "seed:justices": "npx tsx --env-file=.env.local scripts/seed-chief-justices.ts",
-    "seed:cases": "npx tsx --env-file=.env.local scripts/seed-cases.ts",
-    "seed:triggers": "npx tsx --env-file=.env.local scripts/seed-triggers.ts",
-    "seed:case-triggers": "npx tsx --env-file=.env.local scripts/seed-case-triggers.ts"
+    "migrate": "npx tsx --env-file=.env.local scripts/migrate-schema.ts",
+    "import": "npx tsx --env-file=.env.local scripts/import-spreadsheet.ts",
+    "create-spreadsheet": "npx tsx scripts/create-spreadsheet.ts",
+    "seed:justices": "npx tsx --env-file=.env.local scripts/seed-chief-justices.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.71.2",

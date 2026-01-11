@@ -13,26 +13,62 @@ export interface ChiefJustice {
   created_at: Date;
 }
 
-// Case from database
+// Case from database (new schema - no issues array)
 export interface Case {
   id: number;
   name: string;
   year: number;
   description: string;
   chief_justice_id: number;
-  issues: string[];
-  full_text?: string | null;
-  metadata?: Record<string, any> | null;
   created_at: Date;
   updated_at: Date;
 }
 
-// Case with chief justice information (from view)
-export interface CaseWithChiefJustice extends Case {
+// Case with all related data (from cases_view)
+export interface CaseWithChiefJustice {
+  id: number;
+  name: string;
+  year: number;
+  description: string;
+  chief_justice_id: number;
   chief_justice_name: string;
   chief_justice_start: number;
   chief_justice_end: number | null;
-  chief_justice_appointed_by: string;
+  // Issues from junction table
+  issues: string[];
+  issue_ids: string[];
+  // Triggers from junction table
+  trigger_types: string[];
+  trigger_events: string[];
+  trigger_ids: string[];
+  // Provisions from junction table
+  provisions: string[];
+  provision_ids: string[];
+}
+
+// Issue from controlled vocabulary table
+export interface Issue {
+  id: number;
+  issue_id: string;
+  name: string;
+  description?: string | null;
+}
+
+// Trigger from triggers table
+export interface Trigger {
+  id: number;
+  trigger_id: string;
+  trigger_type: string;
+  trigger_event: string;
+}
+
+// Provision from provisions table
+export interface Provision {
+  id: number;
+  provision_id: string;
+  parent_id: string | null;
+  name: string;
+  full_text?: string | null;
 }
 
 // Case embedding for vector search

@@ -1,0 +1,1575 @@
+[
+  {
+    "name": "Chisholm v. Georgia",
+    "year": 1793,
+    "description": "Held that states could be sued in federal court by citizens of other states, leading to the 11th Amendment.",
+    "issues": [
+      "Federalism",
+      "Sovereign Immunity"
+    ]
+  },
+  {
+    "name": "Calder v. Bull",
+    "year": 1798,
+    "description": "Defined the Ex Post Facto Clause as applying only to criminal laws and not to civil matters.",
+    "issues": [
+      "Ex Post Facto Clause",
+      "Natural Law"
+    ]
+  },
+  {
+    "name": "Marbury v. Madison",
+    "year": 1803,
+    "description": "Established the principle of judicial review, granting the Supreme Court power to declare laws unconstitutional.",
+    "issues": [
+      "Judicial Review",
+      "Article III"
+    ]
+  },
+  {
+    "name": "Martin v. Hunter's Lessee",
+    "year": 1816,
+    "description": "Affirmed the Supreme Court's authority to review state court decisions involving federal law.",
+    "issues": [
+      "Federalism",
+      "Federal Jurisdiction"
+    ]
+  },
+  {
+    "name": "McCulloch v. Maryland",
+    "year": 1819,
+    "description": "Interpreted the Necessary and Proper Clause broadly and affirmed federal supremacy over state taxation.",
+    "issues": [
+      "Necessary and Proper Clause",
+      "Federal Supremacy"
+    ]
+  },
+  {
+    "name": "Corfield v. Coryell",
+    "year": 1823,
+    "description": "Early circuit court case defining 'privileges and immunities' to include the right to travel and acquire property.",
+    "issues": [
+      "Privileges and Immunities Clause"
+    ]
+  },
+  {
+    "name": "Gibbons v. Ogden",
+    "year": 1824,
+    "description": "Defined federal commerce power broadly to include navigation, asserting it as superior to state regulations.",
+    "issues": [
+      "Commerce Clause",
+      "Federal Supremacy"
+    ]
+  },
+  {
+    "name": "Barron v. City of Baltimore",
+    "year": 1833,
+    "description": "Held that the Bill of Rights originally applied only to the federal government and not to the states.",
+    "issues": [
+      "Bill of Rights",
+      "Federalism"
+    ]
+  },
+  {
+    "name": "Prigg v. Pennsylvania",
+    "year": 1842,
+    "description": "Held that federal law regarding the return of enslaved people superseded state personal liberty laws.",
+    "issues": [
+      "Federal Supremacy",
+      "Fugitive Slave Clause"
+    ]
+  },
+  {
+    "name": "Luther v. Borden",
+    "year": 1849,
+    "description": "Established the political question doctrine regarding the enforcement of the Republican Form of Government Clause.",
+    "issues": [
+      "Political Question Doctrine",
+      "Guarantee Clause"
+    ]
+  },
+  {
+    "name": "Dred Scott v. Sandford",
+    "year": 1857,
+    "description": "Ruled that Black people were not citizens and that Congress could not prohibit slavery in federal territories.",
+    "issues": [
+      "Citizenship",
+      "Due Process",
+      "Slavery"
+    ]
+  },
+  {
+    "name": "Prize Cases",
+    "year": 1863,
+    "description": "Affirmed the President’s power to take military action during an insurrection without a formal declaration of war.",
+    "issues": [
+      "Executive Power",
+      "War Powers"
+    ]
+  },
+  {
+    "name": "Ex Parte Milligan",
+    "year": 1866,
+    "description": "Ruled that citizens cannot be tried by military tribunals when civilian courts are still functioning.",
+    "issues": [
+      "Habeas Corpus",
+      "Executive Power"
+    ]
+  },
+  {
+    "name": "Mississippi v. Johnson",
+    "year": 1867,
+    "description": "Held that the President could not be restrained by an injunction from carrying out his executive duties.",
+    "issues": [
+      "Separation of Powers",
+      "Executive Immunity"
+    ]
+  },
+  {
+    "name": "Hepburn v. Griswold",
+    "year": 1870,
+    "description": "One of the Paper Money Cases that initially ruled the Legal Tender Act unconstitutional as applied to prior debts.",
+    "issues": [
+      "Paper Money Cases",
+      "Due Process"
+    ]
+  },
+  {
+    "name": "Knox v. Lee",
+    "year": 1871,
+    "description": "Reversed Hepburn v. Griswold, ruling that the Legal Tender Act was a valid exercise of federal power.",
+    "issues": [
+      "Paper Money Cases",
+      "Implied Powers"
+    ]
+  },
+  {
+    "name": "Slaughterhouse Cases",
+    "year": 1873,
+    "description": "Narrowly interpreted the 14th Amendment’s Privileges or Immunities Clause, limiting its impact on state regulations.",
+    "issues": [
+      "Privileges or Immunities Clause",
+      "14th Amendment"
+    ]
+  },
+  {
+    "name": "Bradwell v. Illinois",
+    "year": 1873,
+    "description": "Upheld a state's refusal to license a woman to practice law, reflecting a restrictive view of the 14th Amendment.",
+    "issues": [
+      "Equal Protection",
+      "Gender Discrimination"
+    ]
+  },
+  {
+    "name": "United States v. Cruikshank",
+    "year": 1876,
+    "description": "Held that the 14th Amendment protects only against state action, not private acts of violence or conspiracy.",
+    "issues": [
+      "State Action Doctrine",
+      "14th Amendment"
+    ]
+  },
+  {
+    "name": "Reynolds v. United States",
+    "year": 1878,
+    "description": "Established that while religious belief is protected, religious conduct that violates neutral laws is not.",
+    "issues": [
+      "Free Exercise Clause"
+    ]
+  },
+  {
+    "name": "Strauder v. West Virginia",
+    "year": 1880,
+    "description": "Struck down a law excluding Black citizens from juries as a violation of the Equal Protection Clause.",
+    "issues": [
+      "Equal Protection",
+      "Jury Selection"
+    ]
+  },
+  {
+    "name": "Civil Rights Cases",
+    "year": 1883,
+    "description": "Held that Congress lacks the power to prohibit private racial discrimination under the 14th Amendment.",
+    "issues": [
+      "Equal Protection",
+      "State Action Doctrine"
+    ]
+  },
+  {
+    "name": "Elk v. Wilkins",
+    "year": 1884,
+    "description": "Held that Native Americans born on reservations were not citizens under the 14th Amendment.",
+    "issues": [
+      "Citizenship",
+      "14th Amendment"
+    ]
+  },
+  {
+    "name": "Yick Wo v. Hopkins",
+    "year": 1886,
+    "description": "Held that a facially neutral law administered in a discriminatory manner violates the Equal Protection Clause.",
+    "issues": [
+      "Equal Protection",
+      "Discriminatory Intent"
+    ]
+  },
+  {
+    "name": "Hans v. Louisiana",
+    "year": 1890,
+    "description": "Extended state sovereign immunity to prevent a state from being sued in federal court by its own citizens.",
+    "issues": [
+      "11th Amendment",
+      "Sovereign Immunity"
+    ]
+  },
+  {
+    "name": "In re Neagle",
+    "year": 1890,
+    "description": "Affirmed the President's power to protect federal judges without an express statutory mandate.",
+    "issues": [
+      "Executive Power",
+      "Take Care Clause"
+    ]
+  },
+  {
+    "name": "United States v. E.C. Knight Co.",
+    "year": 1895,
+    "description": "The Sugar Trust Case that limited commerce power by distinguishing manufacturing from interstate commerce.",
+    "issues": [
+      "Commerce Clause",
+      "Federalism"
+    ]
+  },
+  {
+    "name": "Plessy v. Ferguson",
+    "year": 1896,
+    "description": "Established the separate but equal doctrine, constitutionally upholding state-mandated racial segregation.",
+    "issues": [
+      "Equal Protection",
+      "Racial Segregation"
+    ]
+  },
+  {
+    "name": "Chicago, Burlington & Quincy Railroad Co. v. Chicago",
+    "year": 1897,
+    "description": "The first case to incorporate a protection from the Bill of Rights (Just Compensation) against the states.",
+    "issues": [
+      "Takings Clause",
+      "Incorporation"
+    ]
+  },
+  {
+    "name": "Champion v. Ames",
+    "year": 1903,
+    "description": "Held that the power to regulate commerce includes the ability to prohibit the transport of items across state lines.",
+    "issues": [
+      "Commerce Clause",
+      "Police Power"
+    ]
+  },
+  {
+    "name": "Lochner v. New York",
+    "year": 1905,
+    "description": "Struck down a limit on bakers' working hours as a violation of the freedom of contract.",
+    "issues": [
+      "Substantive Due Process",
+      "Freedom of Contract"
+    ]
+  },
+  {
+    "name": "Jacobson v. Massachusetts",
+    "year": 1905,
+    "description": "Upheld the state’s power to enforce compulsory vaccination laws for the protection of public health.",
+    "issues": [
+      "Police Power",
+      "Substantive Due Process"
+    ]
+  },
+  {
+    "name": "Muller v. Oregon",
+    "year": 1908,
+    "description": "Upheld a law limiting work hours for women, distinguishing it from Lochner based on perceived physical differences.",
+    "issues": [
+      "Substantive Due Process",
+      "Gender Discrimination"
+    ]
+  },
+  {
+    "name": "Hipolite Egg Co. v. United States",
+    "year": 1911,
+    "description": "Upheld the Pure Food and Drug Act, allowing federal seizure of adulterated goods transported in interstate commerce.",
+    "issues": [
+      "Commerce Clause",
+      "Police Power"
+    ]
+  },
+  {
+    "name": "Shreveport Rate Cases",
+    "year": 1914,
+    "description": "Allowed federal regulation of intrastate rail rates that had a substantial effect on interstate commerce.",
+    "issues": [
+      "Commerce Clause"
+    ]
+  },
+  {
+    "name": "Selective Draft Law Cases",
+    "year": 1918,
+    "description": "Upheld the military draft, ruling it did not violate the 13th Amendment or religious freedom.",
+    "issues": [
+      "War Powers",
+      "13th Amendment"
+    ]
+  },
+  {
+    "name": "Hammer v. Dagenhart",
+    "year": 1918,
+    "description": "Struck down federal child labor laws as an unconstitutional intrusion into local state matters.",
+    "issues": [
+      "Commerce Clause",
+      "10th Amendment"
+    ]
+  },
+  {
+    "name": "Schenck v. United States",
+    "year": 1919,
+    "description": "Established the clear and present danger test for evaluating government restrictions on speech.",
+    "issues": [
+      "First Amendment",
+      "Free Speech"
+    ]
+  },
+  {
+    "name": "Adkins v. Children's Hospital",
+    "year": 1923,
+    "description": "Struck down minimum wage laws for women as a violation of the freedom of contract.",
+    "issues": [
+      "Substantive Due Process",
+      "Freedom of Contract"
+    ]
+  },
+  {
+    "name": "Meyer v. Nebraska",
+    "year": 1923,
+    "description": "Recognized the right of parents to direct the education of their children as a fundamental liberty.",
+    "issues": [
+      "Substantive Due Process",
+      "Fundamental Rights"
+    ]
+  },
+  {
+    "name": "Pierce v. Society of Sisters",
+    "year": 1925,
+    "description": "Affirmed the right of parents to choose private or parochial schools for their children over public ones.",
+    "issues": [
+      "Substantive Due Process",
+      "Fundamental Rights"
+    ]
+  },
+  {
+    "name": "Buck v. Bell",
+    "year": 1927,
+    "description": "Upheld state eugenics laws allowing forced sterilization of those deemed socially inadequate.",
+    "issues": [
+      "Substantive Due Process"
+    ]
+  },
+  {
+    "name": "Gong Lum v. Rice",
+    "year": 1927,
+    "description": "Upheld the racial segregation of a Chinese-American student in Mississippi under the separate but equal doctrine.",
+    "issues": [
+      "Equal Protection",
+      "Racial Segregation"
+    ]
+  },
+  {
+    "name": "Wong Kim Ark",
+    "year": 1898,
+    "description": "Established birthright citizenship under the 14th Amendment for children born in the U.S. to non-citizens.",
+    "issues": [
+      "Citizenship",
+      "14th Amendment"
+    ]
+  },
+  {
+    "name": "Nebbia v. New York",
+    "year": 1934,
+    "description": "Held that states can regulate prices for the public welfare, signaling a retreat from the Lochner era.",
+    "issues": [
+      "Substantive Due Process",
+      "Police Power"
+    ]
+  },
+  {
+    "name": "Schechter Poultry Corp. v. United States",
+    "year": 1935,
+    "description": "Struck down New Deal codes as unconstitutional delegations of legislative authority to the executive branch.",
+    "issues": [
+      "Non-delegation Doctrine",
+      "Commerce Clause"
+    ]
+  },
+  {
+    "name": "Humphrey's Executor v. United States",
+    "year": 1935,
+    "description": "Limited the President's power to remove heads of independent regulatory agencies at will.",
+    "issues": [
+      "Executive Removal Power",
+      "Separation of Powers"
+    ]
+  },
+  {
+    "name": "United States v. Butler",
+    "year": 1936,
+    "description": "Held that the federal government could not use the taxing and spending power to regulate local agricultural production.",
+    "issues": [
+      "Taxing and Spending Clause",
+      "Federalism"
+    ]
+  },
+  {
+    "name": "West Coast Hotel v. Parrish",
+    "year": 1937,
+    "description": "Upheld minimum wage laws, effectively ending the freedom of contract doctrine from the Lochner era.",
+    "issues": [
+      "Substantive Due Process",
+      "Freedom of Contract"
+    ]
+  },
+  {
+    "name": "NLRB v. Jones & Laughlin Steel Corp.",
+    "year": 1937,
+    "description": "Expanded the Commerce Clause to allow federal regulation of local activities that substantially affect commerce.",
+    "issues": [
+      "Commerce Clause"
+    ]
+  },
+  {
+    "name": "United States v. Carolene Products",
+    "year": 1938,
+    "description": "Established the rational basis test while hinting at higher scrutiny for protected groups in Footnote Four.",
+    "issues": [
+      "Rational Basis Review",
+      "Equal Protection"
+    ]
+  },
+  {
+    "name": "United States v. Darby",
+    "year": 1941,
+    "description": "Overruled Hammer v. Dagenhart, confirming federal power to regulate labor conditions affecting interstate competition.",
+    "issues": [
+      "Commerce Clause",
+      "10th Amendment"
+    ]
+  },
+  {
+    "name": "Wickard v. Filburn",
+    "year": 1942,
+    "description": "Held that commerce power reaches purely local production if the aggregate effect impacts the national market.",
+    "issues": [
+      "Commerce Clause"
+    ]
+  },
+  {
+    "name": "Hirabayashi v. United States",
+    "year": 1943,
+    "description": "Upheld a wartime curfew for Japanese Americans, citing military necessity.",
+    "issues": [
+      "War Powers",
+      "Equal Protection"
+    ]
+  },
+  {
+    "name": "Korematsu v. United States",
+    "year": 1944,
+    "description": "Upheld Japanese American internment during wartime but established strict scrutiny for racial classifications.",
+    "issues": [
+      "Equal Protection",
+      "War Powers"
+    ]
+  },
+  {
+    "name": "Ex Parte Endo",
+    "year": 1944,
+    "description": "Ruled that the government could not continue to detain a citizen whose loyalty had been established.",
+    "issues": [
+      "Habeas Corpus",
+      "Executive Power"
+    ]
+  },
+  {
+    "name": "Ex Parte Quirin",
+    "year": 1942,
+    "description": "Held that military tribunals could be used to try unlawful combatants who breached the laws of war.",
+    "issues": [
+      "War Powers",
+      "Military Tribunals"
+    ]
+  },
+  {
+    "name": "United States v. South-Eastern Underwriters Ass'n",
+    "year": 1944,
+    "description": "Held that the insurance industry is subject to the federal commerce power.",
+    "issues": [
+      "Commerce Clause"
+    ]
+  },
+  {
+    "name": "United Public Workers v. Mitchell",
+    "year": 1947,
+    "description": "Upheld restrictions on the political activities of federal executive branch employees.",
+    "issues": [
+      "Separation of Powers",
+      "First Amendment"
+    ]
+  },
+  {
+    "name": "Shelley v. Kraemer",
+    "year": 1948,
+    "description": "Held that judicial enforcement of private racially restrictive covenants is unconstitutional state action.",
+    "issues": [
+      "State Action Doctrine",
+      "Equal Protection"
+    ]
+  },
+  {
+    "name": "Railway Express Agency v. New York",
+    "year": 1949,
+    "description": "Upheld a law regulating truck advertising as a valid exercise of police power under rational basis review.",
+    "issues": [
+      "Equal Protection",
+      "Rational Basis Review"
+    ]
+  },
+  {
+    "name": "Youngstown Sheet & Tube Co. v. Sawyer",
+    "year": 1952,
+    "description": "Established the framework for evaluating executive power, ruling the President cannot seize private property without authority.",
+    "issues": [
+      "Executive Power",
+      "Separation of Powers"
+    ]
+  },
+  {
+    "name": "Brown v. Board of Education",
+    "year": 1954,
+    "description": "Declared that racial segregation in public schools is unconstitutional, overruling separate but equal.",
+    "issues": [
+      "Equal Protection",
+      "Racial Segregation"
+    ]
+  },
+  {
+    "name": "Bolling v. Sharpe",
+    "year": 1954,
+    "description": "Held that the 5th Amendment's Due Process Clause requires racial equality in D.C. schools.",
+    "issues": [
+      "Equal Protection",
+      "Due Process"
+    ]
+  },
+  {
+    "name": "Lee Optical v. Williamson",
+    "year": 1955,
+    "description": "Applied highly deferential rational basis review to a state economic regulation favoring opticians.",
+    "issues": [
+      "Due Process",
+      "Rational Basis Review"
+    ]
+  },
+  {
+    "name": "Sweezy v. New Hampshire",
+    "year": 1957,
+    "description": "Reversed a contempt conviction for a professor, establishing core constitutional protections for academic freedom.",
+    "issues": [
+      "First Amendment",
+      "Academic Freedom"
+    ]
+  },
+  {
+    "name": "Cooper v. Aaron",
+    "year": 1958,
+    "description": "Asserted that Supreme Court decisions are the supreme law of the land and bind all state officials.",
+    "issues": [
+      "Federal Supremacy",
+      "Judicial Review"
+    ]
+  },
+  {
+    "name": "Baker v. Carr",
+    "year": 1962,
+    "description": "Ruled that challenges to legislative apportionment are justiciable and not excluded as political questions.",
+    "issues": [
+      "Political Question Doctrine",
+      "Equal Protection"
+    ]
+  },
+  {
+    "name": "Sherbert v. Verner",
+    "year": 1963,
+    "description": "Established that the state must have a compelling interest to deny benefits based on religious practices.",
+    "issues": [
+      "Free Exercise Clause"
+    ]
+  },
+  {
+    "name": "Heart of Atlanta Motel v. United States",
+    "year": 1964,
+    "description": "Upheld the Civil Rights Act's ban on discrimination in public accommodations via the Commerce Clause.",
+    "issues": [
+      "Commerce Clause",
+      "Civil Rights"
+    ]
+  },
+  {
+    "name": "Katzenbach v. McClung",
+    "year": 1964,
+    "description": "Confirmed that federal civil rights laws apply to local businesses that purchase supplies through interstate commerce.",
+    "issues": [
+      "Commerce Clause",
+      "Civil Rights"
+    ]
+  },
+  {
+    "name": "Griswold v. Connecticut",
+    "year": 1965,
+    "description": "Found a constitutional right to privacy that protects the use of contraceptives by married couples.",
+    "issues": [
+      "Right to Privacy",
+      "Substantive Due Process"
+    ]
+  },
+  {
+    "name": "United States v. Brown",
+    "year": 1965,
+    "description": "Struck down a law prohibiting members of the Communist Party from serving as labor union officers as a bill of attainder.",
+    "issues": [
+      "Bill of Attainder Clause"
+    ]
+  },
+  {
+    "name": "Katzenbach v. Morgan",
+    "year": 1966,
+    "description": "Upheld federal power to protect voting rights regardless of state literacy requirements under the 14th Amendment.",
+    "issues": [
+      "14th Amendment",
+      "Voting Rights"
+    ]
+  },
+  {
+    "name": "South Carolina v. Katzenbach",
+    "year": 1966,
+    "description": "Upheld the Voting Rights Act of 1965 as a valid exercise of Congress's power to enforce the 15th Amendment.",
+    "issues": [
+      "Voting Rights",
+      "Federalism"
+    ]
+  },
+  {
+    "name": "Loving v. Virginia",
+    "year": 1967,
+    "description": "Struck down laws prohibiting interracial marriage as a violation of equal protection and fundamental rights.",
+    "issues": [
+      "Equal Protection",
+      "Fundamental Rights"
+    ]
+  },
+  {
+    "name": "Keyishian v. Board of Regents",
+    "year": 1967,
+    "description": "Struck down teacher loyalty oaths and recognized academic freedom as a core constitutional protection.",
+    "issues": [
+      "First Amendment",
+      "Academic Freedom"
+    ]
+  },
+  {
+    "name": "Lemon v. Kurtzman",
+    "year": 1971,
+    "description": "Established the Lemon test for determining whether government action violates the Establishment Clause.",
+    "issues": [
+      "Establishment Clause"
+    ]
+  },
+  {
+    "name": "Roe v. Wade",
+    "year": 1973,
+    "description": "Recognized a constitutional right to abortion based on a right to privacy derived from the 14th Amendment.",
+    "issues": [
+      "Right to Privacy",
+      "Substantive Due Process"
+    ]
+  },
+  {
+    "name": "United States v. Nixon",
+    "year": 1974,
+    "description": "Ruled that executive privilege is not absolute and cannot be used to withhold evidence from a criminal trial.",
+    "issues": [
+      "Executive Privilege",
+      "Separation of Powers"
+    ]
+  },
+  {
+    "name": "Milliken v. Bradley",
+    "year": 1974,
+    "description": "Restricted court-ordered desegregation to within individual districts unless inter-district intent was shown.",
+    "issues": [
+      "Equal Protection",
+      "Racial Segregation"
+    ]
+  },
+  {
+    "name": "Buckley v. Valeo",
+    "year": 1976,
+    "description": "Upheld limits on political contributions but struck down limits on campaign expenditures as free speech violations.",
+    "issues": [
+      "First Amendment",
+      "Free Speech"
+    ]
+  },
+  {
+    "name": "Fitzpatrick v. Bitzer",
+    "year": 1976,
+    "description": "Held that Congress can abrogate state sovereign immunity under its 14th Amendment enforcement powers.",
+    "issues": [
+      "14th Amendment",
+      "Sovereign Immunity"
+    ]
+  },
+  {
+    "name": "Craig v. Boren",
+    "year": 1976,
+    "description": "Established intermediate scrutiny as the standard of review for gender-based classifications.",
+    "issues": [
+      "Equal Protection",
+      "Gender Discrimination"
+    ]
+  },
+  {
+    "name": "Washington v. Davis",
+    "year": 1976,
+    "description": "Held that proof of discriminatory intent is required to establish a violation of the Equal Protection Clause.",
+    "issues": [
+      "Equal Protection",
+      "Discriminatory Intent"
+    ]
+  },
+  {
+    "name": "Mathews v. Eldridge",
+    "year": 1977,
+    "description": "Established a balancing test to determine the procedural due process required before government action.",
+    "issues": [
+      "Procedural Due Process"
+    ]
+  },
+  {
+    "name": "Hunt v. Washington State Apple Advertising Commission",
+    "year": 1977,
+    "description": "Struck down a state law that discriminated against out-of-state producers under the Dormant Commerce Clause.",
+    "issues": [
+      "Dormant Commerce Clause"
+    ]
+  },
+  {
+    "name": "Regents of the Univ. of Cal. v. Bakke",
+    "year": 1978,
+    "description": "Upheld the use of race as an admission factor while prohibiting fixed racial quotas.",
+    "issues": [
+      "Equal Protection",
+      "Affirmative Action"
+    ]
+  },
+  {
+    "name": "Hicklin v. Orbeck",
+    "year": 1978,
+    "description": "Struck down an Alaska Hire law as a violation of the Privileges and Immunities Clause of Article IV.",
+    "issues": [
+      "Privileges and Immunities Clause"
+    ]
+  },
+  {
+    "name": "Hodel v. Virginia Surface Mining",
+    "year": 1981,
+    "description": "Upheld federal surface mining regulations as a valid exercise of the commerce power.",
+    "issues": [
+      "Commerce Clause",
+      "10th Amendment"
+    ]
+  },
+  {
+    "name": "Dames & Moore v. Regan",
+    "year": 1981,
+    "description": "Upheld presidential orders suspending claims against Iran during a crisis, citing congressional acquiescence.",
+    "issues": [
+      "Executive Power",
+      "Separation of Powers"
+    ]
+  },
+  {
+    "name": "City of Los Angeles v. Lyons",
+    "year": 1983,
+    "description": "Held that a plaintiff lacked standing to seek an injunction against police chokeholds without proof of future injury.",
+    "issues": [
+      "Standing",
+      "Article III"
+    ]
+  },
+  {
+    "name": "INS v. Chadha",
+    "year": 1983,
+    "description": "Struck down the legislative veto as a violation of the requirements for bicameralism and presentment.",
+    "issues": [
+      "Separation of Powers",
+      "Legislative Power"
+    ]
+  },
+  {
+    "name": "Allen v. Wright",
+    "year": 1984,
+    "description": "Held that parents lacked standing to challenge IRS tax exemptions for discriminatory private schools.",
+    "issues": [
+      "Standing",
+      "Article III"
+    ]
+  },
+  {
+    "name": "Garcia v. San Antonio MTA",
+    "year": 1985,
+    "description": "Held that federalism limits on commerce power are primarily maintained through the political process.",
+    "issues": [
+      "Commerce Clause",
+      "Federalism"
+    ]
+  },
+  {
+    "name": "Maine v. Taylor",
+    "year": 1986,
+    "description": "Upheld a state ban on imported baitfish under the Dormant Commerce Clause for environmental protection.",
+    "issues": [
+      "Dormant Commerce Clause"
+    ]
+  },
+  {
+    "name": "Morrison v. Olson",
+    "year": 1988,
+    "description": "Upheld the Independent Counsel Act, ruling that it did not unconstitutionally interfere with executive power.",
+    "issues": [
+      "Executive Power",
+      "Separation of Powers"
+    ]
+  },
+  {
+    "name": "Texas v. Johnson",
+    "year": 1989,
+    "description": "Ruled that flag burning is protected symbolic speech under the First Amendment.",
+    "issues": [
+      "First Amendment",
+      "Free Speech"
+    ]
+  },
+  {
+    "name": "Lujan v. Defenders of Wildlife",
+    "year": 1992,
+    "description": "Articulated the modern standing test requiring injury-in-fact, causation, and redressability.",
+    "issues": [
+      "Standing",
+      "Article III"
+    ]
+  },
+  {
+    "name": "Planned Parenthood v. Casey",
+    "year": 1992,
+    "description": "Affirmed the core right to abortion while replacing the trimester framework with the undue burden test.",
+    "issues": [
+      "Right to Privacy",
+      "Substantive Due Process"
+    ]
+  },
+  {
+    "name": "New York v. United States",
+    "year": 1992,
+    "description": "Held that the federal government cannot commandeer state legislatures by forcing them to enact specific laws.",
+    "issues": [
+      "Federalism",
+      "10th Amendment"
+    ]
+  },
+  {
+    "name": "Church of Lukumi Babalu Aye v. Hialeah",
+    "year": 1993,
+    "description": "Struck down local ordinances that targeted the specific religious practice of animal sacrifice.",
+    "issues": [
+      "Free Exercise Clause"
+    ]
+  },
+  {
+    "name": "Wisconsin v. Mitchell",
+    "year": 1993,
+    "description": "Upheld a penalty-enhancement statute for bias-motivated crimes against a First Amendment challenge.",
+    "issues": [
+      "First Amendment",
+      "Free Speech"
+    ]
+  },
+  {
+    "name": "United States v. Lopez",
+    "year": 1995,
+    "description": "Struck down a federal law banning guns in schools for exceeding Congress's power under the Commerce Clause.",
+    "issues": [
+      "Commerce Clause",
+      "Federalism"
+    ]
+  },
+  {
+    "name": "BMW v. Gore",
+    "year": 1996,
+    "description": "Held that grossly excessive punitive damage awards violate the Due Process Clause.",
+    "issues": [
+      "Due Process",
+      "Punitive Damages"
+    ]
+  },
+  {
+    "name": "Romer v. Evans",
+    "year": 1996,
+    "description": "Struck down a state amendment targeting LGBTQ+ individuals for exclusion from anti-discrimination laws.",
+    "issues": [
+      "Equal Protection",
+      "Rational Basis Review"
+    ]
+  },
+  {
+    "name": "United States v. Virginia",
+    "year": 1996,
+    "description": "Ruled that the male-only admissions policy of a state military college violated the Equal Protection Clause.",
+    "issues": [
+      "Equal Protection",
+      "Gender Discrimination"
+    ]
+  },
+  {
+    "name": "City of Boerne v. Flores",
+    "year": 1997,
+    "description": "Held that Congress's 14th Amendment enforcement power is limited to congruence and proportionality.",
+    "issues": [
+      "14th Amendment",
+      "Religious Freedom"
+    ]
+  },
+  {
+    "name": "Printz v. United States",
+    "year": 1997,
+    "description": "Held that the federal government cannot commandeer state executive officials to implement federal laws.",
+    "issues": [
+      "Federalism",
+      "10th Amendment"
+    ]
+  },
+  {
+    "name": "Clinton v. City of New York",
+    "year": 1998,
+    "description": "Struck down the Line Item Veto Act as a violation of the Presentment Clause.",
+    "issues": [
+      "Separation of Powers",
+      "Executive Power"
+    ]
+  },
+  {
+    "name": "Saenz v. Roe",
+    "year": 1999,
+    "description": "Struck down state laws limiting welfare benefits for new residents as a violation of the right to travel.",
+    "issues": [
+      "Privileges or Immunities Clause",
+      "Right to Travel"
+    ]
+  },
+  {
+    "name": "Troxel v. Granville",
+    "year": 2000,
+    "description": "Struck down a grandparent visitation statute that interfered with the fundamental rights of parents.",
+    "issues": [
+      "Substantive Due Process",
+      "Fundamental Rights"
+    ]
+  },
+  {
+    "name": "United States v. Morrison",
+    "year": 2000,
+    "description": "Ruled that the Commerce Clause does not permit Congress to regulate non-economic violent crime.",
+    "issues": [
+      "Commerce Clause",
+      "Federalism"
+    ]
+  },
+  {
+    "name": "Board of Trustees of the Univ. of Alabama v. Garrett",
+    "year": 2001,
+    "description": "Held that the 11th Amendment prevents private individuals from suing states for money damages under the ADA.",
+    "issues": [
+      "Sovereign Immunity",
+      "11th Amendment"
+    ]
+  },
+  {
+    "name": "Lawrence v. Texas",
+    "year": 2003,
+    "description": "Ruled that the government cannot criminalize private, consensual sexual conduct between adults.",
+    "issues": [
+      "Right to Privacy",
+      "Due Process"
+    ]
+  },
+  {
+    "name": "Nevada Dept. of Human Resources v. Hibbs",
+    "year": 2003,
+    "description": "Upheld federal leave laws against state sovereign immunity as a remedy for gender discrimination.",
+    "issues": [
+      "14th Amendment",
+      "Sovereign Immunity"
+    ]
+  },
+  {
+    "name": "Stogner v. California",
+    "year": 2003,
+    "description": "Ruled that retroactively extending a statute of limitations to revive expired claims violates the Ex Post Facto Clause.",
+    "issues": [
+      "Ex Post Facto Clause"
+    ]
+  },
+  {
+    "name": "Tennessee v. Lane",
+    "year": 2004,
+    "description": "Upheld the ADA's requirement for courthouse accessibility as a valid exercise of Section 5 power.",
+    "issues": [
+      "14th Amendment",
+      "Access to Courts"
+    ]
+  },
+  {
+    "name": "Gonzales v. Raich",
+    "year": 2005,
+    "description": "Held that the Commerce Clause allows Congress to prohibit local cultivation and use of marijuana.",
+    "issues": [
+      "Commerce Clause"
+    ]
+  },
+  {
+    "name": "Hamdi v. Rumsfeld",
+    "year": 2004,
+    "description": "Held that a U.S. citizen detained as an enemy combatant has a right to challenge his detention before a neutral decision-maker.",
+    "issues": [
+      "War Powers",
+      "Habeas Corpus"
+    ]
+  },
+  {
+    "name": "Rasul v. Bush",
+    "year": 2004,
+    "description": "Ruled that federal courts have jurisdiction to hear habeas corpus petitions from foreign nationals at Guantanamo Bay.",
+    "issues": [
+      "Habeas Corpus",
+      "War Powers"
+    ]
+  },
+  {
+    "name": "Garcetti v. Ceballos",
+    "year": 2006,
+    "description": "Held that public employees do not have First Amendment protection for speech made pursuant to official duties.",
+    "issues": [
+      "First Amendment",
+      "Free Speech"
+    ]
+  },
+  {
+    "name": "Massachusetts v. EPA",
+    "year": 2007,
+    "description": "Recognized state standing to challenge federal inaction on climate change due to special solicitude.",
+    "issues": [
+      "Standing",
+      "Article III"
+    ]
+  },
+  {
+    "name": "District of Columbia v. Heller",
+    "year": 2008,
+    "description": "Recognized an individual's right to keep and bear arms for self-defense within the home.",
+    "issues": [
+      "Second Amendment"
+    ]
+  },
+  {
+    "name": "Boumediene v. Bush",
+    "year": 2008,
+    "description": "Held that foreign nationals at Guantanamo Bay have a constitutional right to petition for habeas corpus.",
+    "issues": [
+      "Habeas Corpus",
+      "War Powers"
+    ]
+  },
+  {
+    "name": "McDonald v. City of Chicago",
+    "year": 2010,
+    "description": "Incorporated the individual right to bear arms against state and local governments.",
+    "issues": [
+      "Second Amendment",
+      "Incorporation"
+    ]
+  },
+  {
+    "name": "NFIB v. Sebelius",
+    "year": 2012,
+    "description": "Upheld the ACA's individual mandate under the taxing power while limiting commerce power.",
+    "issues": [
+      "Taxing and Spending Clause",
+      "Commerce Clause"
+    ]
+  },
+  {
+    "name": "Shelby County v. Holder",
+    "year": 2013,
+    "description": "Struck down the Voting Rights Act's coverage formula as an unconstitutional burden on state sovereignty.",
+    "issues": [
+      "Voting Rights",
+      "Federalism"
+    ]
+  },
+  {
+    "name": "Clapper v. Amnesty International USA",
+    "year": 2013,
+    "description": "Held that plaintiffs lacked standing to challenge surveillance because their injury was speculative.",
+    "issues": [
+      "Standing",
+      "Article III"
+    ]
+  },
+  {
+    "name": "Obergefell v. Hodges",
+    "year": 2015,
+    "description": "Ruled that the 14th Amendment requires all states to license and recognize same-sex marriages.",
+    "issues": [
+      "Equal Protection",
+      "Fundamental Rights"
+    ]
+  },
+  {
+    "name": "Zivotofsky v. Kerry",
+    "year": 2015,
+    "description": "Held that the President has the exclusive authority to recognize foreign sovereigns and territories.",
+    "issues": [
+      "Executive Power",
+      "Foreign Affairs"
+    ]
+  },
+  {
+    "name": "Gundy v. United States",
+    "year": 2019,
+    "description": "Upheld a broad delegation of authority to the Attorney General, though justices debated the non-delegation doctrine.",
+    "issues": [
+      "Non-delegation Doctrine"
+    ]
+  },
+  {
+    "name": "Rucho v. Common Cause",
+    "year": 2019,
+    "description": "Ruled that claims of partisan gerrymandering are non-justiciable political questions.",
+    "issues": [
+      "Political Question Doctrine",
+      "Redistricting"
+    ]
+  },
+  {
+    "name": "Timbs v. Indiana",
+    "year": 2019,
+    "description": "Formally incorporated the 8th Amendment's protection against excessive fines against state and local governments.",
+    "issues": [
+      "Excessive Fines Clause",
+      "Incorporation"
+    ]
+  },
+  {
+    "name": "Seila Law LLC v. CFPB",
+    "year": 2020,
+    "description": "Held that an agency with a single director removable only for cause violates the separation of powers.",
+    "issues": [
+      "Executive Removal Power",
+      "Separation of Powers"
+    ]
+  },
+  {
+    "name": "Trump v. Vance",
+    "year": 2020,
+    "description": "Held that the Supremacy Clause does not preclude a state grand jury subpoena for a President's records.",
+    "issues": [
+      "Executive Privilege",
+      "Federalism"
+    ]
+  },
+  {
+    "name": "Fulton v. City of Philadelphia",
+    "year": 2021,
+    "description": "Held that Philadelphia's refusal to contract with a Catholic agency violated the Free Exercise Clause.",
+    "issues": [
+      "Free Exercise Clause",
+      "Equal Protection"
+    ]
+  },
+  {
+    "name": "California v. Texas",
+    "year": 2021,
+    "description": "Held that plaintiffs lacked standing to challenge the ACA after the mandate penalty was zeroed out.",
+    "issues": [
+      "Standing",
+      "Affordable Care Act"
+    ]
+  },
+  {
+    "name": "Whole Women's Health v. Jackson",
+    "year": 2021,
+    "description": "Addressed procedural challenges to a Texas law banned abortion through private enforcement.",
+    "issues": [
+      "Abortion",
+      "Standing",
+      "Article III"
+    ]
+  },
+  {
+    "name": "Dobbs v. Jackson Women's Health Organization",
+    "year": 2022,
+    "description": "Overruled Roe and Casey, returning the authority to regulate abortion to the states.",
+    "issues": [
+      "Substantive Due Process",
+      "14th Amendment"
+    ]
+  },
+  {
+    "name": "NY State Rifle & Pistol Ass'n v. Bruen",
+    "year": 2022,
+    "description": "Established a history and tradition test for evaluating the constitutionality of firearm regulations.",
+    "issues": [
+      "Second Amendment"
+    ]
+  },
+  {
+    "name": "Carson v. Makin",
+    "year": 2022,
+    "description": "Held that excluding religious schools from a tuition program violated the Free Exercise Clause.",
+    "issues": [
+      "Free Exercise Clause",
+      "Establishment Clause"
+    ]
+  },
+  {
+    "name": "Egbert v. Boule",
+    "year": 2022,
+    "description": "Held that a Bivens cause of action should not be extended to Fourth Amendment claims in border security.",
+    "issues": [
+      "Bivens Action",
+      "Fourth Amendment"
+    ]
+  },
+  {
+    "name": "Haaland v. Brackeen",
+    "year": 2023,
+    "description": "Upheld the Indian Child Welfare Act against challenges related to federalism and racial classifications.",
+    "issues": [
+      "Federalism",
+      "Equal Protection"
+    ]
+  },
+  {
+    "name": "SFFA v. Harvard",
+    "year": 2023,
+    "description": "Struck down race-conscious university admissions programs as a violation of the Equal Protection Clause.",
+    "issues": [
+      "Equal Protection",
+      "Affirmative Action"
+    ]
+  },
+  {
+    "name": "303 Creative LLC v. Elenis",
+    "year": 2023,
+    "description": "Held that the First Amendment prohibits a state from forcing a designer to create content contrary to their beliefs.",
+    "issues": [
+      "First Amendment",
+      "Free Speech",
+      "Equal Protection"
+    ]
+  },
+  {
+    "name": "United States v. Texas",
+    "year": 2023,
+    "description": "Held that states lacked standing to challenge federal immigration enforcement guidelines.",
+    "issues": [
+      "Standing",
+      "Immigration"
+    ]
+  },
+  {
+    "name": "National Pork Producers Council v. Ross",
+    "year": 2023,
+    "description": "Upheld California's animal welfare regulations against a Dormant Commerce Clause challenge.",
+    "issues": [
+      "Dormant Commerce Clause"
+    ]
+  },
+  {
+    "name": "Trump v. United States",
+    "year": 2024,
+    "description": "Established that former Presidents have broad immunity from criminal prosecution for official acts.",
+    "issues": [
+      "Executive Immunity",
+      "Separation of Powers"
+    ]
+  },
+  {
+    "name": "United States v. Rahimi",
+    "year": 2024,
+    "description": "Upheld firearm restrictions for those under domestic violence restraining orders under the Second Amendment.",
+    "issues": [
+      "Second Amendment"
+    ]
+  },
+  {
+    "name": "Jarkesy v. SEC",
+    "year": 2024,
+    "description": "Held that agencies cannot adjudicate certain fraud claims without a jury trial.",
+    "issues": [
+      "Seventh Amendment",
+      "Separation of Powers"
+    ]
+  },
+  {
+    "name": "Sheetz v. County of El Dorado",
+    "year": 2024,
+    "description": "Held that legislative exactions are subject to constitutional nexus and proportionality tests.",
+    "issues": [
+      "Takings Clause",
+      "Due Process"
+    ]
+  },
+  {
+    "name": "Mahmoud v. Taylor",
+    "year": 2024,
+    "description": "Addressed whether state mandates for inclusive curricula infringed upon parents' free exercise rights.",
+    "issues": [
+      "Free Exercise Clause",
+      "Parental Rights"
+    ]
+  },
+  {
+    "name": "United States v. Skrmetti",
+    "year": 2025,
+    "description": "Upheld a state law banning gender-affirming care for minors, finding no violation of equal protection.",
+    "issues": [
+      "Equal Protection",
+      "Substantive Due Process"
+    ]
+  },
+  {
+    "name": "Trump v. CASA, Inc.",
+    "year": 2025,
+    "description": "Restricted the power of federal courts to issue universal injunctions against federal executive actions.",
+    "issues": [
+      "Remedies",
+      "Article III"
+    ]
+  },
+  {
+    "name": "Louisiana v. Callais",
+    "year": 2025,
+    "description": "Considered whether the creation of majority-Black districts constitutes unconstitutional racial gerrymandering.",
+    "issues": [
+      "Equal Protection",
+      "Voting Rights Act"
+    ]
+  },
+  {
+    "name": "Trump v. Barbara",
+    "year": 2025,
+    "description": "Addressed presidential immunity regarding private civil litigation for conduct prior to taking office.",
+    "issues": [
+      "Executive Immunity"
+    ]
+  },
+  {
+    "name": "Chiles v. Salazar",
+    "year": 2025,
+    "description": "Evaluated whether state bans on conversion therapy for minors violate the speech rights of therapists.",
+    "issues": [
+      "First Amendment",
+      "Police Power"
+    ]
+  },
+  {
+    "name": "Trump v. Cook",
+    "year": 2026,
+    "description": "Examines the President's power to remove independent agency heads and the scope of bank independence.",
+    "issues": [
+      "Executive Removal Power",
+      "Separation of Powers"
+    ]
+  },
+  {
+    "name": "Trump v. Slaughter",
+    "year": 2026,
+    "description": "Challenges the President's removal power over independent commissioners.",
+    "issues": [
+      "Executive Removal Power",
+      "Separation of Powers"
+    ]
+  },
+  {
+    "name": "United States v. O'Brien",
+    "year": 1968,
+    "description": "Established a test for regulating expressive conduct, holding that the government may prohibit draft card burning to protect the administrative need for the draft.",
+    "issues": [
+      "First Amendment",
+      "Free Speech",
+      "Expressive Conduct"
+    ]
+  },
+  {
+    "name": "Tinker v. Des Moines Independent Community School District",
+    "year": 1969,
+    "description": "Held that students do not shed their constitutional rights to freedom of speech at the schoolhouse gate.",
+    "issues": [
+      "First Amendment",
+      "Free Speech",
+      "Student Rights"
+    ]
+  },
+  {
+    "name": "Wisconsin v. Yoder",
+    "year": 1972,
+    "description": "Held that Amish parents' right to the free exercise of religion outweighed the state's interest in compelling school attendance beyond the eighth grade.",
+    "issues": [
+      "Free Exercise Clause",
+      "Parental Rights"
+    ]
+  },
+  {
+    "name": "Cleburne v. Cleburne Living Center, Inc.",
+    "year": 1985,
+    "description": "Ruled that intellectual disability is not a suspect classification, but struck down a zoning ordinance based on irrational prejudice using the rational basis test.",
+    "issues": [
+      "Equal Protection",
+      "Rational Basis Review"
+    ]
+  },
+  {
+    "name": "South Dakota v. Dole",
+    "year": 1987,
+    "description": "Upheld federal power to withhold highway funds from states that did not raise the drinking age, establishing limits on conditional spending.",
+    "issues": [
+      "Taxing and Spending Clause",
+      "Federalism"
+    ]
+  },
+  {
+    "name": "Employment Division v. Smith",
+    "year": 1990,
+    "description": "Held that the state could deny unemployment benefits to individuals who used peyote for religious purposes, as the law was a neutral law of general applicability.",
+    "issues": [
+      "Free Exercise Clause"
+    ]
+  },
+  {
+    "name": "R.A.V. v. City of St. Paul",
+    "year": 1992,
+    "description": "Struck down a bias-motivated crime ordinance as unconstitutional content-based discrimination under the First Amendment.",
+    "issues": [
+      "First Amendment",
+      "Free Speech",
+      "Hate Speech"
+    ]
+  },
+  {
+    "name": "Shaw v. Reno",
+    "year": 1993,
+    "description": "Held that redistricting based on race must be held to a standard of strict scrutiny under the Equal Protection Clause.",
+    "issues": [
+      "Equal Protection",
+      "Redistricting"
+    ]
+  },
+  {
+    "name": "Seminole Tribe of Florida v. Florida",
+    "year": 1996,
+    "description": "Held that Congress could not use its Article I powers to abrogate state sovereign immunity.",
+    "issues": [
+      "11th Amendment",
+      "Sovereign Immunity",
+      "Federalism"
+    ]
+  },
+  {
+    "name": "Gratz v. Bollinger",
+    "year": 2003,
+    "description": "Struck down a university's point-based undergraduate admissions policy as not being sufficiently narrowly tailored to achieve diversity.",
+    "issues": [
+      "Equal Protection",
+      "Affirmative Action"
+    ]
+  },
+  {
+    "name": "Grutter v. Bollinger",
+    "year": 2003,
+    "description": "Upheld a law school's use of race as a holistic factor in admissions, finding a compelling interest in the educational benefits of diversity.",
+    "issues": [
+      "Equal Protection",
+      "Affirmative Action"
+    ]
+  },
+  {
+    "name": "McCreary County v. ACLU of Kentucky",
+    "year": 2005,
+    "description": "Held that the display of the Ten Commandments in two county courthouses violated the Establishment Clause because their purpose was religious.",
+    "issues": [
+      "Establishment Clause"
+    ]
+  },
+  {
+    "name": "Van Orden v. Perry",
+    "year": 2005,
+    "description": "Upheld a Ten Commandments monument on the grounds of a state capitol, finding it had a historical and secular significance.",
+    "issues": [
+      "Establishment Clause"
+    ]
+  },
+  {
+    "name": "Snyder v. Phelps",
+    "year": 2011,
+    "description": "Held that the First Amendment shields those who stage a protest at the funeral of a military service member from tort liability.",
+    "issues": [
+      "First Amendment",
+      "Free Speech"
+    ]
+  },
+  {
+    "name": "Town of Greece v. Galloway",
+    "year": 2014,
+    "description": "Held that a town board's practice of beginning legislative sessions with a sectarian prayer did not violate the Establishment Clause.",
+    "issues": [
+      "Establishment Clause"
+    ]
+  },
+  {
+    "name": "NLRB v. Noel Canning",
+    "year": 2014,
+    "description": "Held that the President's recess appointment power applies to both inter-session and intra-session recesses but is limited by the duration of the recess.",
+    "issues": [
+      "Executive Power",
+      "Recess Appointments Clause",
+      "Separation of Powers"
+    ]
+  },
+  {
+    "name": "American Legion v. American Humanist Association",
+    "year": 2019,
+    "description": "Held that a large cross serving as a war memorial did not violate the Establishment Clause, emphasizing historical significance and tradition.",
+    "issues": [
+      "Establishment Clause"
+    ]
+  }
+]

@@ -1,0 +1,1761 @@
+[
+    {
+        "name": "Chisholm v. Georgia",
+        "year": 1793,
+        "description": "Held that states could be sued in federal court by citizens of other states, leading to the 11th Amendment.",
+        "chief_justice": "John Jay",
+        "issues": [
+            "Federalism",
+            "Sovereign Immunity"
+        ]
+    },
+    {
+        "name": "Calder v. Bull",
+        "year": 1798,
+        "description": "Defined the Ex Post Facto Clause as applying only to criminal laws and not to civil matters.",
+        "chief_justice": "Oliver Ellsworth",
+        "issues": [
+            "Ex Post Facto Clause",
+            "Natural Law"
+        ]
+    },
+    {
+        "name": "Marbury v. Madison",
+        "year": 1803,
+        "description": "Established the principle of judicial review, granting the Supreme Court power to declare laws unconstitutional.",
+        "chief_justice": "John Marshall",
+        "issues": [
+            "Judicial Review",
+            "Article III"
+        ]
+    },
+    {
+        "name": "Martin v. Hunter's Lessee",
+        "year": 1816,
+        "description": "Affirmed the Supreme Court's authority to review state court decisions involving federal law.",
+        "chief_justice": "John Marshall",
+        "issues": [
+            "Federalism",
+            "Federal Jurisdiction"
+        ]
+    },
+    {
+        "name": "McCulloch v. Maryland",
+        "year": 1819,
+        "description": "Interpreted the Necessary and Proper Clause broadly and affirmed the supremacy of federal law over states.",
+        "chief_justice": "John Marshall",
+        "issues": [
+            "Necessary and Proper Clause",
+            "Federal Supremacy"
+        ]
+    },
+    {
+        "name": "Corfield v. Coryell",
+        "year": 1823,
+        "description": "Early circuit court case defining 'privileges and immunities' to include the right to travel and acquire property.",
+        "chief_justice": "Bushrod Washington",
+        "issues": [
+            "Privileges and Immunities Clause"
+        ]
+    },
+    {
+        "name": "Gibbons v. Ogden",
+        "year": 1824,
+        "description": "Defined the federal commerce power broadly to include navigation, asserting it as superior to state regulations.",
+        "chief_justice": "John Marshall",
+        "issues": [
+            "Commerce Clause",
+            "Federal Supremacy"
+        ]
+    },
+    {
+        "name": "Barron v. City of Baltimore",
+        "year": 1833,
+        "description": "Held that the Bill of Rights originally applied only to the federal government and not to the states.",
+        "chief_justice": "John Marshall",
+        "issues": [
+            "Bill of Rights",
+            "Federalism"
+        ]
+    },
+    {
+        "name": "Prigg v. Pennsylvania",
+        "year": 1842,
+        "description": "Held that federal law regarding the return of enslaved people superseded state personal liberty laws.",
+        "chief_justice": "Roger B. Taney",
+        "issues": [
+            "Federal Supremacy",
+            "Fugitive Slave Clause"
+        ]
+    },
+    {
+        "name": "Luther v. Borden",
+        "year": 1849,
+        "description": "Established the political question doctrine regarding the enforcement of the Republican Form of Government Clause.",
+        "chief_justice": "Roger B. Taney",
+        "issues": [
+            "Political Question Doctrine",
+            "Guarantee Clause"
+        ]
+    },
+    {
+        "name": "Dred Scott v. Sandford",
+        "year": 1857,
+        "description": "Ruled that Black people were not citizens and that Congress could not prohibit slavery in federal territories.",
+        "chief_justice": "Roger B. Taney",
+        "issues": [
+            "Citizenship",
+            "Due Process",
+            "Slavery"
+        ]
+    },
+    {
+        "name": "Prize Cases",
+        "year": 1863,
+        "description": "Affirmed the President's power to take military action during an insurrection without a formal declaration of war.",
+        "chief_justice": "Roger B. Taney",
+        "issues": [
+            "Executive Power",
+            "War Powers"
+        ]
+    },
+    {
+        "name": "Ex Parte Milligan",
+        "year": 1866,
+        "description": "Ruled that citizens cannot be tried by military tribunals when civilian courts are still functioning.",
+        "chief_justice": "Salmon P. Chase",
+        "issues": [
+            "Habeas Corpus",
+            "Executive Power"
+        ]
+    },
+    {
+        "name": "Mississippi v. Johnson",
+        "year": 1867,
+        "description": "Held that the President could not be restrained by an injunction from carrying out his executive duties.",
+        "chief_justice": "Salmon P. Chase",
+        "issues": [
+            "Separation of Powers",
+            "Executive Immunity"
+        ]
+    },
+    {
+        "name": "Hepburn v. Griswold",
+        "year": 1870,
+        "description": "One of the Paper Money Cases that initially ruled the Legal Tender Act unconstitutional as applied to prior debts.",
+        "chief_justice": "Salmon P. Chase",
+        "issues": [
+            "Paper Money Cases",
+            "Due Process"
+        ]
+    },
+    {
+        "name": "Knox v. Lee",
+        "year": 1871,
+        "description": "Reversed Hepburn v. Griswold, ruling that the Legal Tender Act was a valid exercise of federal power.",
+        "chief_justice": "Salmon P. Chase",
+        "issues": [
+            "Paper Money Cases",
+            "Implied Powers"
+        ]
+    },
+    {
+        "name": "Slaughterhouse Cases",
+        "year": 1873,
+        "description": "Narrowly interpreted the 14th Amendment's Privileges or Immunities Clause, limiting its impact on state regulations.",
+        "chief_justice": "Salmon P. Chase",
+        "issues": [
+            "Privileges or Immunities Clause",
+            "14th Amendment"
+        ]
+    },
+    {
+        "name": "Bradwell v. Illinois",
+        "year": 1873,
+        "description": "Upheld a state's refusal to license a woman to practice law, reflecting a restrictive view of the 14th Amendment.",
+        "chief_justice": "Salmon P. Chase",
+        "issues": [
+            "Equal Protection",
+            "Gender Discrimination"
+        ]
+    },
+    {
+        "name": "United States v. Cruikshank",
+        "year": 1876,
+        "description": "Held that the 14th Amendment protects only against state action, not private acts of violence or conspiracy.",
+        "chief_justice": "Morrison Waite",
+        "issues": [
+            "State Action Doctrine",
+            "14th Amendment"
+        ]
+    },
+    {
+        "name": "Reynolds v. United States",
+        "year": 1878,
+        "description": "Established that while religious belief is protected, religious conduct that violates neutral laws is not.",
+        "chief_justice": "Morrison Waite",
+        "issues": [
+            "Free Exercise Clause"
+        ]
+    },
+    {
+        "name": "Strauder v. West Virginia",
+        "year": 1880,
+        "description": "Struck down a law excluding Black citizens from juries as a violation of the Equal Protection Clause.",
+        "chief_justice": "Morrison Waite",
+        "issues": [
+            "Equal Protection",
+            "Jury Selection"
+        ]
+    },
+    {
+        "name": "Civil Rights Cases",
+        "year": 1883,
+        "description": "Held that Congress lacks the power to prohibit private racial discrimination under the 14th Amendment.",
+        "chief_justice": "Morrison Waite",
+        "issues": [
+            "Equal Protection",
+            "State Action Doctrine"
+        ]
+    },
+    {
+        "name": "Elk v. Wilkins",
+        "year": 1884,
+        "description": "Held that Native Americans born on reservations were not citizens under the 14th Amendment.",
+        "chief_justice": "Morrison Waite",
+        "issues": [
+            "Citizenship",
+            "14th Amendment"
+        ]
+    },
+    {
+        "name": "Yick Wo v. Hopkins",
+        "year": 1886,
+        "description": "Held that a facially neutral law administered in a discriminatory manner violates the Equal Protection Clause.",
+        "chief_justice": "Morrison Waite",
+        "issues": [
+            "Equal Protection",
+            "Discriminatory Intent"
+        ]
+    },
+    {
+        "name": "Hans v. Louisiana",
+        "year": 1890,
+        "description": "Extended state sovereign immunity to prevent a state from being sued in federal court by its own citizens.",
+        "chief_justice": "Melville Fuller",
+        "issues": [
+            "11th Amendment",
+            "Sovereign Immunity"
+        ]
+    },
+    {
+        "name": "In re Neagle",
+        "year": 1890,
+        "description": "Affirmed the President's power to protect federal judges without an express statutory mandate.",
+        "chief_justice": "Melville Fuller",
+        "issues": [
+            "Executive Power",
+            "Take Care Clause"
+        ]
+    },
+    {
+        "name": "E.C. Knight Co.",
+        "year": 1895,
+        "description": "Limited the Commerce Clause by distinguishing between manufacturing and the interstate commerce that follows it.",
+        "chief_justice": "Melville Fuller",
+        "issues": [
+            "Commerce Clause",
+            "Federalism"
+        ]
+    },
+    {
+        "name": "United States v. E.C. Knight Co.",
+        "year": 1895,
+        "description": "The Sugar Trust Case that limited commerce power by distinguishing manufacturing from interstate commerce.",
+        "chief_justice": "Melville Fuller",
+        "issues": [
+            "Commerce Clause",
+            "Federalism"
+        ]
+    },
+    {
+        "name": "Plessy v. Ferguson",
+        "year": 1896,
+        "description": "Established the 'separate but equal' doctrine, upholding state-mandated racial segregation.",
+        "chief_justice": "Melville Fuller",
+        "issues": [
+            "Equal Protection",
+            "Racial Segregation"
+        ]
+    },
+    {
+        "name": "Chicago, Burlington & Quincy Railroad Co. v. Chicago",
+        "year": 1897,
+        "description": "The first case to incorporate a protection from the Bill of Rights (Just Compensation) against the states.",
+        "chief_justice": "Melville Fuller",
+        "issues": [
+            "Takings Clause",
+            "Incorporation"
+        ]
+    },
+    {
+        "name": "Wong Kim Ark",
+        "year": 1898,
+        "description": "Established birthright citizenship under the 14th Amendment for children born in the U.S. to non-citizens.",
+        "chief_justice": "Melville Fuller",
+        "issues": [
+            "Citizenship",
+            "14th Amendment"
+        ]
+    },
+    {
+        "name": "Champion v. Ames",
+        "year": 1903,
+        "description": "Held that federal commerce power includes the ability to prohibit the interstate transport of specific items.",
+        "chief_justice": "Melville Fuller",
+        "issues": [
+            "Commerce Clause",
+            "Police Power"
+        ]
+    },
+    {
+        "name": "Lochner v. New York",
+        "year": 1905,
+        "description": "Struck down a limit on bakers' working hours as a violation of the freedom of contract.",
+        "chief_justice": "Melville Fuller",
+        "issues": [
+            "Substantive Due Process",
+            "Freedom of Contract"
+        ]
+    },
+    {
+        "name": "Jacobson v. Massachusetts",
+        "year": 1905,
+        "description": "Upheld the state's power to enforce compulsory vaccination laws for the protection of public health.",
+        "chief_justice": "Melville Fuller",
+        "issues": [
+            "Police Power",
+            "Substantive Due Process"
+        ]
+    },
+    {
+        "name": "Muller v. Oregon",
+        "year": 1908,
+        "description": "Upheld a law limiting work hours for women, distinguishing it from Lochner based on perceived physical differences.",
+        "chief_justice": "Melville Fuller",
+        "issues": [
+            "Substantive Due Process",
+            "Gender Discrimination"
+        ]
+    },
+    {
+        "name": "Hipolite Egg Co. v. United States",
+        "year": 1911,
+        "description": "Upheld the Pure Food and Drug Act, allowing federal seizure of adulterated goods transported in interstate commerce.",
+        "chief_justice": "Edward Douglass White",
+        "issues": [
+            "Commerce Clause",
+            "Police Power"
+        ]
+    },
+    {
+        "name": "Shreveport Rate Cases",
+        "year": 1914,
+        "description": "Allowed federal regulation of intrastate rail rates that had a substantial effect on interstate commerce.",
+        "chief_justice": "Edward Douglass White",
+        "issues": [
+            "Commerce Clause"
+        ]
+    },
+    {
+        "name": "Hammer v. Dagenhart",
+        "year": 1918,
+        "description": "Struck down federal child labor laws as an unconstitutional intrusion into local state matters.",
+        "chief_justice": "Edward Douglass White",
+        "issues": [
+            "Commerce Clause",
+            "10th Amendment"
+        ]
+    },
+    {
+        "name": "Selective Draft Law Cases",
+        "year": 1918,
+        "description": "Upheld the military draft, ruling it did not violate the 13th Amendment or religious freedom.",
+        "chief_justice": "Edward Douglass White",
+        "issues": [
+            "War Powers",
+            "13th Amendment"
+        ]
+    },
+    {
+        "name": "Schenck v. United States",
+        "year": 1919,
+        "description": "Established the clear and present danger test for evaluating government restrictions on speech.",
+        "chief_justice": "Edward Douglass White",
+        "issues": [
+            "First Amendment",
+            "Free Speech"
+        ]
+    },
+    {
+        "name": "Adkins v. Children's Hospital",
+        "year": 1923,
+        "description": "Struck down minimum wage laws for women as a violation of the freedom of contract.",
+        "chief_justice": "William Howard Taft",
+        "issues": [
+            "Substantive Due Process",
+            "Freedom of Contract"
+        ]
+    },
+    {
+        "name": "Meyer v. Nebraska",
+        "year": 1923,
+        "description": "Recognized the right of parents to direct the education of their children as a fundamental liberty.",
+        "chief_justice": "William Howard Taft",
+        "issues": [
+            "Substantive Due Process",
+            "Fundamental Rights"
+        ]
+    },
+    {
+        "name": "Pierce v. Society of Sisters",
+        "year": 1925,
+        "description": "Affirmed the right of parents to choose private or parochial schools for their children.",
+        "chief_justice": "William Howard Taft",
+        "issues": [
+            "Substantive Due Process",
+            "Fundamental Rights"
+        ]
+    },
+    {
+        "name": "Buck v. Bell",
+        "year": 1927,
+        "description": "Upheld state eugenics laws allowing forced sterilization of those deemed socially inadequate.",
+        "chief_justice": "William Howard Taft",
+        "issues": [
+            "Substantive Due Process"
+        ]
+    },
+    {
+        "name": "Gong Lum v. Rice",
+        "year": 1927,
+        "description": "Upheld the racial segregation of a Chinese-American student in Mississippi under the separate but equal doctrine.",
+        "chief_justice": "William Howard Taft",
+        "issues": [
+            "Equal Protection",
+            "Racial Segregation"
+        ]
+    },
+    {
+        "name": "Nebbia v. New York",
+        "year": 1934,
+        "description": "Held that the state could regulate the price of milk for the public welfare, signaling a shift in due process.",
+        "chief_justice": "Charles Evans Hughes",
+        "issues": [
+            "Substantive Due Process"
+        ]
+    },
+    {
+        "name": "Schechter Poultry Corp. v. United States",
+        "year": 1935,
+        "description": "Struck down New Deal codes as unconstitutional delegations of legislative authority to the executive branch.",
+        "chief_justice": "Charles Evans Hughes",
+        "issues": [
+            "Non-delegation Doctrine",
+            "Commerce Clause"
+        ]
+    },
+    {
+        "name": "Humphrey's Executor v. United States",
+        "year": 1935,
+        "description": "Limited the President's power to remove heads of independent regulatory agencies at will.",
+        "chief_justice": "Charles Evans Hughes",
+        "issues": [
+            "Executive Removal Power",
+            "Separation of Powers"
+        ]
+    },
+    {
+        "name": "United States v. Butler",
+        "year": 1936,
+        "description": "Held that the federal government could not use the taxing and spending power to regulate local agricultural production.",
+        "chief_justice": "Charles Evans Hughes",
+        "issues": [
+            "Taxing and Spending Clause",
+            "Federalism"
+        ]
+    },
+    {
+        "name": "West Coast Hotel v. Parrish",
+        "year": 1937,
+        "description": "Upheld minimum wage laws for women, effectively ending the Lochner-era freedom of contract doctrine.",
+        "chief_justice": "Charles Evans Hughes",
+        "issues": [
+            "Substantive Due Process"
+        ]
+    },
+    {
+        "name": "NLRB v. Jones & Laughlin Steel Corp.",
+        "year": 1937,
+        "description": "Greatly expanded federal power by allowing regulation of local activities that substantially affect commerce.",
+        "chief_justice": "Charles Evans Hughes",
+        "issues": [
+            "Commerce Clause"
+        ]
+    },
+    {
+        "name": "United States v. Carolene Products",
+        "year": 1938,
+        "description": "Established the rational basis test for economic laws while hinting at higher scrutiny for protected groups.",
+        "chief_justice": "Charles Evans Hughes",
+        "issues": [
+            "Rational Basis Review",
+            "Equal Protection"
+        ]
+    },
+    {
+        "name": "United States v. Darby",
+        "year": 1941,
+        "description": "Overruled Hammer v. Dagenhart, confirming federal power to regulate labor conditions affecting interstate competition.",
+        "chief_justice": "Harlan F. Stone",
+        "issues": [
+            "Commerce Clause",
+            "10th Amendment"
+        ]
+    },
+    {
+        "name": "Wickard v. Filburn",
+        "year": 1942,
+        "description": "Held that federal commerce power reaches purely local production if the aggregate effect impacts the national market.",
+        "chief_justice": "Harlan F. Stone",
+        "issues": [
+            "Commerce Clause"
+        ]
+    },
+    {
+        "name": "Ex Parte Quirin",
+        "year": 1942,
+        "description": "Held that military tribunals could be used to try unlawful combatants who breached the laws of war.",
+        "chief_justice": "Harlan F. Stone",
+        "issues": [
+            "War Powers",
+            "Military Tribunals"
+        ]
+    },
+    {
+        "name": "Hirabayashi v. United States",
+        "year": 1943,
+        "description": "Upheld a wartime curfew for Japanese Americans, citing military necessity.",
+        "chief_justice": "Harlan F. Stone",
+        "issues": [
+            "War Powers",
+            "Equal Protection"
+        ]
+    },
+    {
+        "name": "Korematsu v. United States",
+        "year": 1944,
+        "description": "Upheld Japanese American internment during wartime but established strict scrutiny for racial classifications.",
+        "chief_justice": "Harlan F. Stone",
+        "issues": [
+            "Equal Protection",
+            "War Powers"
+        ]
+    },
+    {
+        "name": "Ex Parte Endo",
+        "year": 1944,
+        "description": "Ruled that the government could not continue to detain a citizen whose loyalty had been established.",
+        "chief_justice": "Harlan F. Stone",
+        "issues": [
+            "Habeas Corpus",
+            "Executive Power"
+        ]
+    },
+    {
+        "name": "United States v. South-Eastern Underwriters Ass'n",
+        "year": 1944,
+        "description": "Held that the insurance industry is subject to the federal commerce power.",
+        "chief_justice": "Harlan F. Stone",
+        "issues": [
+            "Commerce Clause"
+        ]
+    },
+    {
+        "name": "United Public Workers v. Mitchell",
+        "year": 1947,
+        "description": "Upheld federal restrictions on the political activities of executive branch employees.",
+        "chief_justice": "Fred M. Vinson",
+        "issues": [
+            "Separation of Powers",
+            "First Amendment"
+        ]
+    },
+    {
+        "name": "Shelley v. Kraemer",
+        "year": 1948,
+        "description": "Held that judicial enforcement of private racially restrictive covenants is unconstitutional state action.",
+        "chief_justice": "Fred M. Vinson",
+        "issues": [
+            "State Action Doctrine",
+            "Equal Protection"
+        ]
+    },
+    {
+        "name": "Railway Express Agency v. New York",
+        "year": 1949,
+        "description": "Upheld a law regulating truck advertising as a valid exercise of police power under rational basis review.",
+        "chief_justice": "Fred M. Vinson",
+        "issues": [
+            "Equal Protection",
+            "Rational Basis Review"
+        ]
+    },
+    {
+        "name": "Youngstown Sheet & Tube Co. v. Sawyer",
+        "year": 1952,
+        "description": "Ruled that the President cannot seize private steel mills without specific congressional or constitutional authority.",
+        "chief_justice": "Fred M. Vinson",
+        "issues": [
+            "Executive Power",
+            "Separation of Powers"
+        ]
+    },
+    {
+        "name": "Brown v. Board of Education",
+        "year": 1954,
+        "description": "Declared that racial segregation in public schools is unconstitutional, overruling the 'separate but equal' doctrine.",
+        "chief_justice": "Earl Warren",
+        "issues": [
+            "Equal Protection",
+            "Racial Segregation"
+        ]
+    },
+    {
+        "name": "Bolling v. Sharpe",
+        "year": 1954,
+        "description": "Held that the 5th Amendment's Due Process Clause requires racial equality in D.C. schools.",
+        "chief_justice": "Earl Warren",
+        "issues": [
+            "Equal Protection",
+            "Due Process"
+        ]
+    },
+    {
+        "name": "Lee Optical v. Williamson",
+        "year": 1955,
+        "description": "Applied highly deferential rational basis review to a state economic regulation favoring opticians.",
+        "chief_justice": "Earl Warren",
+        "issues": [
+            "Due Process",
+            "Rational Basis Review"
+        ]
+    },
+    {
+        "name": "Sweezy v. New Hampshire",
+        "year": 1957,
+        "description": "Overturned a conviction for refusing to answer questions about academic lectures, emphasizing academic freedom.",
+        "chief_justice": "Earl Warren",
+        "issues": [
+            "First Amendment",
+            "Academic Freedom"
+        ]
+    },
+    {
+        "name": "Cooper v. Aaron",
+        "year": 1958,
+        "description": "Asserted that Supreme Court decisions are the supreme law of the land and must be followed by state officials.",
+        "chief_justice": "Earl Warren",
+        "issues": [
+            "Federal Supremacy",
+            "Judicial Review"
+        ]
+    },
+    {
+        "name": "Baker v. Carr",
+        "year": 1962,
+        "description": "Ruled that challenges to legislative apportionment are justiciable and not excluded by the political question doctrine.",
+        "chief_justice": "Earl Warren",
+        "issues": [
+            "Political Question Doctrine",
+            "Equal Protection"
+        ]
+    },
+    {
+        "name": "Sherbert v. Verner",
+        "year": 1963,
+        "description": "Established that the state must have a compelling interest to deny benefits based on religious practices.",
+        "chief_justice": "Earl Warren",
+        "issues": [
+            "Free Exercise Clause"
+        ]
+    },
+    {
+        "name": "Heart of Atlanta Motel v. United States",
+        "year": 1964,
+        "description": "Upheld the Civil Rights Act's ban on discrimination in public accommodations via the Commerce Clause.",
+        "chief_justice": "Earl Warren",
+        "issues": [
+            "Commerce Clause",
+            "Civil Rights"
+        ]
+    },
+    {
+        "name": "Katzenbach v. McClung",
+        "year": 1964,
+        "description": "Confirmed that federal civil rights laws apply to local businesses that participate in interstate commerce.",
+        "chief_justice": "Earl Warren",
+        "issues": [
+            "Commerce Clause",
+            "Civil Rights"
+        ]
+    },
+    {
+        "name": "Griswold v. Connecticut",
+        "year": 1965,
+        "description": "Found a constitutional right to privacy that protects the use of contraceptives by married couples.",
+        "chief_justice": "Earl Warren",
+        "issues": [
+            "Right to Privacy",
+            "Substantive Due Process"
+        ]
+    },
+    {
+        "name": "United States v. Brown",
+        "year": 1965,
+        "description": "Struck down a law prohibiting members of the Communist Party from serving as labor union officers as a bill of attainder.",
+        "chief_justice": "Earl Warren",
+        "issues": [
+            "Bill of Attainder Clause"
+        ]
+    },
+    {
+        "name": "South Carolina v. Katzenbach",
+        "year": 1966,
+        "description": "Upheld the Voting Rights Act of 1965 as a valid exercise of Congress's power to enforce the 15th Amendment.",
+        "chief_justice": "Earl Warren",
+        "issues": [
+            "Voting Rights",
+            "Federalism"
+        ]
+    },
+    {
+        "name": "Katzenbach v. Morgan",
+        "year": 1966,
+        "description": "Upheld federal power to protect voting rights regardless of state literacy requirements under the 14th Amendment.",
+        "chief_justice": "Earl Warren",
+        "issues": [
+            "14th Amendment",
+            "Voting Rights"
+        ]
+    },
+    {
+        "name": "Loving v. Virginia",
+        "year": 1967,
+        "description": "Struck down laws prohibiting interracial marriage as violations of equal protection and due process.",
+        "chief_justice": "Earl Warren",
+        "issues": [
+            "Equal Protection",
+            "Fundamental Rights"
+        ]
+    },
+    {
+        "name": "Keyishian v. Board of Regents",
+        "year": 1967,
+        "description": "Struck down teacher loyalty oaths and recognized academic freedom as a core constitutional protection.",
+        "chief_justice": "Earl Warren",
+        "issues": [
+            "First Amendment",
+            "Academic Freedom"
+        ]
+    },
+    {
+        "name": "United States v. O'Brien",
+        "year": 1968,
+        "description": "Established a test for regulating expressive conduct, holding that the government may prohibit draft card burning to protect the administrative need for the draft.",
+        "chief_justice": "Earl Warren",
+        "issues": [
+            "First Amendment",
+            "Free Speech",
+            "Expressive Conduct"
+        ]
+    },
+    {
+        "name": "Tinker v. Des Moines Independent Community School District",
+        "year": 1969,
+        "description": "Held that students do not shed their constitutional rights to freedom of speech at the schoolhouse gate.",
+        "chief_justice": "Earl Warren",
+        "issues": [
+            "First Amendment",
+            "Free Speech",
+            "Student Rights"
+        ]
+    },
+    {
+        "name": "Lemon v. Kurtzman",
+        "year": 1971,
+        "description": "Established the Lemon test for determining whether government action violates the Establishment Clause.",
+        "chief_justice": "Warren E. Burger",
+        "issues": [
+            "Establishment Clause"
+        ]
+    },
+    {
+        "name": "Wisconsin v. Yoder",
+        "year": 1972,
+        "description": "Held that Amish parents' right to the free exercise of religion outweighed the state's interest in compelling school attendance beyond the eighth grade.",
+        "chief_justice": "Warren E. Burger",
+        "issues": [
+            "Free Exercise Clause",
+            "Parental Rights"
+        ]
+    },
+    {
+        "name": "Roe v. Wade",
+        "year": 1973,
+        "description": "Recognized a constitutional right to abortion based on a right to privacy derived from the 14th Amendment.",
+        "chief_justice": "Warren E. Burger",
+        "issues": [
+            "Right to Privacy",
+            "Substantive Due Process"
+        ]
+    },
+    {
+        "name": "United States v. Nixon",
+        "year": 1974,
+        "description": "Ruled that executive privilege is not absolute and cannot be used to withhold evidence from a criminal trial.",
+        "chief_justice": "Warren E. Burger",
+        "issues": [
+            "Executive Privilege",
+            "Separation of Powers"
+        ]
+    },
+    {
+        "name": "Milliken v. Bradley",
+        "year": 1974,
+        "description": "Restricted the scope of court-ordered desegregation to within individual school districts unless inter-district intent was shown.",
+        "chief_justice": "Warren E. Burger",
+        "issues": [
+            "Equal Protection",
+            "Racial Segregation"
+        ]
+    },
+    {
+        "name": "Fitzpatrick v. Bitzer",
+        "year": 1976,
+        "description": "Held that Congress can abrogate state sovereign immunity under its 14th Amendment enforcement powers.",
+        "chief_justice": "Warren E. Burger",
+        "issues": [
+            "14th Amendment",
+            "Sovereign Immunity"
+        ]
+    },
+    {
+        "name": "Craig v. Boren",
+        "year": 1976,
+        "description": "Established intermediate scrutiny as the standard of review for gender-based classifications.",
+        "chief_justice": "Warren E. Burger",
+        "issues": [
+            "Equal Protection",
+            "Gender Discrimination"
+        ]
+    },
+    {
+        "name": "Washington v. Davis",
+        "year": 1976,
+        "description": "Held that proof of discriminatory intent is required to establish a violation of the Equal Protection Clause.",
+        "chief_justice": "Warren E. Burger",
+        "issues": [
+            "Equal Protection",
+            "Discriminatory Intent"
+        ]
+    },
+    {
+        "name": "Buckley v. Valeo",
+        "year": 1976,
+        "description": "Upheld limits on political contributions but struck down limits on campaign expenditures as free speech violations.",
+        "chief_justice": "Warren E. Burger",
+        "issues": [
+            "First Amendment",
+            "Free Speech"
+        ]
+    },
+    {
+        "name": "Mathews v. Eldridge",
+        "year": 1977,
+        "description": "Established a balancing test to determine the specific procedural due process required before government action.",
+        "chief_justice": "Warren E. Burger",
+        "issues": [
+            "Procedural Due Process"
+        ]
+    },
+    {
+        "name": "Hunt v. Washington State Apple Advertising Commission",
+        "year": 1977,
+        "description": "Struck down a state law that discriminated against out-of-state producers under the Dormant Commerce Clause.",
+        "chief_justice": "Warren E. Burger",
+        "issues": [
+            "Dormant Commerce Clause"
+        ]
+    },
+    {
+        "name": "Regents of the Univ. of Cal. v. Bakke",
+        "year": 1978,
+        "description": "Upheld the use of race as a factor in admissions but prohibited racial quotas in higher education.",
+        "chief_justice": "Warren E. Burger",
+        "issues": [
+            "Equal Protection",
+            "Affirmative Action"
+        ]
+    },
+    {
+        "name": "Hicklin v. Orbeck",
+        "year": 1978,
+        "description": "Struck down an Alaska Hire law as a violation of the Privileges and Immunities Clause of Article IV.",
+        "chief_justice": "Warren E. Burger",
+        "issues": [
+            "Privileges and Immunities Clause"
+        ]
+    },
+    {
+        "name": "Hodel v. Virginia Surface Mining",
+        "year": 1981,
+        "description": "Upheld federal surface mining regulations as a valid exercise of the commerce power.",
+        "chief_justice": "Warren E. Burger",
+        "issues": [
+            "Commerce Clause",
+            "10th Amendment"
+        ]
+    },
+    {
+        "name": "Dames & Moore v. Regan",
+        "year": 1981,
+        "description": "Upheld presidential orders suspending claims against Iran during a crisis, citing congressional acquiescence.",
+        "chief_justice": "Warren E. Burger",
+        "issues": [
+            "Executive Power",
+            "Separation of Powers"
+        ]
+    },
+    {
+        "name": "City of Los Angeles v. Lyons",
+        "year": 1983,
+        "description": "Held that a plaintiff lacked standing to seek an injunction against police chokeholds without proof of future injury.",
+        "chief_justice": "Warren E. Burger",
+        "issues": [
+            "Standing",
+            "Article III"
+        ]
+    },
+    {
+        "name": "INS v. Chadha",
+        "year": 1983,
+        "description": "Struck down the legislative veto as a violation of the requirements for bicameralism and presentment.",
+        "chief_justice": "Warren E. Burger",
+        "issues": [
+            "Separation of Powers",
+            "Legislative Power"
+        ]
+    },
+    {
+        "name": "Allen v. Wright",
+        "year": 1984,
+        "description": "Held that parents lacked standing to challenge IRS tax exemptions for discriminatory private schools.",
+        "chief_justice": "Warren E. Burger",
+        "issues": [
+            "Standing",
+            "Article III"
+        ]
+    },
+    {
+        "name": "Garcia v. San Antonio MTA",
+        "year": 1985,
+        "description": "Held that federalism limits on the commerce power are primarily maintained through the political process.",
+        "chief_justice": "Warren E. Burger",
+        "issues": [
+            "Commerce Clause",
+            "Federalism"
+        ]
+    },
+    {
+        "name": "Cleburne v. Cleburne Living Center, Inc.",
+        "year": 1985,
+        "description": "Ruled that intellectual disability is not a suspect classification, but struck down a zoning ordinance based on irrational prejudice using the rational basis test.",
+        "chief_justice": "Warren E. Burger",
+        "issues": [
+            "Equal Protection",
+            "Rational Basis Review"
+        ]
+    },
+    {
+        "name": "Maine v. Taylor",
+        "year": 1986,
+        "description": "Upheld a state ban on imported baitfish under the Dormant Commerce Clause for legitimate local health reasons.",
+        "chief_justice": "William Rehnquist",
+        "issues": [
+            "Dormant Commerce Clause"
+        ]
+    },
+    {
+        "name": "South Dakota v. Dole",
+        "year": 1987,
+        "description": "Upheld federal power to withhold highway funds from states that did not raise the drinking age, establishing limits on conditional spending.",
+        "chief_justice": "William Rehnquist",
+        "issues": [
+            "Taxing and Spending Clause",
+            "Federalism"
+        ]
+    },
+    {
+        "name": "Morrison v. Olson",
+        "year": 1988,
+        "description": "Upheld the Independent Counsel Act, ruling that it did not unconstitutionally interfere with executive power.",
+        "chief_justice": "William Rehnquist",
+        "issues": [
+            "Executive Power",
+            "Separation of Powers"
+        ]
+    },
+    {
+        "name": "Texas v. Johnson",
+        "year": 1989,
+        "description": "Ruled that flag burning is protected symbolic speech under the First Amendment.",
+        "chief_justice": "William Rehnquist",
+        "issues": [
+            "First Amendment",
+            "Free Speech"
+        ]
+    },
+    {
+        "name": "Employment Division v. Smith",
+        "year": 1990,
+        "description": "Held that the state could deny unemployment benefits to individuals who used peyote for religious purposes, as the law was a neutral law of general applicability.",
+        "chief_justice": "William Rehnquist",
+        "issues": [
+            "Free Exercise Clause"
+        ]
+    },
+    {
+        "name": "Lujan v. Defenders of Wildlife",
+        "year": 1992,
+        "description": "Articulated the modern standing test requiring injury-in-fact, causation, and redressability.",
+        "chief_justice": "William Rehnquist",
+        "issues": [
+            "Standing",
+            "Article III"
+        ]
+    },
+    {
+        "name": "R.A.V. v. City of St. Paul",
+        "year": 1992,
+        "description": "Struck down a bias-motivated crime ordinance as unconstitutional content-based discrimination under the First Amendment.",
+        "chief_justice": "William Rehnquist",
+        "issues": [
+            "First Amendment",
+            "Free Speech",
+            "Hate Speech"
+        ]
+    },
+    {
+        "name": "Planned Parenthood v. Casey",
+        "year": 1992,
+        "description": "Affirmed the core right to abortion while replacing the trimester framework with the undue burden test.",
+        "chief_justice": "William Rehnquist",
+        "issues": [
+            "Right to Privacy",
+            "Substantive Due Process"
+        ]
+    },
+    {
+        "name": "New York v. United States",
+        "year": 1992,
+        "description": "Held that the federal government cannot commandeer state legislatures by forcing them to enact specific laws.",
+        "chief_justice": "William Rehnquist",
+        "issues": [
+            "Federalism",
+            "10th Amendment"
+        ]
+    },
+    {
+        "name": "Shaw v. Reno",
+        "year": 1993,
+        "description": "Held that redistricting based on race must be held to a standard of strict scrutiny under the Equal Protection Clause.",
+        "chief_justice": "William Rehnquist",
+        "issues": [
+            "Equal Protection",
+            "Redistricting"
+        ]
+    },
+    {
+        "name": "Church of Lukumi Babalu Aye v. Hialeah",
+        "year": 1993,
+        "description": "Struck down local ordinances that targeted the specific religious practice of animal sacrifice.",
+        "chief_justice": "William Rehnquist",
+        "issues": [
+            "Free Exercise Clause"
+        ]
+    },
+    {
+        "name": "Wisconsin v. Mitchell",
+        "year": 1993,
+        "description": "Upheld a penalty-enhancement statute for bias-motivated crimes against a First Amendment challenge.",
+        "chief_justice": "William Rehnquist",
+        "issues": [
+            "First Amendment",
+            "Free Speech"
+        ]
+    },
+    {
+        "name": "United States v. Lopez",
+        "year": 1995,
+        "description": "Struck down a federal law banning guns in schools for exceeding Congress's power under the Commerce Clause.",
+        "chief_justice": "William Rehnquist",
+        "issues": [
+            "Commerce Clause",
+            "Federalism"
+        ]
+    },
+    {
+        "name": "BMW v. Gore",
+        "year": 1996,
+        "description": "Held that grossly excessive punitive damage awards violate the Due Process Clause.",
+        "chief_justice": "William Rehnquist",
+        "issues": [
+            "Due Process",
+            "Punitive Damages"
+        ]
+    },
+    {
+        "name": "Romer v. Evans",
+        "year": 1996,
+        "description": "Struck down a state amendment targeting LGBTQ+ individuals using the rational basis test with 'teeth.'",
+        "chief_justice": "William Rehnquist",
+        "issues": [
+            "Equal Protection",
+            "Rational Basis Review"
+        ]
+    },
+    {
+        "name": "United States v. Virginia",
+        "year": 1996,
+        "description": "Ruled that the male-only admissions policy of a state military college violated the Equal Protection Clause.",
+        "chief_justice": "William Rehnquist",
+        "issues": [
+            "Equal Protection",
+            "Gender Discrimination"
+        ]
+    },
+    {
+        "name": "Seminole Tribe of Florida v. Florida",
+        "year": 1996,
+        "description": "Held that Congress could not use its Article I powers to abrogate state sovereign immunity.",
+        "chief_justice": "William Rehnquist",
+        "issues": [
+            "11th Amendment",
+            "Sovereign Immunity",
+            "Federalism"
+        ]
+    },
+    {
+        "name": "City of Boerne v. Flores",
+        "year": 1997,
+        "description": "Held that Congress's 14th Amendment enforcement power is limited to 'congruence and proportionality.'",
+        "chief_justice": "William Rehnquist",
+        "issues": [
+            "14th Amendment",
+            "Religious Freedom"
+        ]
+    },
+    {
+        "name": "Printz v. United States",
+        "year": 1997,
+        "description": "Held that the federal government cannot commandeer state executive officials to implement federal laws.",
+        "chief_justice": "William Rehnquist",
+        "issues": [
+            "Federalism",
+            "10th Amendment"
+        ]
+    },
+    {
+        "name": "Clinton v. City of New York",
+        "year": 1998,
+        "description": "Struck down the Line Item Veto Act as a violation of the Presentment Clause.",
+        "chief_justice": "William Rehnquist",
+        "issues": [
+            "Separation of Powers",
+            "Executive Power"
+        ]
+    },
+    {
+        "name": "Saenz v. Roe",
+        "year": 1999,
+        "description": "Struck down state laws limiting benefits for new residents as a violation of the right to travel.",
+        "chief_justice": "William Rehnquist",
+        "issues": [
+            "Privileges or Immunities Clause",
+            "Right to Travel"
+        ]
+    },
+    {
+        "name": "United States v. Morrison",
+        "year": 2000,
+        "description": "Ruled that Congress cannot regulate non-economic violent crime under the Commerce Clause.",
+        "chief_justice": "William Rehnquist",
+        "issues": [
+            "Commerce Clause",
+            "Federalism"
+        ]
+    },
+    {
+        "name": "Troxel v. Granville",
+        "year": 2000,
+        "description": "Struck down a grandparent visitation statute that interfered with the fundamental rights of parents.",
+        "chief_justice": "William Rehnquist",
+        "issues": [
+            "Substantive Due Process",
+            "Fundamental Rights"
+        ]
+    },
+    {
+        "name": "Board of Trustees of the Univ. of Alabama v. Garrett",
+        "year": 2001,
+        "description": "Held that the 11th Amendment prevents private individuals from suing states for money damages under the ADA.",
+        "chief_justice": "William Rehnquist",
+        "issues": [
+            "Sovereign Immunity",
+            "11th Amendment"
+        ]
+    },
+    {
+        "name": "Lawrence v. Texas",
+        "year": 2003,
+        "description": "Ruled that the government cannot criminalize private, consensual sexual conduct between adults.",
+        "chief_justice": "William Rehnquist",
+        "issues": [
+            "Right to Privacy",
+            "Due Process"
+        ]
+    },
+    {
+        "name": "Nevada Dept. of Human Resources v. Hibbs",
+        "year": 2003,
+        "description": "Upheld federal leave laws against state sovereign immunity as a remedy for gender discrimination history.",
+        "chief_justice": "William Rehnquist",
+        "issues": [
+            "14th Amendment",
+            "Sovereign Immunity"
+        ]
+    },
+    {
+        "name": "Gratz v. Bollinger",
+        "year": 2003,
+        "description": "Struck down a university's point-based undergraduate admissions policy as not being sufficiently narrowly tailored to achieve diversity.",
+        "chief_justice": "William Rehnquist",
+        "issues": [
+            "Equal Protection",
+            "Affirmative Action"
+        ]
+    },
+    {
+        "name": "Grutter v. Bollinger",
+        "year": 2003,
+        "description": "Upheld a law school's use of race as a holistic factor in admissions, finding a compelling interest in the educational benefits of diversity.",
+        "chief_justice": "William Rehnquist",
+        "issues": [
+            "Equal Protection",
+            "Affirmative Action"
+        ]
+    },
+    {
+        "name": "Stogner v. California",
+        "year": 2003,
+        "description": "Ruled that retroactively extending a statute of limitations to revive expired claims violates the Ex Post Facto Clause.",
+        "chief_justice": "William Rehnquist",
+        "issues": [
+            "Ex Post Facto Clause"
+        ]
+    },
+    {
+        "name": "Tennessee v. Lane",
+        "year": 2004,
+        "description": "Upheld the ADA's requirement for courthouse accessibility as a valid exercise of Section 5 power.",
+        "chief_justice": "William Rehnquist",
+        "issues": [
+            "14th Amendment",
+            "Access to Courts"
+        ]
+    },
+    {
+        "name": "Hamdi v. Rumsfeld",
+        "year": 2004,
+        "description": "Held that a U.S. citizen detained as an enemy combatant has a right to challenge his detention before a neutral decision-maker.",
+        "chief_justice": "William Rehnquist",
+        "issues": [
+            "War Powers",
+            "Habeas Corpus"
+        ]
+    },
+    {
+        "name": "Rasul v. Bush",
+        "year": 2004,
+        "description": "Ruled that federal courts have jurisdiction to hear habeas corpus petitions from foreign nationals at Guantanamo Bay.",
+        "chief_justice": "William Rehnquist",
+        "issues": [
+            "Habeas Corpus",
+            "War Powers"
+        ]
+    },
+    {
+        "name": "McCreary County v. ACLU of Kentucky",
+        "year": 2005,
+        "description": "Held that the display of the Ten Commandments in two county courthouses violated the Establishment Clause because their purpose was religious.",
+        "chief_justice": "William Rehnquist",
+        "issues": [
+            "Establishment Clause"
+        ]
+    },
+    {
+        "name": "Van Orden v. Perry",
+        "year": 2005,
+        "description": "Upheld a Ten Commandments monument on the grounds of a state capitol, finding it had a historical and secular significance.",
+        "chief_justice": "William Rehnquist",
+        "issues": [
+            "Establishment Clause"
+        ]
+    },
+    {
+        "name": "Gonzales v. Raich",
+        "year": 2005,
+        "description": "Held that the Commerce Clause allows Congress to prohibit local cultivation and use of marijuana.",
+        "chief_justice": "William Rehnquist",
+        "issues": [
+            "Commerce Clause"
+        ]
+    },
+    {
+        "name": "Garcetti v. Ceballos",
+        "year": 2006,
+        "description": "Held that public employees do not have First Amendment protection for speech made pursuant to official duties.",
+        "chief_justice": "John Roberts",
+        "issues": [
+            "First Amendment",
+            "Free Speech"
+        ]
+    },
+    {
+        "name": "Massachusetts v. EPA",
+        "year": 2007,
+        "description": "Recognized state standing to challenge federal inaction on climate change due to a state's 'special solicitude.'",
+        "chief_justice": "John Roberts",
+        "issues": [
+            "Standing",
+            "Article III"
+        ]
+    },
+    {
+        "name": "District of Columbia v. Heller",
+        "year": 2008,
+        "description": "Recognized an individual's right to keep and bear arms for self-defense within the home.",
+        "chief_justice": "John Roberts",
+        "issues": [
+            "Second Amendment"
+        ]
+    },
+    {
+        "name": "Boumediene v. Bush",
+        "year": 2008,
+        "description": "Held that foreign nationals at Guantanamo Bay have a constitutional right to petition for habeas corpus.",
+        "chief_justice": "John Roberts",
+        "issues": [
+            "Habeas Corpus",
+            "War Powers"
+        ]
+    },
+    {
+        "name": "McDonald v. City of Chicago",
+        "year": 2010,
+        "description": "Incorporated the individual right to bear arms against state and local governments.",
+        "chief_justice": "John Roberts",
+        "issues": [
+            "Second Amendment",
+            "Incorporation"
+        ]
+    },
+    {
+        "name": "Snyder v. Phelps",
+        "year": 2011,
+        "description": "Held that the First Amendment shields those who stage a protest at the funeral of a military service member from tort liability.",
+        "chief_justice": "John Roberts",
+        "issues": [
+            "First Amendment",
+            "Free Speech"
+        ]
+    },
+    {
+        "name": "NFIB v. Sebelius",
+        "year": 2012,
+        "description": "Upheld the Affordable Care Act's individual mandate under the taxing power while limiting commerce power.",
+        "chief_justice": "John Roberts",
+        "issues": [
+            "Taxing and Spending Clause",
+            "Commerce Clause"
+        ]
+    },
+    {
+        "name": "Shelby County v. Holder",
+        "year": 2013,
+        "description": "Struck down the Voting Rights Act's coverage formula as an unconstitutional burden on state sovereignty.",
+        "chief_justice": "John Roberts",
+        "issues": [
+            "Voting Rights",
+            "Federalism"
+        ]
+    },
+    {
+        "name": "Clapper v. Amnesty International USA",
+        "year": 2013,
+        "description": "Held that plaintiffs lacked standing to challenge surveillance because their injury was speculative.",
+        "chief_justice": "John Roberts",
+        "issues": [
+            "Standing",
+            "Article III"
+        ]
+    },
+    {
+        "name": "Town of Greece v. Galloway",
+        "year": 2014,
+        "description": "Held that a town board's practice of beginning legislative sessions with a sectarian prayer did not violate the Establishment Clause.",
+        "chief_justice": "John Roberts",
+        "issues": [
+            "Establishment Clause"
+        ]
+    },
+    {
+        "name": "NLRB v. Noel Canning",
+        "year": 2014,
+        "description": "Held that the President's recess appointment power applies to both inter-session and intra-session recesses but is limited by the duration of the recess.",
+        "chief_justice": "John Roberts",
+        "issues": [
+            "Executive Power",
+            "Recess Appointments Clause",
+            "Separation of Powers"
+        ]
+    },
+    {
+        "name": "Obergefell v. Hodges",
+        "year": 2015,
+        "description": "Ruled that the 14th Amendment requires all states to license and recognize same-sex marriages.",
+        "chief_justice": "John Roberts",
+        "issues": [
+            "Equal Protection",
+            "Fundamental Rights"
+        ]
+    },
+    {
+        "name": "Zivotofsky v. Kerry",
+        "year": 2015,
+        "description": "Held that the President has the exclusive authority to recognize foreign sovereigns and territories.",
+        "chief_justice": "John Roberts",
+        "issues": [
+            "Executive Power",
+            "Foreign Affairs"
+        ]
+    },
+    {
+        "name": "Rucho v. Common Cause",
+        "year": 2019,
+        "description": "Ruled that claims of partisan gerrymandering are non-justiciable political questions.",
+        "chief_justice": "John Roberts",
+        "issues": [
+            "Political Question Doctrine",
+            "Redistricting"
+        ]
+    },
+    {
+        "name": "American Legion v. American Humanist Association",
+        "year": 2019,
+        "description": "Held that a large cross serving as a war memorial did not violate the Establishment Clause, emphasizing historical significance and tradition.",
+        "chief_justice": "John Roberts",
+        "issues": [
+            "Establishment Clause"
+        ]
+    },
+    {
+        "name": "Gundy v. United States",
+        "year": 2019,
+        "description": "Upheld a broad delegation of authority to the Attorney General, though justices debated the non-delegation doctrine.",
+        "chief_justice": "John Roberts",
+        "issues": [
+            "Non-delegation Doctrine"
+        ]
+    },
+    {
+        "name": "Timbs v. Indiana",
+        "year": 2019,
+        "description": "Formally incorporated the 8th Amendment's protection against excessive fines against state and local governments.",
+        "chief_justice": "John Roberts",
+        "issues": [
+            "Excessive Fines Clause",
+            "Incorporation"
+        ]
+    },
+    {
+        "name": "Seila Law LLC v. CFPB",
+        "year": 2020,
+        "description": "Held that an agency with a single director removable only for cause violates the separation of powers.",
+        "chief_justice": "John Roberts",
+        "issues": [
+            "Executive Removal Power",
+            "Separation of Powers"
+        ]
+    },
+    {
+        "name": "Trump v. Vance",
+        "year": 2020,
+        "description": "Held that the Supremacy Clause does not preclude a state grand jury subpoena for a President's records.",
+        "chief_justice": "John Roberts",
+        "issues": [
+            "Executive Privilege",
+            "Federalism"
+        ]
+    },
+    {
+        "name": "Fulton v. City of Philadelphia",
+        "year": 2021,
+        "description": "Held that Philadelphia's refusal to contract with a Catholic agency violated the Free Exercise Clause.",
+        "chief_justice": "John Roberts",
+        "issues": [
+            "Free Exercise Clause",
+            "Equal Protection"
+        ]
+    },
+    {
+        "name": "California v. Texas",
+        "year": 2021,
+        "description": "Held that plaintiffs lacked standing to challenge the ACA after the mandate penalty was zeroed out.",
+        "chief_justice": "John Roberts",
+        "issues": [
+            "Standing",
+            "Affordable Care Act"
+        ]
+    },
+    {
+        "name": "Whole Women's Health v. Jackson",
+        "year": 2021,
+        "description": "Addressed procedural challenges to a Texas law banned abortion through private enforcement.",
+        "chief_justice": "John Roberts",
+        "issues": [
+            "Abortion",
+            "Standing",
+            "Article III"
+        ]
+    },
+    {
+        "name": "Dobbs v. Jackson Women's Health Organization",
+        "year": 2022,
+        "description": "Overruled Roe and Casey, returning the authority to regulate abortion to the states.",
+        "chief_justice": "John Roberts",
+        "issues": [
+            "Substantive Due Process",
+            "14th Amendment"
+        ]
+    },
+    {
+        "name": "NY State Rifle & Pistol Ass'n v. Bruen",
+        "year": 2022,
+        "description": "Established a 'history and tradition' test for evaluating the constitutionality of firearm regulations.",
+        "chief_justice": "John Roberts",
+        "issues": [
+            "Second Amendment"
+        ]
+    },
+    {
+        "name": "Carson v. Makin",
+        "year": 2022,
+        "description": "Held that excluding religious schools from a tuition program violated the Free Exercise Clause.",
+        "chief_justice": "John Roberts",
+        "issues": [
+            "Free Exercise Clause",
+            "Establishment Clause"
+        ]
+    },
+    {
+        "name": "Egbert v. Boule",
+        "year": 2022,
+        "description": "Held that a Bivens cause of action should not be extended to Fourth Amendment claims in border security.",
+        "chief_justice": "John Roberts",
+        "issues": [
+            "Bivens Action",
+            "Fourth Amendment"
+        ]
+    },
+    {
+        "name": "SFFA v. Harvard",
+        "year": 2023,
+        "description": "Struck down race-conscious university admissions programs as a violation of the Equal Protection Clause.",
+        "chief_justice": "John Roberts",
+        "issues": [
+            "Equal Protection",
+            "Affirmative Action"
+        ]
+    },
+    {
+        "name": "Haaland v. Brackeen",
+        "year": 2023,
+        "description": "Upheld the Indian Child Welfare Act against challenges related to federalism and racial classifications.",
+        "chief_justice": "John Roberts",
+        "issues": [
+            "Federalism",
+            "Equal Protection"
+        ]
+    },
+    {
+        "name": "303 Creative LLC v. Elenis",
+        "year": 2023,
+        "description": "Held that the First Amendment prohibits a state from forcing a designer to create content contrary to their beliefs.",
+        "chief_justice": "John Roberts",
+        "issues": [
+            "First Amendment",
+            "Free Speech",
+            "Equal Protection"
+        ]
+    },
+    {
+        "name": "United States v. Texas",
+        "year": 2023,
+        "description": "Held that states lacked standing to challenge federal immigration enforcement guidelines.",
+        "chief_justice": "John Roberts",
+        "issues": [
+            "Standing",
+            "Immigration"
+        ]
+    },
+    {
+        "name": "National Pork Producers Council v. Ross",
+        "year": 2023,
+        "description": "Upheld California's animal welfare regulations against a Dormant Commerce Clause challenge.",
+        "chief_justice": "John Roberts",
+        "issues": [
+            "Dormant Commerce Clause"
+        ]
+    },
+    {
+        "name": "Trump v. United States",
+        "year": 2024,
+        "description": "Recognized broad criminal immunity for a President's official acts performed while in office.",
+        "chief_justice": "John Roberts",
+        "issues": [
+            "Executive Immunity",
+            "Separation of Powers"
+        ]
+    },
+    {
+        "name": "United States v. Rahimi",
+        "year": 2024,
+        "description": "Upheld firearm restrictions for those under domestic violence restraining orders under the Second Amendment.",
+        "chief_justice": "John Roberts",
+        "issues": [
+            "Second Amendment"
+        ]
+    },
+    {
+        "name": "Jarkesy v. SEC",
+        "year": 2024,
+        "description": "Held that agencies cannot adjudicate certain fraud claims without a jury trial.",
+        "chief_justice": "John Roberts",
+        "issues": [
+            "Seventh Amendment",
+            "Separation of Powers"
+        ]
+    },
+    {
+        "name": "Sheetz v. County of El Dorado",
+        "year": 2024,
+        "description": "Held that legislative exactions are subject to constitutional nexus and proportionality tests.",
+        "chief_justice": "John Roberts",
+        "issues": [
+            "Takings Clause",
+            "Due Process"
+        ]
+    },
+    {
+        "name": "Mahmoud v. Taylor",
+        "year": 2024,
+        "description": "Addressed whether state mandates for inclusive curricula infringed upon parents' free exercise rights.",
+        "chief_justice": "John Roberts",
+        "issues": [
+            "Free Exercise Clause",
+            "Parental Rights"
+        ]
+    },
+    {
+        "name": "United States v. Skrmetti",
+        "year": 2025,
+        "description": "Upheld a state law banning gender-affirming care for minors, applying rational basis review.",
+        "chief_justice": "John Roberts",
+        "issues": [
+            "Equal Protection",
+            "Substantive Due Process"
+        ]
+    },
+    {
+        "name": "Trump v. CASA, Inc.",
+        "year": 2025,
+        "description": "Limited the equitable power of federal courts to issue 'universal' or nationwide injunctions against federal policies.",
+        "chief_justice": "John Roberts",
+        "issues": [
+            "Remedies",
+            "Article III",
+            "Federal Court Power"
+        ]
+    },
+    {
+        "name": "Louisiana v. Callais",
+        "year": 2025,
+        "description": "Considered whether the creation of majority-Black districts to comply with the VRA constitutes unconstitutional racial gerrymandering.",
+        "chief_justice": "John Roberts",
+        "issues": [
+            "Equal Protection",
+            "Voting Rights Act"
+        ]
+    },
+    {
+        "name": "Trump v. Barbara",
+        "year": 2025,
+        "description": "Addressed presidential immunity regarding private civil litigation for conduct prior to taking office.",
+        "chief_justice": "John Roberts",
+        "issues": [
+            "Executive Immunity"
+        ]
+    },
+    {
+        "name": "Chiles v. Salazar",
+        "year": 2025,
+        "description": "Evaluated whether state bans on conversion therapy for minors violate the speech rights of therapists.",
+        "chief_justice": "John Roberts",
+        "issues": [
+            "First Amendment",
+            "Police Power"
+        ]
+    },
+    {
+        "name": "Trump v. Cook",
+        "year": 2026,
+        "description": "Examines the President's power to remove a Federal Reserve Governor and the nature of central bank independence.",
+        "chief_justice": "John Roberts",
+        "issues": [
+            "Executive Removal Power",
+            "Separation of Powers"
+        ]
+    },
+    {
+        "name": "Trump v. Slaughter",
+        "year": 2026,
+        "description": "Tests the limits of the Humphrey's Executor precedent regarding the President's power to remove independent commissioners.",
+        "chief_justice": "John Roberts",
+        "issues": [
+            "Executive Removal Power",
+            "Separation of Powers"
+        ]
+    }
+]
