@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import StructuredSearch from '@/components/StructuredSearch';
 import QueryBuilder from '@/components/QueryBuilder';
@@ -13,11 +14,23 @@ export default function Home() {
       <div className="border-b">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between mb-2">
-            <div>
-              <h1 className="text-2xl font-bold">ConLaw Cases</h1>
-              <p className="text-sm text-muted-foreground">
-                Constitutional Law Database
-              </p>
+            <div className="flex items-center gap-4">
+              <Image
+                src="/con-law-cases-app-icon.png"
+                alt="ConLaw Cases"
+                width={64}
+                height={64}
+                className="rounded-lg"
+              />
+              <div>
+                <h1 className="text-2xl font-bold">ConLaw Cases</h1>
+                <p className="text-sm text-muted-foreground">
+                  Constitutional Law Database
+                </p>
+                <p className="text-xs text-muted-foreground">
+                  Professor Seth J. Chandler, University of Houston Law Center
+                </p>
+              </div>
             </div>
             <SettingsPanel />
           </div>
