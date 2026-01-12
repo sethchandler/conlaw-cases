@@ -294,15 +294,6 @@ export default function ChatInterface() {
         content: m.content,
       }));
 
-      // Debug: log what we're sending
-      console.log('Chat request:', {
-        historyLength: conversationHistory.length,
-        history: conversationHistory,
-        currentQuestion: userQuestion,
-        useGeneralKnowledge,
-        casesFound: cases.length,
-      });
-
       // Step 2: Generate response using RAG with conversation history
       const result = await chatWithRAG(provider, apiKey, model, userQuestion, cases, conversationHistory, useGeneralKnowledge);
 
