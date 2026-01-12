@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
 import { Card } from '@/components/ui/card';
 import { ExternalLink, Plus, MessageSquare, Trash2, Menu, X, Download, Brain } from 'lucide-react';
-import { chatWithRAG } from '@/lib/ai/providers';
+import { chatWithRAG, type ConversationMessage } from '@/lib/ai/providers';
 import { getPrimaryUrl } from '@/lib/case-url';
 import type { AIProviderName } from '@/types/ai';
 
@@ -284,8 +284,14 @@ export default function ChatInterface() {
         url: getPrimaryUrl(c),
       }));
 
-      // Step 2: Generate response using RAG
-      const result = await chatWithRAG(provider, apiKey, model, userQuestion, cases, useGeneralKnowledge);
+      // Build conversation history from previous messages (excluding the just-added user message)
+      const conversationHistory: ConversationMessage[] = currentMessages.map(m => ({
+        role: m.role,
+        content: m.content,
+      }));
+
+      // Step 2: Generate response using RAG with conversation history
+      const result = await chatWithRAG(provider, apiKey, model, userQuestion, cases, conversationHistory, useGeneralKnowledge);
 
       if (result.error) {
         throw new Error(result.error);
