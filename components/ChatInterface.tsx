@@ -100,6 +100,10 @@ export default function ChatInterface() {
   const [aiConfig, setAiConfig] = useState<{ provider: string; model: string } | null>(null);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
+  // Keep a ref to threads that's always current (avoids stale closure issues)
+  const threadsRef = useRef<ChatThread[]>(threads);
+  threadsRef.current = threads;
+
   // Load AI config from localStorage
   useEffect(() => {
     const provider = localStorage.getItem('ai-provider');
@@ -256,8 +260,8 @@ export default function ChatInterface() {
     setInput('');
     setError('');
 
-    // Add user message immediately
-    const currentMessages = threads.find(t => t.id === threadId)?.messages || [];
+    // Add user message immediately (use ref to avoid stale closure)
+    const currentMessages = threadsRef.current.find(t => t.id === threadId)?.messages || [];
     const updatedMessages = [...currentMessages, { role: 'user' as const, content: userQuestion }];
     updateThreadMessages(threadId, updatedMessages);
 
@@ -289,6 +293,15 @@ export default function ChatInterface() {
         role: m.role,
         content: m.content,
       }));
+
+      // Debug: log what we're sending
+      console.log('Chat request:', {
+        historyLength: conversationHistory.length,
+        history: conversationHistory,
+        currentQuestion: userQuestion,
+        useGeneralKnowledge,
+        casesFound: cases.length,
+      });
 
       // Step 2: Generate response using RAG with conversation history
       const result = await chatWithRAG(provider, apiKey, model, userQuestion, cases, conversationHistory, useGeneralKnowledge);
