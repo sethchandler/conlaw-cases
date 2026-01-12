@@ -11,7 +11,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
-import { X, ExternalLink } from 'lucide-react';
+import { X, ExternalLink, Download } from 'lucide-react';
 import { getPrimaryUrl } from '@/lib/case-url';
 import type { CaseWithChiefJustice } from '@/types/case';
 
@@ -222,6 +222,70 @@ export default function StructuredSearch() {
     return prov ? prov.name : id;
   };
 
+  // Export results to markdown
+  const exportToMarkdown = () => {
+    if (results.length === 0) return;
+
+    const lines: string[] = [
+      `# Search Results`,
+      `*Exported from ConLaw Cases on ${new Date().toLocaleDateString()}*`,
+      '',
+    ];
+
+    // Document the filters used
+    const filters: string[] = [];
+    if (selectedIssues.length > 0) filters.push(`**Issues:** ${selectedIssues.join(', ')}`);
+    if (selectedTriggers.length > 0) filters.push(`**Triggers:** ${selectedTriggers.join(', ')}`);
+    if (selectedProvisions.length > 0) filters.push(`**Provisions:** ${selectedProvisions.map(getProvisionName).join(', ')}`);
+    if (selectedChiefJustice) filters.push(`**Chief Justice:** ${selectedChiefJustice}`);
+    if (yearMin || yearMax) filters.push(`**Years:** ${yearMin || '?'} - ${yearMax || '?'}`);
+    if (textSearch) filters.push(`**Text Search:** "${textSearch}"`);
+
+    if (filters.length > 0) {
+      lines.push('## Filters');
+      lines.push(filters.join('  \n'));
+      lines.push('');
+    }
+
+    lines.push(`## Results (${results.length} cases)`);
+    lines.push('');
+
+    for (const c of results) {
+      lines.push(`### ${c.name} (${c.year})`);
+      lines.push(`**Chief Justice:** ${c.chief_justice_name}`);
+      lines.push('');
+      if (c.description) lines.push(c.description);
+      lines.push('');
+      if (c.issues && c.issues.length > 0) {
+        lines.push(`**Topics:** ${c.issues.join(', ')}`);
+      }
+      if (c.provisions && c.provisions.length > 0) {
+        lines.push(`**Provisions:** ${c.provisions.join(', ')}`);
+      }
+      if (c.trigger_types && c.trigger_types.length > 0) {
+        lines.push(`**Triggers:** ${c.trigger_types.join(', ')}`);
+      }
+      const url = getPrimaryUrl(c);
+      if (url) {
+        lines.push(`**Opinion:** [Link](${url})`);
+      }
+      lines.push('');
+      lines.push('---');
+      lines.push('');
+    }
+
+    const markdown = lines.join('\n');
+    const blob = new Blob([markdown], { type: 'text/markdown' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `search-results-${new Date().toISOString().split('T')[0]}.md`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  };
+
   if (loadingSchema) {
     return (
       <div className="flex items-center justify-center py-12">
@@ -419,11 +483,22 @@ export default function StructuredSearch() {
             <h3 className="text-lg font-semibold">
               Results ({results.length} {results.length === 1 ? 'case' : 'cases'})
             </h3>
-            {executionTime !== null && (
-              <span className="text-sm text-muted-foreground">
-                {executionTime}ms
-              </span>
-            )}
+            <div className="flex items-center gap-3">
+              {executionTime !== null && (
+                <span className="text-sm text-muted-foreground">
+                  {executionTime}ms
+                </span>
+              )}
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={exportToMarkdown}
+                className="gap-1"
+              >
+                <Download className="h-4 w-4" />
+                Export
+              </Button>
+            </div>
           </div>
           <div className="space-y-4">
             {results.map((result, i) => (

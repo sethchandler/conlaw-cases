@@ -229,13 +229,15 @@ interface CaseContext {
 
 /**
  * Chat with RAG - answers questions using retrieved cases as context
+ * @param useGeneralKnowledge - If true, allows AI to use general knowledge beyond the case database
  */
 export async function chatWithRAG(
   provider: AIProviderName,
   apiKey: string,
   model: string,
   userQuestion: string,
-  cases: CaseContext[]
+  cases: CaseContext[],
+  useGeneralKnowledge: boolean = false
 ): Promise<{ response: string; error?: string }> {
   // Build context from retrieved cases, including URLs and triggers
   const caseContext = cases.map((c, i) => {
@@ -250,7 +252,24 @@ export async function chatWithRAG(
    Summary: ${c.description}${urlLine}`;
   }).join('\n\n');
 
-  const systemPrompt = `You are a constitutional law expert assistant. Answer questions based ONLY on the cases provided below.
+  let systemPrompt: string;
+
+  if (useGeneralKnowledge) {
+    systemPrompt = `You are a constitutional law expert assistant. The user has enabled "General Knowledge Mode" which means you may use your full knowledge of constitutional law, legal history, and related topics.
+
+You have access to the following cases from the user's database. Use these as primary sources when relevant, but you are NOT limited to only these cases:
+
+CASES FROM DATABASE:
+${caseContext}
+
+IMPORTANT RULES:
+- When citing a case from the database above, use markdown link format: [*Case Name* (Year)](URL) if a URL is available
+- You may also reference cases and legal concepts NOT in the database
+- When referencing cases not in the database, clearly indicate this (e.g., "While not in your database, *Case Name* (Year) is also relevant...")
+- Be accurate and thorough
+- If you're uncertain about something, say so`;
+  } else {
+    systemPrompt = `You are a constitutional law expert assistant. Answer questions based ONLY on the cases provided below.
 
 IMPORTANT RULES:
 - Base your answers ONLY on the provided cases - do not use outside knowledge
@@ -264,6 +283,7 @@ AVAILABLE CASES:
 ${caseContext}
 
 If no cases are provided or relevant, explain that you need more specific information to answer.`;
+  }
 
   try {
     switch (provider) {

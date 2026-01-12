@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
 import { Card } from '@/components/ui/card';
-import { ExternalLink, Plus, MessageSquare, Trash2, Menu, X } from 'lucide-react';
+import { ExternalLink, Plus, MessageSquare, Trash2, Menu, X, Download, Brain } from 'lucide-react';
 import { chatWithRAG } from '@/lib/ai/providers';
 import { getPrimaryUrl } from '@/lib/case-url';
 import type { AIProviderName } from '@/types/ai';
@@ -96,7 +96,53 @@ export default function ChatInterface() {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
   const [sidebarOpen, setSidebarOpen] = useState(true);
+  const [useGeneralKnowledge, setUseGeneralKnowledge] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
+
+  // Export current thread to markdown
+  const exportToMarkdown = () => {
+    if (!activeThread || activeThread.messages.length === 0) return;
+
+    const lines: string[] = [
+      `# ${activeThread.title}`,
+      `*Exported from ConLaw Cases on ${new Date().toLocaleDateString()}*`,
+      '',
+    ];
+
+    for (const msg of activeThread.messages) {
+      if (msg.role === 'user') {
+        lines.push(`## Question`);
+        lines.push(msg.content);
+        lines.push('');
+      } else {
+        lines.push(`## Answer`);
+        lines.push(msg.content);
+        if (msg.casesUsed && msg.casesUsed.length > 0) {
+          lines.push('');
+          lines.push('**Sources:**');
+          for (const c of msg.casesUsed) {
+            if (c.url) {
+              lines.push(`- [${c.name} (${c.year})](${c.url})`);
+            } else {
+              lines.push(`- ${c.name} (${c.year})`);
+            }
+          }
+        }
+        lines.push('');
+      }
+    }
+
+    const markdown = lines.join('\n');
+    const blob = new Blob([markdown], { type: 'text/markdown' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `${activeThread.title.replace(/[^a-z0-9]/gi, '-').toLowerCase()}.md`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  };
 
   // Load threads from localStorage on mount
   useEffect(() => {
@@ -227,7 +273,7 @@ export default function ChatInterface() {
       }));
 
       // Step 2: Generate response using RAG
-      const result = await chatWithRAG(provider, apiKey, model, userQuestion, cases);
+      const result = await chatWithRAG(provider, apiKey, model, userQuestion, cases, useGeneralKnowledge);
 
       if (result.error) {
         throw new Error(result.error);
@@ -302,17 +348,50 @@ export default function ChatInterface() {
       {/* Main Chat Area */}
       <div className="flex-1 flex flex-col min-w-0">
         {/* Header with toggle */}
-        <div className="flex items-center gap-2 p-2 border-b">
-          <Button
-            variant="ghost"
-            size="icon"
-            onClick={() => setSidebarOpen(!sidebarOpen)}
-          >
-            {sidebarOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
-          </Button>
-          <h2 className="font-semibold">
-            {activeThread?.title || 'Chat'}
-          </h2>
+        <div className="flex items-center justify-between p-2 border-b">
+          <div className="flex items-center gap-2">
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={() => setSidebarOpen(!sidebarOpen)}
+            >
+              {sidebarOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
+            </Button>
+            <h2 className="font-semibold">
+              {activeThread?.title || 'Chat'}
+            </h2>
+          </div>
+          <div className="flex items-center gap-3">
+            {/* General Knowledge Toggle */}
+            <label className="flex items-center gap-2 cursor-pointer">
+              <input
+                type="checkbox"
+                checked={useGeneralKnowledge}
+                onChange={(e) => setUseGeneralKnowledge(e.target.checked)}
+                className="sr-only"
+              />
+              <div className={`flex items-center gap-1.5 px-2 py-1 rounded-full text-xs font-medium transition-colors ${
+                useGeneralKnowledge
+                  ? 'bg-amber-500/20 text-amber-700 dark:text-amber-300'
+                  : 'bg-muted text-muted-foreground hover:bg-accent'
+              }`}>
+                <Brain className="h-3 w-3" />
+                <span>General Knowledge</span>
+              </div>
+            </label>
+            {/* Export Button */}
+            {activeThread && activeThread.messages.length > 0 && (
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={exportToMarkdown}
+                className="gap-1"
+              >
+                <Download className="h-4 w-4" />
+                <span className="hidden sm:inline">Export</span>
+              </Button>
+            )}
+          </div>
         </div>
 
         {/* Error Banner */}
@@ -436,7 +515,13 @@ export default function ChatInterface() {
               </Button>
             </div>
             <p className="text-xs text-muted-foreground mt-2 text-center">
-              Responses are grounded in the case database. Press Enter to send.
+              {useGeneralKnowledge ? (
+                <span className="text-amber-600 dark:text-amber-400">
+                  General Knowledge mode: AI may use knowledge beyond the case database.
+                </span>
+              ) : (
+                'Responses are grounded in the case database. Press Enter to send.'
+              )}
             </p>
           </div>
         </div>

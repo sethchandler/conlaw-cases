@@ -70,6 +70,7 @@ const toolCards = [
 
 export default function Home() {
   const [counts, setCounts] = useState<SchemaInfo['counts'] | null>(null);
+  const [aiConfig, setAiConfig] = useState<{ provider: string; model: string } | null>(null);
 
   useEffect(() => {
     async function fetchCounts() {
@@ -84,6 +85,15 @@ export default function Home() {
       }
     }
     fetchCounts();
+
+    // Load AI config from localStorage
+    const provider = localStorage.getItem('ai-provider');
+    if (provider) {
+      const model = localStorage.getItem(`ai-model-${provider}`);
+      if (model) {
+        setAiConfig({ provider, model });
+      }
+    }
   }, []);
 
   return (
@@ -138,7 +148,20 @@ export default function Home() {
 
         {/* AI Tools Section */}
         <div className="border-t pt-8">
-          <h2 className="text-lg font-semibold mb-4">AI-Powered Tools</h2>
+          <div className="flex items-center justify-between mb-4">
+            <h2 className="text-lg font-semibold">AI-Powered Tools</h2>
+            {aiConfig ? (
+              <span className="text-sm text-muted-foreground">
+                Using <span className="font-medium text-foreground">{aiConfig.provider}</span>
+                {' / '}
+                <span className="font-medium text-foreground">{aiConfig.model}</span>
+              </span>
+            ) : (
+              <span className="text-sm text-muted-foreground">
+                Configure AI in Settings
+              </span>
+            )}
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl">
             {toolCards.map((card) => (
               <Link key={card.href} href={card.href}>

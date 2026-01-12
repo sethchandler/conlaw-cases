@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Card } from '@/components/ui/card';
-import { Copy, Check } from 'lucide-react';
+import { Copy, Check, Download } from 'lucide-react';
 import CaseCard from '@/components/CaseCard';
 import { generateSQL } from '@/lib/ai/providers';
 import { DATABASE_SCHEMA } from '@/lib/schema';
@@ -57,6 +57,60 @@ export default function QueryBuilder() {
     await navigator.clipboard.writeText(generatedSQL);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
+  };
+
+  const exportToMarkdown = () => {
+    if (results.length === 0) return;
+
+    const lines: string[] = [
+      `# AI Query Results`,
+      `*Exported from ConLaw Cases on ${new Date().toLocaleDateString()}*`,
+      '',
+      `**Query:** ${query}`,
+      '',
+      `**SQL:**`,
+      '```sql',
+      generatedSQL,
+      '```',
+      '',
+      `## Results (${results.length} cases)`,
+      '',
+    ];
+
+    for (const c of results) {
+      lines.push(`### ${c.name} (${c.year})`);
+      lines.push(`**Chief Justice:** ${c.chief_justice_name}`);
+      lines.push('');
+      lines.push(c.description || '');
+      lines.push('');
+      if (c.issues && c.issues.length > 0) {
+        lines.push(`**Topics:** ${c.issues.join(', ')}`);
+      }
+      if (c.provisions && c.provisions.length > 0) {
+        lines.push(`**Provisions:** ${c.provisions.join(', ')}`);
+      }
+      if (c.trigger_types && c.trigger_types.length > 0) {
+        lines.push(`**Triggers:** ${c.trigger_types.join(', ')}`);
+      }
+      const url = c.oyez_url || c.cornell_url || c.justia_url;
+      if (url) {
+        lines.push(`**Opinion:** [Link](${url})`);
+      }
+      lines.push('');
+      lines.push('---');
+      lines.push('');
+    }
+
+    const markdown = lines.join('\n');
+    const blob = new Blob([markdown], { type: 'text/markdown' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `query-results-${new Date().toISOString().split('T')[0]}.md`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
   };
 
   // Fetch dynamic schema info on mount
@@ -358,9 +412,20 @@ CRITICAL: Do NOT invent values. Only use the exact strings listed above.
       {/* Results */}
       {results.length > 0 && (
         <div>
-          <h3 className="text-lg font-semibold mb-4">
-            Results ({results.length} {results.length === 1 ? 'case' : 'cases'})
-          </h3>
+          <div className="flex items-center justify-between mb-4">
+            <h3 className="text-lg font-semibold">
+              Results ({results.length} {results.length === 1 ? 'case' : 'cases'})
+            </h3>
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={exportToMarkdown}
+              className="gap-1"
+            >
+              <Download className="h-4 w-4" />
+              Export
+            </Button>
+          </div>
           <div className="space-y-4">
             {results.map((result) => (
               <CaseCard key={result.id} case_={result} />
