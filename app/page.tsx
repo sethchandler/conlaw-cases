@@ -110,26 +110,42 @@ export default function Home() {
           </p>
         </div>
 
-        {/* Metrics */}
-        {counts && (
-          <div className="flex flex-wrap gap-4 mb-8 text-sm text-muted-foreground">
-            <span className="flex items-center gap-1">
-              <span className="font-semibold text-foreground">{counts.cases}</span> cases
-            </span>
-            <span>·</span>
-            <span className="flex items-center gap-1">
-              <span className="font-semibold text-foreground">{counts.issues}</span> legal topics
-            </span>
-            <span>·</span>
-            <span className="flex items-center gap-1">
-              <span className="font-semibold text-foreground">{counts.provisions}</span> provisions
-            </span>
-            <span>·</span>
-            <span className="flex items-center gap-1">
-              <span className="font-semibold text-foreground">{counts.triggers}</span> triggers
-            </span>
-          </div>
-        )}
+        {/* Metrics and AI Config */}
+        <div className="flex flex-wrap gap-4 mb-8 text-sm text-muted-foreground">
+          {counts && (
+            <>
+              <span className="flex items-center gap-1">
+                <span className="font-semibold text-foreground">{counts.cases}</span> cases
+              </span>
+              <span>·</span>
+              <span className="flex items-center gap-1">
+                <span className="font-semibold text-foreground">{counts.issues}</span> legal topics
+              </span>
+              <span>·</span>
+              <span className="flex items-center gap-1">
+                <span className="font-semibold text-foreground">{counts.provisions}</span> provisions
+              </span>
+              <span>·</span>
+              <span className="flex items-center gap-1">
+                <span className="font-semibold text-foreground">{counts.triggers}</span> triggers
+              </span>
+            </>
+          )}
+          {aiConfig && (
+            <>
+              <span>·</span>
+              <span className="flex items-center gap-1">
+                AI: <span className="font-semibold text-foreground">{aiConfig.provider}/{aiConfig.model}</span>
+              </span>
+            </>
+          )}
+          {!aiConfig && (
+            <>
+              <span>·</span>
+              <span className="text-amber-600 dark:text-amber-400">AI not configured</span>
+            </>
+          )}
+        </div>
 
         {/* Navigation Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
@@ -148,20 +164,7 @@ export default function Home() {
 
         {/* AI Tools Section */}
         <div className="border-t pt-8">
-          <div className="flex items-center justify-between mb-4">
-            <h2 className="text-lg font-semibold">AI-Powered Tools</h2>
-            {aiConfig ? (
-              <span className="text-sm text-muted-foreground">
-                Using <span className="font-medium text-foreground">{aiConfig.provider}</span>
-                {' / '}
-                <span className="font-medium text-foreground">{aiConfig.model}</span>
-              </span>
-            ) : (
-              <span className="text-sm text-muted-foreground">
-                Configure AI in Settings
-              </span>
-            )}
-          </div>
+          <h2 className="text-lg font-semibold mb-4">AI-Powered Tools</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl">
             {toolCards.map((card) => (
               <Link key={card.href} href={card.href}>

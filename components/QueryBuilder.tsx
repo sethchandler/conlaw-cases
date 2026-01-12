@@ -52,6 +52,18 @@ export default function QueryBuilder() {
   const [executionTime, setExecutionTime] = useState<number | null>(null);
   const [schemaInfo, setSchemaInfo] = useState<SchemaInfo | null>(null);
   const [copied, setCopied] = useState(false);
+  const [aiConfig, setAiConfig] = useState<{ provider: string; model: string } | null>(null);
+
+  // Load AI config from localStorage
+  useEffect(() => {
+    const provider = localStorage.getItem('ai-provider');
+    if (provider) {
+      const model = localStorage.getItem(`ai-model-${provider}`);
+      if (model) {
+        setAiConfig({ provider, model });
+      }
+    }
+  }, []);
 
   const copySQL = async () => {
     await navigator.clipboard.writeText(generatedSQL);
@@ -299,11 +311,23 @@ CRITICAL: Do NOT invent values. Only use the exact strings listed above.
 
   return (
     <div className="space-y-6">
-      <div>
-        <h2 className="text-2xl font-bold mb-2">AI Query Builder</h2>
-        <p className="text-muted-foreground">
-          Ask a question in natural language and see the SQL generated to answer it.
-        </p>
+      <div className="flex items-start justify-between">
+        <div>
+          <h2 className="text-2xl font-bold mb-2">AI Query Builder</h2>
+          <p className="text-muted-foreground">
+            Ask a question in natural language and see the SQL generated to answer it.
+          </p>
+        </div>
+        {aiConfig ? (
+          <div className="text-right text-sm">
+            <div className="text-muted-foreground">AI Model</div>
+            <div className="font-medium">{aiConfig.provider} / {aiConfig.model}</div>
+          </div>
+        ) : (
+          <div className="text-sm text-muted-foreground">
+            Configure AI in Settings
+          </div>
+        )}
       </div>
 
       {/* Input Section */}

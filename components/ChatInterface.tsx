@@ -97,7 +97,19 @@ export default function ChatInterface() {
   const [error, setError] = useState('');
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [useGeneralKnowledge, setUseGeneralKnowledge] = useState(false);
+  const [aiConfig, setAiConfig] = useState<{ provider: string; model: string } | null>(null);
   const messagesEndRef = useRef<HTMLDivElement>(null);
+
+  // Load AI config from localStorage
+  useEffect(() => {
+    const provider = localStorage.getItem('ai-provider');
+    if (provider) {
+      const model = localStorage.getItem(`ai-model-${provider}`);
+      if (model) {
+        setAiConfig({ provider, model });
+      }
+    }
+  }, []);
 
   // Export current thread to markdown
   const exportToMarkdown = () => {
@@ -360,6 +372,11 @@ export default function ChatInterface() {
             <h2 className="font-semibold">
               {activeThread?.title || 'Chat'}
             </h2>
+            {aiConfig && (
+              <span className="text-xs text-muted-foreground ml-2 hidden sm:inline">
+                ({aiConfig.provider} / {aiConfig.model})
+              </span>
+            )}
           </div>
           <div className="flex items-center gap-3">
             {/* General Knowledge Toggle */}
