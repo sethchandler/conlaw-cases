@@ -5,12 +5,22 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Card } from '@/components/ui/card';
-import { ExternalLink } from 'lucide-react';
+import { Copy, Check } from 'lucide-react';
+import CaseCard from '@/components/CaseCard';
 import { generateSQL } from '@/lib/ai/providers';
 import { DATABASE_SCHEMA } from '@/lib/schema';
-import { getPrimaryUrl } from '@/lib/case-url';
 import type { AIProviderName } from '@/types/ai';
 import type { CaseWithChiefJustice } from '@/types/case';
+
+const EXAMPLE_QUERIES = [
+  "Show me Commerce Clause cases after 1990",
+  "Which cases involve the Fourteenth Amendment Equal Protection Clause?",
+  "Find cases triggered by federal legislation from 1932 to 1945",
+  "What cases involving federalism were decided during the Warren Court?",
+  "Cases involving the Tenth Amendment",
+  "Show me the most recent cases in the database",
+  "Show me cases triggered by war",
+];
 
 interface Issue {
   id: string;
@@ -41,6 +51,13 @@ export default function QueryBuilder() {
   const [results, setResults] = useState<CaseWithChiefJustice[]>([]);
   const [executionTime, setExecutionTime] = useState<number | null>(null);
   const [schemaInfo, setSchemaInfo] = useState<SchemaInfo | null>(null);
+  const [copied, setCopied] = useState(false);
+
+  const copySQL = async () => {
+    await navigator.clipboard.writeText(generatedSQL);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
 
   // Fetch dynamic schema info on mount
   useEffect(() => {
@@ -229,179 +246,128 @@ CRITICAL: Do NOT invent values. Only use the exact strings listed above.
   return (
     <div className="space-y-6">
       <div>
-        <h2 className="text-2xl font-bold mb-4">AI Query Builder</h2>
-        <p className="text-muted-foreground mb-6">
-          Enter a natural language query and let AI generate SQL for you.
-          For more reliable results, use the Structured Search tab.
+        <h2 className="text-2xl font-bold mb-2">AI Query Builder</h2>
+        <p className="text-muted-foreground">
+          Ask a question in natural language and see the SQL generated to answer it.
         </p>
       </div>
 
-      <div className="space-y-4">
+      {/* Input Section */}
+      <Card className="p-6 space-y-4">
         <div>
           <label className="text-sm font-medium mb-2 block">
-            Natural Language Query
+            Ask a question about the cases
           </label>
-          <Input
-            placeholder="e.g., Show me all Commerce Clause cases after 1990"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            onKeyDown={(e) => {
-              if (e.key === 'Enter' && !e.shiftKey) {
-                e.preventDefault();
-                handleGenerateSQL();
-              }
-            }}
-            className="w-full"
-          />
+          <div className="flex gap-2">
+            <Input
+              placeholder="e.g., Show me Commerce Clause cases after 1990"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' && !e.shiftKey) {
+                  e.preventDefault();
+                  handleGenerateSQL();
+                }
+              }}
+              className="flex-1"
+            />
+            <Button
+              onClick={handleGenerateSQL}
+              disabled={isGenerating || !query.trim()}
+            >
+              {isGenerating ? 'Generating...' : 'Generate Query'}
+            </Button>
+          </div>
         </div>
 
-        <Button
-          onClick={handleGenerateSQL}
-          disabled={isGenerating || !query.trim()}
-          className="w-full sm:w-auto"
-        >
-          {isGenerating ? 'Generating SQL...' : 'Generate SQL Query'}
-        </Button>
+        {/* Example Queries */}
+        <div>
+          <p className="text-sm text-muted-foreground mb-2">Try an example:</p>
+          <div className="flex flex-wrap gap-2">
+            {EXAMPLE_QUERIES.map((example, i) => (
+              <button
+                key={i}
+                onClick={() => setQuery(example)}
+                className="px-3 py-1.5 text-sm bg-accent hover:bg-accent/80 rounded-full transition-colors"
+              >
+                {example}
+              </button>
+            ))}
+          </div>
+        </div>
+      </Card>
 
-        {error && (
-          <Card className={`p-4 ${error.startsWith('Note:') ? 'border-yellow-500 bg-yellow-50 dark:bg-yellow-950/20' : 'border-red-500 bg-red-50 dark:bg-red-950/20'}`}>
-            <p className={`text-sm ${error.startsWith('Note:') ? 'text-yellow-700 dark:text-yellow-300' : 'text-red-700 dark:text-red-300'}`}>{error}</p>
-          </Card>
-        )}
+      {/* Error */}
+      {error && (
+        <Card className={`p-4 ${error.startsWith('Note:') ? 'border-yellow-500 bg-yellow-50 dark:bg-yellow-950/20' : 'border-red-500 bg-red-50 dark:bg-red-950/20'}`}>
+          <p className={`text-sm ${error.startsWith('Note:') ? 'text-yellow-700 dark:text-yellow-300' : 'text-red-700 dark:text-red-300'}`}>{error}</p>
+        </Card>
+      )}
 
-        {generatedSQL && (
-          <div className="space-y-4">
-            <div>
-              <div className="flex items-center justify-between mb-2">
-                <label className="text-sm font-medium">
-                  Generated SQL (Editable)
-                </label>
-                <span className="text-xs text-muted-foreground">
-                  You can edit this query before executing
-                </span>
+      {/* Generated SQL */}
+      {generatedSQL && (
+        <Card className="p-6 space-y-4">
+          <div>
+            <div className="flex items-center justify-between mb-2">
+              <label className="text-sm font-medium">Generated SQL</label>
+              <div className="flex items-center gap-2">
+                <button
+                  onClick={copySQL}
+                  className="flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  {copied ? <Check className="h-3 w-3" /> : <Copy className="h-3 w-3" />}
+                  {copied ? 'Copied!' : 'Copy SQL'}
+                </button>
               </div>
-              <Textarea
-                value={generatedSQL}
-                onChange={(e) => setGeneratedSQL(e.target.value)}
-                className="font-mono text-sm"
-                rows={8}
-              />
             </div>
+            <Textarea
+              value={generatedSQL}
+              onChange={(e) => setGeneratedSQL(e.target.value)}
+              className="font-mono text-sm bg-muted/50"
+              rows={6}
+            />
+          </div>
 
-            <div className="flex gap-2">
-              <Button
-                onClick={handleExecuteSQL}
-                disabled={isExecuting}
-                className="flex-1 sm:flex-initial"
-              >
-                {isExecuting ? 'Executing...' : 'Execute Query'}
-              </Button>
-              <Button
-                variant="outline"
-                onClick={() => {
-                  setGeneratedSQL('');
-                  setResults([]);
-                  setError('');
-                  setExecutionTime(null);
-                }}
-              >
-                Clear
-              </Button>
-            </div>
-
+          <div className="flex items-center gap-4">
+            <Button
+              onClick={handleExecuteSQL}
+              disabled={isExecuting}
+            >
+              {isExecuting ? 'Executing...' : 'Execute Query'}
+            </Button>
+            <Button
+              variant="outline"
+              onClick={() => {
+                setGeneratedSQL('');
+                setResults([]);
+                setError('');
+                setExecutionTime(null);
+              }}
+            >
+              Clear
+            </Button>
             {executionTime !== null && (
-              <div className="text-sm text-muted-foreground">
-                Query executed in {executionTime}ms
-              </div>
+              <span className="text-sm text-muted-foreground">
+                Executed in {executionTime}ms
+              </span>
             )}
           </div>
-        )}
+        </Card>
+      )}
 
-        {!generatedSQL && !isGenerating && !error && (
-          <div className="text-center py-12 text-muted-foreground">
-            <p className="mb-2">No query generated yet.</p>
-            <p className="text-sm">
-              Enter a natural language query above and click "Generate SQL Query"
-            </p>
+      {/* Results */}
+      {results.length > 0 && (
+        <div>
+          <h3 className="text-lg font-semibold mb-4">
+            Results ({results.length} {results.length === 1 ? 'case' : 'cases'})
+          </h3>
+          <div className="space-y-4">
+            {results.map((result) => (
+              <CaseCard key={result.id} case_={result} />
+            ))}
           </div>
-        )}
-
-        {results.length > 0 && (
-          <div>
-            <div className="flex items-center justify-between mb-4">
-              <h3 className="text-lg font-semibold">
-                Results ({results.length} {results.length === 1 ? 'case' : 'cases'})
-              </h3>
-            </div>
-            <div className="space-y-4">
-              {results.map((result, i) => (
-                <Card key={i} className="p-4 hover:bg-accent/50 transition-colors">
-                  <div className="space-y-2">
-                    <div>
-                      <div className="flex items-center gap-2">
-                        <span className="font-semibold text-lg">{result.name}</span>
-                        {getPrimaryUrl(result) && (
-                          <a
-                            href={getPrimaryUrl(result)!}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-muted-foreground hover:text-primary transition-colors"
-                            title="View opinion"
-                          >
-                            <ExternalLink className="h-4 w-4" />
-                          </a>
-                        )}
-                      </div>
-                      <div className="text-sm text-muted-foreground">
-                        {result.year} • Chief Justice: {result.chief_justice_name || 'Unknown'}
-                      </div>
-                    </div>
-                    {result.description && (
-                      <p className="text-sm">{result.description}</p>
-                    )}
-                    {result.issues && result.issues.length > 0 && (
-                      <div className="flex flex-wrap gap-2 mt-2">
-                        {result.issues.map((issue, idx) => (
-                          <span
-                            key={idx}
-                            className="px-2 py-1 bg-primary/10 text-primary rounded-md text-xs"
-                          >
-                            {issue}
-                          </span>
-                        ))}
-                      </div>
-                    )}
-                    {result.provisions && result.provisions.length > 0 && (
-                      <div className="flex flex-wrap gap-2 mt-1">
-                        {result.provisions.map((prov, idx) => (
-                          <span
-                            key={idx}
-                            className="px-2 py-1 bg-blue-500/10 text-blue-600 dark:text-blue-400 rounded-md text-xs"
-                          >
-                            {prov}
-                          </span>
-                        ))}
-                      </div>
-                    )}
-                    {result.trigger_types && result.trigger_types.length > 0 && (
-                      <div className="flex flex-wrap gap-2 mt-1">
-                        {result.trigger_types.map((trigger, idx) => (
-                          <span
-                            key={idx}
-                            className="px-2 py-1 bg-amber-500/10 text-amber-600 dark:text-amber-400 rounded-md text-xs"
-                          >
-                            {trigger}
-                          </span>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                </Card>
-              ))}
-            </div>
-          </div>
-        )}
-      </div>
+        </div>
+      )}
     </div>
   );
 }
